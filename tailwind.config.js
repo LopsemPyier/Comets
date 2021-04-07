@@ -28,13 +28,17 @@ module.exports = {
         },
         colors: {
           white: '#ffffff',
-          'gray-lightest': '#f8f8f9',
-          'gray-lighter': '#e5e4e6',
-          'gray-light': '#d1d1d2',
-          gray: '#bebebf',
-          'gray-dark': '#979697',
-          'gray-darker': '#6f6f70',
-          'gray-darkest': '#484849',
+          
+          gray: {
+            lightest: '#f8f8f9',
+            lighter: '#e5e4e6',
+            light: '#d1d1d2',
+            DEFAULT: '#bebebf',
+            dark: '#979697',
+            darker: '#6f6f70',
+            darkest: '#484849'
+          },
+
           black: '#212121',
   
           primary: {
@@ -48,26 +52,30 @@ module.exports = {
             DEFAULT: '#EBC44E',
             dark: '#e6b520',
           },
-  
-          'cta-light': '#f2ded1',
-          cta: '#bf8151',
-          'cta-dark': '#5c402b',
-  
-          'info-light': '#daf0fc',
-          info: '#46c2f2',
-          'info-dark': '#2d5c71',
-  
-          'warning-light': '#fdefd3',
-          warning: '#e6c051',
-          'warning-dark': '#6d5b2c',
-  
-          'success-light': '#d9f4d8',
-          success: '#58d068',
-          'success-dark': '#316335',
-  
-          'danger-light': '#ffd3d4',
-          danger: '#e6405d',
-          'danger-dark': '#6e2730',
+
+          error: {
+            light: '#ffd3d4',
+            DEFAULT: '#e6405d',
+            dark: '#6e2730'
+          },
+
+          info: {
+            light: '#daf0fc',
+            DEFAULT: '#46c2f2',
+            dark: '#2d5c71'
+          },
+
+          warning: {
+            light: '#fdefd3',
+            DEFAULT: '#e6c051',
+            dark: '#6d5b2c'
+          },
+
+          success: {
+            light: '#d9f4d8',
+            DEFAULT: '#58d068',
+            dark: '#316335'
+          }
         },
       },
     },

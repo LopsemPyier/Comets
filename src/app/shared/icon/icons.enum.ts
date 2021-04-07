@@ -34,6 +34,7 @@ import {
     RiSettings5Fill,
     RiMoonClearFill,
     RiMouseLine,
+    RiCheckboxCircleFill
 } from 'angular-remix-icon';
 
 export const icons = {
@@ -72,4 +73,5 @@ export const icons = {
     RiSettings5Fill,
     RiMoonClearFill,
     RiMouseLine,
+    RiCheckboxCircleFill
 };

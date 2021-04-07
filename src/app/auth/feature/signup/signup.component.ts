@@ -9,7 +9,7 @@ import { Validators, FormBuilder } from '@angular/forms';
 export class SignupComponent implements OnInit {
   loading = false;
 
-  error: 'username' | 'email' | 'request' | 'internal' | 'none' = 'none';
+  error: 'username' | 'email' | 'request' | 'internal' | 'none' = 'username';
 
   form = this.fb.group({
     username: ['', Validators.required],

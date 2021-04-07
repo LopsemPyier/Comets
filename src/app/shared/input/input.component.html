@@ -1,6 +1,6 @@
 <div class="relative flex flex-row items-center w-full">
     <div
-      class="absolute z-10 left-0 pl-2 text-gray-darkest dark:text-gray-lightest"
+      class="absolute z-10 left-0 pl-2 text-light"
       *ngIf="!!iconLeft"
     >
       <app-icon [icon]="iconLeft" size="md" color="inherit"></app-icon>
@@ -16,11 +16,11 @@
         [name]="ngControl.name"
         [id]="ngControl.name"
         [placeholder]="label"
-        class="h-10 px-10 bg-gray-lighter text-gray-darkest rounded-sm w-full dark:bg-gray-darkest dark:text-gray-lightest"
+        class="h-10 px-10 bg-light text rounded-sm w-full"
     />
   
     <div
-      class="absolute z-10 right-0 pl-2 text-gray-darkest dark:text-gray-lightest"
+      class="absolute z-10 right-0 pl-2 text-light"
       *ngIf="!!iconRight"
     >
       <app-icon [icon]="iconRight" size="md" color="inherit"></app-icon>
@@ -28,12 +28,19 @@
   </div>
   
   <div
-    class="h-1 mt-1 bg-gray-lighter dark:bg-gray-darkest w-full rounded-sm"
+    class="h-1 mt-1 bg-light w-full rounded-sm"
     *ngIf="type === 'password' && strengh"
   >
     <div
       class="h-full rounded-sm transition-all duration-500"
-      [ngClass]="passwordStrengh"
+      [ngClass]="{
+        'w-0 bg-gray-light dark:bg-gray-dark': passwordStrengh === 0,
+        'w-3/12 bg-error': passwordStrengh === 1,
+        'w-6/12 bg-warning': passwordStrengh === 2,
+        'w-9/12': passwordStrengh === 3,
+        'w-full': passwordStrengh === 4,
+        'bg-success': passwordStrengh >= 3
+      }"
     ></div>
   </div>
   

@@ -38,8 +38,7 @@ export class InputComponent implements ControlValueAccessor {
     this.disabled = disabled;
   }
 
-  public get passwordStrengh(): string {
-    if (this.ngControl.value.length === 0) { return 'w-0 bg-danger'; }
+  public get passwordStrengh(): number {
     let mode = 0;
     let reg = new RegExp('[0-9]+');
 
@@ -50,18 +49,6 @@ export class InputComponent implements ControlValueAccessor {
     reg = new RegExp('[^A-Za-z0-9]');
     if (reg.test(this.ngControl.value)) { mode += 1; }
 
-    switch (mode) {
-      case 1:
-        return 'w-3/12 bg-danger';
-      case 2:
-        return 'w-6/12 bg-warning';
-      case 3:
-        return 'w-9/12 bg-success';
-      case 4:
-        return 'w-full bg-success';
-
-      default:
-        return 'no';
-    }
+    return mode;
   }
 }

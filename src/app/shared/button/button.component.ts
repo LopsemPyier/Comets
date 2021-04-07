@@ -25,6 +25,10 @@ export class ButtonComponent {
     }
     if (this.disabled || this.loading) {
       bgMode += '-light';
+      textMode += '-light';
+      if (this.type === 'default') {
+        bgMode += 'er';
+      }
     } else {
       bgMode += '-hover';
     }
