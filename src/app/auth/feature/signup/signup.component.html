@@ -1,0 +1,108 @@
+<section
+  class="h-full w-full grid grid-rows-1 grid-cols-none lg:grid-cols-signup lg:grid-rows-none"
+>
+  <img
+    src="./assets/images/signup.svg"
+    alt="An illustration for the signup page which represents a rocket launch to the space."
+    class="hidden place-self-center lg:block"
+    i18n-alt
+  />
+  <form
+    [formGroup]="form"
+    (ngSubmit)="submit()"
+    class="relative w-full h-full flex flex-col items-center justify-center lg:justify-self-start justify-self-center self-center"
+  >
+    <h1 class="text-black text-3xl font-bold dark:text-white" i18n>
+      Welcome to comets
+    </h1>
+
+    <p class="text-gray-dark mb-5 dark:text-light" i18n>
+      Join the rocket to launch to the comet.
+    </p>
+
+    <app-input
+      formControlName="username"
+      type="text"
+      label="Username"
+      iconLeft="user-fill"
+      class="mb-2 w-72 sm:w-80"
+      i18n-label
+    ></app-input>
+
+    <app-input
+      formControlName="email"
+      type="email"
+      label="Email"
+      iconLeft="mail-fill"
+      class="mb-2 w-72 sm:w-80"
+      i18n-label
+    ></app-input>
+
+    <app-input
+      formControlName="password"
+      type="password"
+      [strengh]="true"
+      label="Password"
+      iconLeft="lock-2-fill"
+      class="mb-2 w-72 sm:w-80"
+      i18n-label
+    ></app-input>
+
+    <p
+      class="text-sm mb-4 w-72 text-center sm:w-80 text-gray-light dark:text-gray-dark"
+      i18n
+    >
+      By joigning us, you accept the
+      <a
+        routerLink="/terms-of-service"
+        class="text-sm font-bold text-gray-darker dark:text-gray-lighter"
+        >Terms of Service</a
+      >
+    </p>
+
+    <app-button
+      label="Sign Up"
+      [loading]="loading"
+      [disabled]="!form.valid"
+      class="mb-4 w-72 sm:w-80"
+      i18n-label
+    ></app-button>
+
+    <div class="h-10 w-80 sm:w-auto">
+      <app-message
+        *ngIf="error === 'username'"
+        message="Username already taken"
+        type='error'
+        i18n-message
+      ></app-message>
+
+      <app-message
+        *ngIf="error === 'email'"
+        message="Email already taken"
+        type='error'
+        i18n-message
+      ></app-message>
+
+      <app-message
+        *ngIf="error === 'request'"
+        message="Error during request, please retry."
+        type='error'
+        i18n-message
+      ></app-message>
+
+      <app-message
+        *ngIf="error === 'internal'"
+        message="Internal error, please retry later."
+        type='error'
+        i18n-message
+      ></app-message>
+    </div>
+
+    <p class="absolute bottom-5 text-gray-lighter dark:text-gray-darker" i18n>
+      Already member ?
+      <a routerLink="/login" class="text-gray-darker dark:text-gray-lighter"
+        >Login</a
+      >
+    </p>
+  </form>
+</section>

@@ -1,4 +1,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'styles/typography.scss';
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font-size: 18px;
+  @apply h-screen;
+}

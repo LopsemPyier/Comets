@@ -1,0 +1,76 @@
+h1.hero {
+    @apply font-serif;
+    @apply font-black;
+    @apply text-5xl;
+    @apply md:text-8xl;
+}
+
+h1 {
+    @apply font-sans;
+    @apply font-bold;
+    @apply text-4xl;
+}
+
+h2 {
+    @apply font-sans font-semibold text-4xl;
+}
+
+h3 {
+    @apply font-sans font-medium text-xl;
+}
+
+h4 {
+    @apply font-sans font-medium text-base;
+}
+
+p {
+    @apply font-sans font-normal;
+}
+
+p.small {
+    @apply text-sm;
+}
+
+p.paragraph {
+    @apply text-base;
+}
+
+a {
+    @apply font-sans font-normal;
+}
+
+.text-on-primary {
+    @apply text-white;
+}
+
+.text-light-on-primary {
+    @apply text-gray-lighter;
+}
+
+.text-on-secondary {
+    @apply text-white;
+}
+
+.text-light-on-secondary {
+    @apply text-gray-lighter;
+}
+
+.text-on-bg {
+    @apply text-black dark:text-white;
+}
+
+.text-light-on-bg {
+    @apply text-gray dark:text-gray-lighter;
+}
+
+.bg {
+    @apply bg-white dark:bg-black;
+}
+
+.bg-light {
+    @apply bg-gray-lightest dark:bg-gray-lightest;
+}
+
+.bg-primary-hov {
+    @apply bg-primary hover:bg-primary-light;
+}

@@ -1,0 +1,16 @@
+<button
+  (click)="buttonClick.emit($event)"
+  [disabled]="disabled"
+  class="px-10 h-10 w-full rounded-sm flex flex-row items-center justify-center shadow"
+  [ngClass]="classes"
+  [class.cursor-not-allowed]="disabled"
+  [class.cursor-wait]="loading"
+>
+  <span class="mr-2">{{ label }}</span>
+  <app-icon
+    class="animate-spin"
+    *ngIf="loading"
+    icon="loader-5-fill"
+    [color]="type === 'default' ? 'text' : 'inverse'"
+  ></app-icon>
+</button>

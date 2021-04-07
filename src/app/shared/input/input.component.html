@@ -1,0 +1,39 @@
+<div class="relative flex flex-row items-center w-full">
+    <div
+      class="absolute z-10 left-0 pl-2 text-gray-darkest dark:text-gray-lightest"
+      *ngIf="!!iconLeft"
+    >
+      <app-icon [icon]="iconLeft" size="md" color="inherit"></app-icon>
+    </div>
+  
+    <input
+        #input
+        [type]="type"
+        [value]="value"
+        (input)="onChange(input.value)"
+        (blur)="onTouched()"
+        [disabled]="disabled"
+        [name]="ngControl.name"
+        [id]="ngControl.name"
+        [placeholder]="label"
+        class="h-10 px-10 bg-gray-lighter text-gray-darkest rounded-sm w-full dark:bg-gray-darkest dark:text-gray-lightest"
+    />
+  
+    <div
+      class="absolute z-10 right-0 pl-2 text-gray-darkest dark:text-gray-lightest"
+      *ngIf="!!iconRight"
+    >
+      <app-icon [icon]="iconRight" size="md" color="inherit"></app-icon>
+    </div>
+  </div>
+  
+  <div
+    class="h-1 mt-1 bg-gray-lighter dark:bg-gray-darkest w-full rounded-sm"
+    *ngIf="type === 'password' && strengh"
+  >
+    <div
+      class="h-full rounded-sm transition-all duration-500"
+      [ngClass]="passwordStrengh"
+    ></div>
+  </div>
+  
