@@ -1,0 +1,61 @@
+@layer utilities {
+    .text-on-primary {
+        @apply text-white;
+    }
+
+    .text-on-primary-light {
+        @apply text-gray-lighter;
+    }
+
+    .text-on-secondary {
+        @apply text-white;
+    }
+
+    .text-on-secondary-light {
+        @apply text-gray-lighter;
+    }
+
+    .text {
+        @apply text-black dark:text-white;
+    }
+
+    .text-light {
+        @apply text-gray-light dark:text-gray-dark;
+    }
+
+    .bg {
+        @apply bg-white dark:bg-black;
+    }
+
+    .bg-light {
+        @apply bg-gray-lighter dark:bg-gray-darkest;
+    }
+
+    .bg-hover {
+        @apply bg-light hover:bg-gray-lightest dark:hover:bg-gray-darker;
+    }
+
+    .bg-primary {
+        @apply bg-primary;
+    }
+
+    .bg-primary-light {
+        @apply bg-primary-light;
+    }
+
+    .bg-primary-hover {
+        @apply bg-primary hover:bg-primary-light;
+    }
+
+    .bg-secondary {
+        @apply bg-secondary;
+    }
+
+    .bg-secondary-light {
+        @apply bg-secondary-light;
+    }
+
+    .bg-secondary-hover {
+        @apply bg-secondary hover:bg-secondary-light;
+    }
+}

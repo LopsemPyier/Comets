@@ -18,8 +18,8 @@ module.exports = {
       },
       extend: {
         gridTemplateColumns: {
-          login: '40% auto',
-          signup: 'auto 40%',
+          login: '60% auto',
+          signup: 'auto 60%',
           hero: '65% auto',
         },
         gridTemplateRows: {

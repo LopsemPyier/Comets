@@ -4,105 +4,108 @@
   <img
     src="./assets/images/signup.svg"
     alt="An illustration for the signup page which represents a rocket launch to the space."
-    class="hidden place-self-center lg:block"
+    class="hidden justify-self-end self-center lg:block"
     i18n-alt
   />
-  <form
-    [formGroup]="form"
-    (ngSubmit)="submit()"
-    class="relative w-full h-full flex flex-col items-center justify-center lg:justify-self-start justify-self-center self-center"
-  >
-    <h1 class="text-black text-3xl font-bold dark:text-white" i18n>
-      Welcome to comets
-    </h1>
-
-    <p class="text-gray-dark mb-5 dark:text-light" i18n>
-      Join the rocket to launch to the comet.
-    </p>
-
-    <app-input
-      formControlName="username"
-      type="text"
-      label="Username"
-      iconLeft="user-fill"
-      class="mb-2 w-72 sm:w-80"
-      i18n-label
-    ></app-input>
-
-    <app-input
-      formControlName="email"
-      type="email"
-      label="Email"
-      iconLeft="mail-fill"
-      class="mb-2 w-72 sm:w-80"
-      i18n-label
-    ></app-input>
-
-    <app-input
-      formControlName="password"
-      type="password"
-      [strengh]="true"
-      label="Password"
-      iconLeft="lock-2-fill"
-      class="mb-2 w-72 sm:w-80"
-      i18n-label
-    ></app-input>
-
-    <p
-      class="text-sm mb-4 w-72 text-center sm:w-80 text-gray-light dark:text-gray-dark"
-      i18n
+  <div class="relative items-center flex flex-col place-content-center">
+    <form
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+      class="relative w-full grid grid-flow-row auto-flow-row gap-2 justify-center lg:justify-self-end justify-self-center self-center"
     >
-      By joigning us, you accept the
-      <a
-        routerLink="/terms-of-service"
-        class="text-sm font-bold text-gray-darker dark:text-gray-lighter"
-        >Terms of Service</a
+      <h1 class="mb-[-.75rem] text text-center" i18n>
+        Welcome to comets
+      </h1>
+
+      <p class="mb-3 text-center text-light" i18n>
+        Join the rocket to launch to the comet.
+      </p>
+
+      <app-input
+        formControlName="username"
+        type="text"
+        label="Username"
+        iconLeft="user-fill"
+        class="w-72 sm:w-80"
+        i18n-label
+      ></app-input>
+
+      <app-input
+        formControlName="email"
+        type="email"
+        label="Email"
+        iconLeft="mail-fill"
+        class="w-72 sm:w-80"
+        i18n-label
+      ></app-input>
+
+      <app-input
+        formControlName="password"
+        type="password"
+        [strengh]="true"
+        label="Password"
+        iconLeft="lock-2-fill"
+        class="w-72 sm:w-80"
+        i18n-label
+      ></app-input>
+
+      <p
+        class="small mb-2 w-72 text-center sm:w-80 text-light"
+        i18n
       >
-    </p>
+        By joigning us, you accept the
+        <a
+          routerLink="/terms-of-service"
+          class="text"
+          >Terms of Service</a
+        >
+      </p>
 
-    <app-button
-      label="Sign Up"
-      [loading]="loading"
-      [disabled]="!form.valid"
-      class="mb-4 w-72 sm:w-80"
-      i18n-label
-    ></app-button>
+      <app-button
+        label="Sign Up"
+        type='primary'
+        [loading]="loading"
+        [disabled]="!form.valid"
+        class="mb-2 w-72 sm:w-80"
+        i18n-label
+      ></app-button>
 
-    <div class="h-10 w-80 sm:w-auto">
-      <app-message
-        *ngIf="error === 'username'"
-        message="Username already taken"
-        type='error'
-        i18n-message
-      ></app-message>
+      <div class="h-10 w-80 sm:w-auto">
+        <app-message
+          *ngIf="error === 'username'"
+          message="Username already taken"
+          type='error'
+          i18n-message
+        ></app-message>
 
-      <app-message
-        *ngIf="error === 'email'"
-        message="Email already taken"
-        type='error'
-        i18n-message
-      ></app-message>
+        <app-message
+          *ngIf="error === 'email'"
+          message="Email already taken"
+          type='error'
+          i18n-message
+        ></app-message>
 
-      <app-message
-        *ngIf="error === 'request'"
-        message="Error during request, please retry."
-        type='error'
-        i18n-message
-      ></app-message>
+        <app-message
+          *ngIf="error === 'request'"
+          message="Error during request, please retry."
+          type='error'
+          i18n-message
+        ></app-message>
 
-      <app-message
-        *ngIf="error === 'internal'"
-        message="Internal error, please retry later."
-        type='error'
-        i18n-message
-      ></app-message>
-    </div>
+        <app-message
+          *ngIf="error === 'internal'"
+          message="Internal error, please retry later."
+          type='error'
+          i18n-message
+        ></app-message>
+      </div>
+    </form>
 
-    <p class="absolute bottom-5 text-gray-lighter dark:text-gray-darker" i18n>
+    <p class="absolute text-center bottom-5 text-light" i18n>
       Already member ?
-      <a routerLink="/login" class="text-gray-darker dark:text-gray-lighter"
+      <a routerLink="/login" class="text"
         >Login</a
       >
     </p>
-  </form>
+  </div>
 </section>

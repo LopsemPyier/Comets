@@ -1,83 +1,86 @@
 <section
   class="h-full w-full grid grid-rows-1 grid-cols-none lg:grid-cols-login lg:grid-rows-none"
 >
-  <form
-    [formGroup]="form"
-    (ngSubmit)="submit()"
-    class="relative w-full h-full flex flex-col items-center justify-center lg:justify-self-end justify-self-center self-center"
-  >
-    <h1 class="text-black text-3xl mb-5 font-bold dark:text-white" i18n>
-      Welcome back
-    </h1>
+  <div class="relative items-center flex flex-col place-content-center">
+      <form
+      [formGroup]="form"
+      (ngSubmit)="submit()"
+      class="relative w-full grid grid-flow-row auto-flow-row gap-2 justify-center lg:justify-self-end justify-self-center self-center"
+    >
+      <h1 class="text mb-2 text-center" i18n>
+        Welcome back
+      </h1>
 
-    <app-input
-      formControlName="username"
-      type="text"
-      label="Username"
-      iconLeft="user-fill"
-      class="mb-2 w-72 sm:w-80"
-      i18n-label
-    ></app-input>
+      <app-input
+        formControlName="username"
+        type="text"
+        label="Username"
+        iconLeft="user-fill"
+        class="w-72 sm:w-80"
+        i18n-label
+      ></app-input>
 
-    <app-input
-      formControlName="password"
-      type="password"
-      label="Password"
-      iconLeft="lock-2-fill"
-      class="mb-4 w-72 sm:w-80"
-      i18n-label
-    ></app-input>
+      <app-input
+        formControlName="password"
+        type="password"
+        label="Password"
+        iconLeft="lock-2-fill"
+        class="mb-2 w-72 sm:w-80"
+        i18n-label
+      ></app-input>
 
-    <app-button
-      label="Login"
-      type="primary"
-      [loading]="loading"
-      [disabled]="!form.valid"
-      class="mb-4 w-72 sm:w-80"
-      i18n-label
-    ></app-button>
+      <app-button
+        label="Login"
+        type="primary"
+        [loading]="loading"
+        [disabled]="!form.valid"
+        class="mb-2 w-72 sm:w-80"
+        i18n-label
+      ></app-button>
 
-    <div class="h-10 w-80 sm:w-auto">
-      <app-message
-        *ngIf="error === 'username'"
-        message="Invalid username"
-        type='error'
-        i18n-message
-      ></app-message>
+      <div class="h-10 w-80 sm:w-auto">
+        <app-message
+          *ngIf="error === 'username'"
+          message="Invalid username"
+          type='error'
+          i18n-message
+        ></app-message>
 
-      <app-message
-        *ngIf="error === 'password'"
-        message="Invalid password"
-        type='error'
-        i18n-message
-      ></app-message>
+        <app-message
+          *ngIf="error === 'password'"
+          message="Invalid password"
+          type='error'
+          i18n-message
+        ></app-message>
 
-      <app-message
-        *ngIf="error === 'request'"
-        message="Error during request, please retry."
-        type='error'
-        i18n-message
-      ></app-message>
+        <app-message
+          *ngIf="error === 'request'"
+          message="Error during request, please retry."
+          type='error'
+          i18n-message
+        ></app-message>
 
-      <app-message
-        *ngIf="error === 'internal'"
-        message="Internal error, please retry later."
-        type='error'
-        i18n-message
-      ></app-message>
-    </div>
-
-    <p class="absolute bottom-5 text-gray-lighter dark:text-gray-darker" i18n>
+        <app-message
+          *ngIf="error === 'internal'"
+          message="Internal error, please retry later."
+          type='error'
+          i18n-message
+        ></app-message>
+      </div>
+    </form>
+    
+    <p class="absolute text-center bottom-5 text-light" i18n>
       No account ?
       <a routerLink="/signup" class="text-gray-darker dark:text-gray-lighter"
         >Sign Up</a
       >
     </p>
-  </form>
+  </div>
+  
   <img
     src="./assets/images/login.svg"
     alt="An illustration for the login page which represents an astronaut on his rocket in the space."
-    class="hidden place-self-center lg:block"
+    class="hidden justify-self-start self-center lg:block"
     i18n-alt
   />
 </section>

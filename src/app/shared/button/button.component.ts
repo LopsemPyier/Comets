@@ -14,28 +14,20 @@ export class ButtonComponent {
   @Output() buttonClick = new EventEmitter();
 
   public get classes(): string[] {
-    let colorMode = '';
-    // if (this.primary) {
-    //   if (this.disabled || this.loading) {
-    //     colorMode = 'bg-primary-light text-gray-lightest';
-    //   } else {
-    //     colorMode = 'bg-primary text-white hover:bg-primary-light';
-    //   }
-    // } else if (this.secondary) {
-    //   if (this.disabled || this.loading) {
-    //     colorMode = 'bg-secondary-light text-gray-lightest';
-    //   } else {
-    //     colorMode = 'bg-secondary text-white hover:bg-secondary-light';
-    //   }
-    // } else {
-    //   if (this.disabled || this.loading) {
-    //     colorMode =
-    //       'bg-gray-lightest text-gray-dark dark:bg-gray-dark dark:text-gray-light';
-    //   } else {
-    //     colorMode =
-    //       'bg-gray-lighter text-black hover:bg-gray-light dark:bg-gray-darker dark:text-white dark:hover:bg-gray-dark';
-    //   }
-    // }
-    return [colorMode];
+    let bgMode = 'bg';
+    let textMode = 'text';
+    let cursorMode = '';
+    if (this.disabled) { cursorMode = 'cursor-not-allowed'; }
+    if (this.loading) { cursorMode = 'cursor-wait'; }
+    if (this.type !== 'default') {
+      bgMode += `-${this.type}`;
+      textMode += `-on-${this.type}`;
+    }
+    if (this.disabled || this.loading) {
+      bgMode += '-light';
+    } else {
+      bgMode += '-hover';
+    }
+    return [bgMode, textMode, cursorMode];
   }
 }
