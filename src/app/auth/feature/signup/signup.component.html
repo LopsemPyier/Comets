@@ -11,13 +11,13 @@
     <form
       [formGroup]="form"
       (ngSubmit)="submit()"
-      class="relative w-full grid grid-flow-row auto-flow-row gap-2 justify-center lg:justify-self-end justify-self-center self-center"
+      class="relative w-full grid grid-flow-row auto-flow-row gap-2 justify-items-center lg:justify-self-end justify-self-center self-center"
     >
-      <h1 class="mb-[-.75rem] text text-center" i18n>
+      <h1 class="mb-[-.75rem] text-center" i18n>
         Welcome to comets
       </h1>
 
-      <p class="mb-3 text-center text-light" i18n>
+      <p class="mb-3 text-center" i18n>
         Join the rocket to launch to the comet.
       </p>
 
@@ -50,13 +50,12 @@
       ></app-input>
 
       <p
-        class="small mb-2 w-72 text-center sm:w-80 text-light"
+        class="small mb-2 w-72 text-center sm:w-80"
         i18n
       >
         By joigning us, you accept the
         <a
           routerLink="/terms-of-service"
-          class="text"
           >Terms of Service</a
         >
       </p>
@@ -101,9 +100,9 @@
       </div>
     </form>
 
-    <p class="absolute text-center bottom-5 text-light" i18n>
+    <p class="absolute text-center bottom-5" i18n>
       Already member ?
-      <a routerLink="/login" class="text"
+      <a routerLink="/login"
         >Login</a
       >
     </p>

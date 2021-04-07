@@ -5,9 +5,9 @@
       <form
       [formGroup]="form"
       (ngSubmit)="submit()"
-      class="relative w-full grid grid-flow-row auto-flow-row gap-2 justify-center lg:justify-self-end justify-self-center self-center"
+      class="relative w-full grid grid-flow-row auto-flow-row gap-2 justify-items-center lg:justify-self-end justify-self-center self-center"
     >
-      <h1 class="text mb-2 text-center" i18n>
+      <h1 class="mb-2 text-center" i18n>
         Welcome back
       </h1>
 
@@ -69,9 +69,9 @@
       </div>
     </form>
     
-    <p class="absolute text-center bottom-5 text-light" i18n>
+    <p class="absolute text-center bottom-5" i18n>
       No account ?
-      <a routerLink="/signup" class="text-gray-darker dark:text-gray-lighter"
+      <a routerLink="/signup"
         >Sign Up</a
       >
     </p>

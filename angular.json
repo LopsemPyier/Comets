@@ -16,6 +16,12 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "en",
+        "locales": {
+          "fr": "src/locale/messages.fr.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -26,6 +32,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "localize": false,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -46,6 +53,7 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
+              "localize": true,
               "namedChunks": false,
               "extractLicenses": true,
               "vendorChunk": false,
@@ -90,7 +98,6 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [

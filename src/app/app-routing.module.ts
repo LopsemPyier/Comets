@@ -17,32 +17,31 @@ const routes: Routes = [
         loadChildren: async () =>
           (await import('./auth')).SignupModule,
       },
-      // {
-      //   path: '',
-      //   loadChildren: async () =>
-      //     (await import('@comets/client/home')).HomeModule,
-      // },
-      // {
-      //   path: 'terms-of-service',
-      //   loadChildren: async () =>
-      //     (await import('@comets/client/terms-of-service'))
-      //       .TermsOfServiceModule,
-      // },
-      // {
-      //   path: 'download',
-      //   loadChildren: async () =>
-      //     (await import('@comets/client/download')).DownloadModule,
-      // },
-      // {
-      //   path: 'contact',
-      //   loadChildren: async () =>
-      //     (await import('@comets/client/contact')).ContactModule,
-      // },
-      // {
-      //   path: 'collection',
-      //   redirectTo: 'collection/playlists',
-      //   pathMatch: 'full'
-      // }
+      {
+        path: '',
+        loadChildren: async () =>
+          (await import('./landing')).HomeModule,
+      },
+      {
+        path: 'terms-of-service',
+        loadChildren: async () =>
+          (await import('./landing')).TermsModule,
+      },
+      {
+        path: 'download',
+        loadChildren: async () =>
+          (await import('./landing')).DownloadModule,
+      },
+      {
+        path: 'credits',
+        loadChildren: async () =>
+          (await import('./landing')).CreditsModule,
+      },
+      {
+        path: 'collection',
+        redirectTo: 'collection/playlists',
+        pathMatch: 'full'
+      }
     ],
   },
   // {
