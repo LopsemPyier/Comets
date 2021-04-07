@@ -3,6 +3,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { ButtonModule } from 'src/app/shared/button/button.module';
 import { InputModule } from 'src/app/shared/input/input.module';
+import { MessageModule } from 'src/app/shared/message/message.module';
 
 import { SignupComponent } from './signup.component';
 
@@ -19,6 +20,7 @@ describe('SignupComponent', () => {
         ReactiveFormsModule,
         ButtonModule,
         InputModule,
+        MessageModule
       ],
     })
     .compileComponents();
