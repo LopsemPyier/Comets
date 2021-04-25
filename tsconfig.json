@@ -20,8 +20,14 @@
 			"dom",
 			"esnext.asynciterable"
 		],
+		"typeRoots": [
+			"src/app/shared/types"
+		],
 		"allowSyntheticDefaultImports": true
 	},
+	"files": [
+		"src/app/shared/types/graphql.d.ts"
+	],
 	"angularCompilerOptions": {
 		"enableI18nLegacyMessageIdFormat": false,
 		"strictInjectionParameters": true,

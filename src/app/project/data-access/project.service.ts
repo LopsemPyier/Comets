@@ -1,62 +1,25 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Project } from '../../shared/types';
-import { shareReplay } from 'rxjs/operators';
+import { map, shareReplay } from 'rxjs/operators';
+import { Apollo } from 'apollo-angular';
+import dashboardQuery from './graphql/dashboard.graphql';
 
 @Injectable({
-	providedIn: 'root'
+	providedIn: 'root',
 })
 export class ProjectService {
 
-	constructor() {
+	constructor(
+		private apollo: Apollo,
+	) {
 	}
 
 	dashboard(): Observable<Project[]> {
-		return of<Project[]>(
-			[
-				{
-					id: '1',
-					name: 'First Project',
-					description: 'The description of the first project',
-					lastEdit: {
-						id: '19',
-						createAt: new Date(),
-						author: {
-							id: '8',
-							username: 'LopsemPyier',
-							email: 'lopsempyier@gmail.com'
-						}
-					}
-				},
-				{
-					id: '1',
-					name: 'First Project',
-					description: 'The description of the first project',
-					lastEdit: {
-						id: '19',
-						createAt: new Date(),
-						author: {
-							id: '8',
-							username: 'LopsemPyier',
-							email: 'lopsempyier@gmail.com'
-						}
-					}
-				},
-				{
-					id: '1',
-					name: 'First Project',
-					description: 'The description of the first project',
-					lastEdit: {
-						id: '19',
-						createAt: new Date(),
-						author: {
-							id: '8',
-							username: 'LopsemPyier',
-							email: 'lopsempyier@gmail.com'
-						}
-					}
-				}
-			]
-		).pipe(shareReplay());
+		return this.apollo.query<{ projects: Project[] }>({
+			query: dashboardQuery,
+		}).pipe(shareReplay(), map(value => {
+			return value.data.projects;
+		}));
 	}
 }

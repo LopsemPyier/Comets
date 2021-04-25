@@ -1,0 +1,16 @@
+query Dashboard {
+	projects {
+		id
+		name
+		description
+		lastEdit {
+			id
+			createAt
+			author {
+				id
+				username
+				email
+			}
+		}
+	}
+}
