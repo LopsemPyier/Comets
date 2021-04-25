@@ -1,18 +1,18 @@
 <div
-  class="max-w-full rounded-sm py-2 px-10 flex flex-row items-center place-content-center"
-  [ngClass]="{
+	class="max-w-full rounded-sm py-2 px-10 flex flex-row items-center place-content-center"
+	[ngClass]="{
     'bg-error-light dark:bg-error text-error dark:text-error-light': type === 'error',
     'bg-warning-light dark:bg-warning text-warning dark:text-warning-light': type === 'warning',
     'bg-info-light dark:bg-info text-info dark:text-info-light': type === 'info',
     'bg-success-light dark:bg-success text-success dark:text-success-light': type === 'success'
   }"
 >
-  <app-icon
-    class="mr-1"
-    [icon]="icon"
-    [color]="type"
-  ></app-icon>
-  <p class="w-auto font-bold text-current">
-    {{ message }}
-  </p>
+	<app-icon
+		class="mr-1"
+		[icon]="icon"
+		[color]="type"
+	></app-icon>
+	<p class="w-auto font-bold text-current">
+		{{ message }}
+	</p>
 </div>

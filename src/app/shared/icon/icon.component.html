@@ -1,8 +1,8 @@
 <div class="flex items-center">
-    <rmx-icon 
-        [name]="icon" 
-        [ngStyle]="style"
-        [ngClass]="{
+	<rmx-icon
+		[name]="icon"
+		[ngStyle]="style"
+		[ngClass]="{
             'text-error dark:text-error-light': color === 'error',
             'text-warning dark:text-warning-light': color === 'warning',
             'text-info dark:text-info-light': color === 'info',
@@ -13,6 +13,5 @@
             'text-white': color === 'primary' || color === 'secondary',
             '': color === 'inherit'
         }">
-    </rmx-icon>
+	</rmx-icon>
 </div>
-  

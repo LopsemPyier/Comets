@@ -1,110 +1,110 @@
 <section
-  class="h-full w-full grid grid-rows-1 grid-cols-none lg:grid-cols-signup lg:grid-rows-none"
+	class="h-full w-full grid grid-rows-1 grid-cols-none lg:grid-cols-signup lg:grid-rows-none"
 >
-  <img
-    src="./assets/images/signup.svg"
-    alt="An illustration for the signup page which represents a rocket launch to the space."
-    class="hidden justify-self-end self-center lg:block"
-    i18n-alt
-  />
-  <div class="relative items-center flex flex-col place-content-center">
-    <form
-      [formGroup]="form"
-      (ngSubmit)="submit()"
-      class="relative w-full grid grid-flow-row auto-flow-row gap-2 justify-items-center lg:justify-self-end justify-self-center self-center"
-    >
-      <h1 class="mb-[-.75rem] text-center" i18n>
-        Welcome to comets
-      </h1>
+	<img
+		src="./assets/images/signup.svg"
+		alt="An illustration for the signup page which represents a rocket launch to the space."
+		class="hidden justify-self-end self-center lg:block"
+		i18n-alt
+	/>
+	<div class="relative items-center flex flex-col place-content-center">
+		<form
+			[formGroup]="form"
+			(ngSubmit)="submit()"
+			class="relative w-full grid grid-flow-row auto-flow-row gap-2 justify-items-center lg:justify-self-end justify-self-center self-center"
+		>
+			<h1 class="mb-[-.75rem] text-center" i18n>
+				Welcome to comets
+			</h1>
 
-      <p class="mb-3 text-center" i18n>
-        Join the rocket to launch to the comet.
-      </p>
+			<p class="mb-3 text-center" i18n>
+				Join the rocket to launch to the comet.
+			</p>
 
-      <app-input
-        formControlName="username"
-        type="text"
-        label="Username"
-        iconLeft="user-fill"
-        class="w-72 sm:w-80"
-        i18n-label
-      ></app-input>
+			<app-input
+				formControlName="username"
+				type="text"
+				label="Username"
+				iconLeft="user-fill"
+				class="w-72 sm:w-80"
+				i18n-label
+			></app-input>
 
-      <app-input
-        formControlName="email"
-        type="email"
-        label="Email"
-        iconLeft="mail-fill"
-        class="w-72 sm:w-80"
-        i18n-label
-      ></app-input>
+			<app-input
+				formControlName="email"
+				type="email"
+				label="Email"
+				iconLeft="mail-fill"
+				class="w-72 sm:w-80"
+				i18n-label
+			></app-input>
 
-      <app-input
-        formControlName="password"
-        type="password"
-        [strengh]="true"
-        label="Password"
-        iconLeft="lock-2-fill"
-        class="w-72 sm:w-80"
-        i18n-label
-      ></app-input>
+			<app-input
+				formControlName="password"
+				type="password"
+				[strengh]="true"
+				label="Password"
+				iconLeft="lock-2-fill"
+				class="w-72 sm:w-80"
+				i18n-label
+			></app-input>
 
-      <p
-        class="small mb-2 w-72 text-center sm:w-80"
-        i18n
-      >
-        By joigning us, you accept the
-        <a
-          routerLink="/terms-of-service"
-          >Terms of Service</a
-        >
-      </p>
+			<p
+				class="small mb-2 w-72 text-center sm:w-80"
+				i18n
+			>
+				By joigning us, you accept the
+				<a
+					routerLink="/terms-of-service"
+				>Terms of Service</a
+				>
+			</p>
 
-      <app-button
-        label="Sign Up"
-        type='primary'
-        [loading]="loading"
-        [disabled]="!form.valid"
-        class="mb-2 w-72 sm:w-80"
-        i18n-label
-      ></app-button>
+			<app-button
+				label="Sign Up"
+				type='primary'
+				[loading]="loading"
+				[disabled]="!form.valid"
+				class="mb-2 w-72 sm:w-80"
+				i18n-label
+			></app-button>
 
-      <div class="h-10 w-80 sm:w-auto">
-        <app-message
-          *ngIf="error === 'username'"
-          message="Username already taken"
-          type='error'
-          i18n-message
-        ></app-message>
+			<div class="h-10 w-80 sm:w-auto">
+				<app-message
+					*ngIf="error === 'username'"
+					message="Username already taken"
+					type='error'
+					i18n-message
+				></app-message>
 
-        <app-message
-          *ngIf="error === 'email'"
-          message="Email already taken"
-          type='error'
-          i18n-message
-        ></app-message>
+				<app-message
+					*ngIf="error === 'email'"
+					message="Email already taken"
+					type='error'
+					i18n-message
+				></app-message>
 
-        <app-message
-          *ngIf="error === 'request'"
-          message="Error during request, please retry."
-          type='error'
-          i18n-message
-        ></app-message>
+				<app-message
+					*ngIf="error === 'request'"
+					message="Error during request, please retry."
+					type='error'
+					i18n-message
+				></app-message>
 
-        <app-message
-          *ngIf="error === 'internal'"
-          message="Internal error, please retry later."
-          type='error'
-          i18n-message
-        ></app-message>
-      </div>
-    </form>
+				<app-message
+					*ngIf="error === 'internal'"
+					message="Internal error, please retry later."
+					type='error'
+					i18n-message
+				></app-message>
+			</div>
+		</form>
 
-    <p class="absolute text-center bottom-5" i18n>
-      Already member ?
-      <a routerLink="/login"
-        >Login</a
-      >
-    </p>
-  </div>
+		<p class="absolute text-center bottom-5" i18n>
+			Already member ?
+			<a routerLink="/login"
+			>Login</a
+			>
+		</p>
+	</div>
 </section>

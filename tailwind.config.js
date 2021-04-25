@@ -3,84 +3,84 @@ const { guessProductionMode } = require("@ngneat/tailwind");
 process.env.TAILWIND_MODE = guessProductionMode() ? 'build' : 'watch';
 
 module.exports = {
-    prefix: '',
-    mode: 'jit',
-    purge: {
-      content: [
-        './src/**/*.{html,ts,css,scss,sass,less,styl}',
-      ]
-    },
-    darkMode: 'class', // or 'media' or 'class'
-    theme: {
-      fontFamily: {
-        sans: ['Lato', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
-      },
-      extend: {
-        gridTemplateColumns: {
-          login: '60% auto',
-          signup: 'auto 60%',
-          hero: '65% auto',
-        },
-        gridTemplateRows: {
-          login: '40% auto',
-          signup: 'auto 40%',
-        },
-        colors: {
-          white: '#ffffff',
-          
-          gray: {
-            lightest: '#f8f8f9',
-            lighter: '#e5e4e6',
-            light: '#d1d1d2',
-            DEFAULT: '#bebebf',
-            dark: '#979697',
-            darker: '#6f6f70',
-            darkest: '#484849'
-          },
+	prefix: '',
+	mode: 'jit',
+	purge: {
+		content: [
+			'./src/**/*.{html,ts,css,scss,sass,less,styl}',
+		]
+	},
+	darkMode: 'class', // or 'media' or 'class'
+	theme: {
+		fontFamily: {
+			sans: ['Lato', 'sans-serif'],
+			serif: ['Merriweather', 'serif'],
+		},
+		extend: {
+			gridTemplateColumns: {
+				login: '60% auto',
+				signup: 'auto 60%',
+				hero: '65% auto',
+			},
+			gridTemplateRows: {
+				login: '40% auto',
+				signup: 'auto 40%',
+			},
+			colors: {
+				white: '#ffffff',
 
-          black: '#212121',
-  
-          primary: {
-            light: '#767ccd',
-            DEFAULT: '#5158bf',
-            dark: '#3b42a2',
-          },
-  
-          secondary: {
-            light: '#f0d37c',
-            DEFAULT: '#EBC44E',
-            dark: '#e6b520',
-          },
+				gray: {
+					lightest: '#f8f8f9',
+					lighter: '#e5e4e6',
+					light: '#d1d1d2',
+					DEFAULT: '#bebebf',
+					dark: '#979697',
+					darker: '#6f6f70',
+					darkest: '#484849'
+				},
 
-          error: {
-            light: '#ffd3d4',
-            DEFAULT: '#e6405d',
-            dark: '#6e2730'
-          },
+				black: '#212121',
 
-          info: {
-            light: '#daf0fc',
-            DEFAULT: '#46c2f2',
-            dark: '#2d5c71'
-          },
+				primary: {
+					light: '#767ccd',
+					DEFAULT: '#5158bf',
+					dark: '#3b42a2',
+				},
 
-          warning: {
-            light: '#fdefd3',
-            DEFAULT: '#e6c051',
-            dark: '#6d5b2c'
-          },
+				secondary: {
+					light: '#f0d37c',
+					DEFAULT: '#EBC44E',
+					dark: '#e6b520',
+				},
 
-          success: {
-            light: '#d9f4d8',
-            DEFAULT: '#58d068',
-            dark: '#316335'
-          }
-        },
-      },
-    },
-    variants: {
-      extend: {},
-    },
-    plugins: [],
+				error: {
+					light: '#ffd3d4',
+					DEFAULT: '#e6405d',
+					dark: '#6e2730'
+				},
+
+				info: {
+					light: '#daf0fc',
+					DEFAULT: '#46c2f2',
+					dark: '#2d5c71'
+				},
+
+				warning: {
+					light: '#fdefd3',
+					DEFAULT: '#e6c051',
+					dark: '#6d5b2c'
+				},
+
+				success: {
+					light: '#d9f4d8',
+					DEFAULT: '#58d068',
+					dark: '#316335'
+				}
+			},
+		},
+	},
+	variants: {
+		extend: {},
+	},
+	plugins: [],
 };

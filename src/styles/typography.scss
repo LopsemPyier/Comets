@@ -1,59 +1,59 @@
 @layer base {
-    h1.hero {
-        @apply font-serif;
-        @apply font-black;
-        @apply text-5xl;
-        @apply md:text-8xl;
-        @apply text-black;
-        @apply dark:text-white;
-    }
+	h1.hero {
+		@apply font-serif;
+		@apply font-black;
+		@apply text-5xl;
+		@apply md:text-8xl;
+		@apply text-black;
+		@apply dark:text-white;
+	}
 
-    h1 {
-        @apply font-sans;
-        @apply font-bold;
-        @apply text-4xl;
-        @apply text-black;
-        @apply dark:text-white;
-    }
+	h1 {
+		@apply font-sans;
+		@apply font-bold;
+		@apply text-4xl;
+		@apply text-black;
+		@apply dark:text-white;
+	}
 
-    h2 {
-        @apply font-sans font-semibold text-4xl;
-        @apply text-black;
-        @apply dark:text-white;
-    }
+	h2 {
+		@apply font-sans font-semibold text-4xl;
+		@apply text-black;
+		@apply dark:text-white;
+	}
 
-    h3 {
-        @apply font-sans font-medium text-xl;
-        @apply text-black;
-        @apply dark:text-white;
-    }
+	h3 {
+		@apply font-sans font-medium text-xl;
+		@apply text-black;
+		@apply dark:text-white;
+	}
 
-    h4 {
-        @apply font-sans font-medium text-base;
-        @apply text-black;
-        @apply dark:text-white;
-    }
+	h4 {
+		@apply font-sans font-medium text-base;
+		@apply text-black;
+		@apply dark:text-white;
+	}
 
-    p {
-        @apply font-sans font-normal;
-        @apply text-gray-light dark:text-gray-dark;
-    }
+	p {
+		@apply font-sans font-normal;
+		@apply text-gray-light dark:text-gray-dark;
+	}
 
-    p.small {
-        @apply text-xs font-light;
-    }
+	p.small {
+		@apply text-xs font-light;
+	}
 
-    p.paragraph {
-        @apply text-base;
-    }
+	p.paragraph {
+		@apply text-base;
+	}
 
-    a {
-        @apply font-sans font-normal;
-        @apply text-black;
-        @apply text-white;
-    }
+	a {
+		@apply font-sans font-normal;
+		@apply text-black;
+		@apply text-white;
+	}
 
-    .small a {
-        @apply text-xs;
-    }
+	.small a {
+		@apply text-xs;
+	}
 }

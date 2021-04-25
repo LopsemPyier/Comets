@@ -1,49 +1,49 @@
 @layer utilities {
-    .text-on-primary {
-        @apply text-white;
-    }
+	.text-on-primary {
+		@apply text-white;
+	}
 
-    .text-on-primary-light {
-        @apply text-gray-light;
-    }
+	.text-on-primary-light {
+		@apply text-gray-light;
+	}
 
-    .text-on-secondary {
-        @apply text-white;
-    }
+	.text-on-secondary {
+		@apply text-white;
+	}
 
-    .text-on-secondary-light {
-        @apply text-gray-light;
-    }
+	.text-on-secondary-light {
+		@apply text-gray-light;
+	}
 
-    .text {
-        @apply text-black dark:text-white;
-    }
+	.text {
+		@apply text-black dark:text-white;
+	}
 
-    .text-light {
-        @apply text-gray-light dark:text-gray-dark;
-    }
+	.text-light {
+		@apply text-gray-light dark:text-gray-dark;
+	}
 
-    .bg {
-        @apply bg-white dark:bg-black;
-    }
+	.bg {
+		@apply bg-white dark:bg-black;
+	}
 
-    .bg-light {
-        @apply bg-gray-lighter dark:bg-gray-darkest;
-    }
+	.bg-light {
+		@apply bg-gray-lighter dark:bg-gray-darkest;
+	}
 
-    .bg-lighter {
-        @apply bg-gray-lightest dark:bg-gray-darker;
-    }
+	.bg-lighter {
+		@apply bg-gray-lightest dark:bg-gray-darker;
+	}
 
-    .bg-hover {
-        @apply bg-light hover:bg-gray-lightest dark:hover:bg-gray-darker;
-    }
+	.bg-hover {
+		@apply bg-light hover:bg-gray-lightest dark:hover:bg-gray-darker;
+	}
 
-    .bg-primary-hover {
-        @apply bg-primary hover:bg-primary-light;
-    }
+	.bg-primary-hover {
+		@apply bg-primary hover:bg-primary-light;
+	}
 
-    .bg-secondary-hover {
-        @apply bg-secondary hover:bg-secondary-light;
-    }
+	.bg-secondary-hover {
+		@apply bg-secondary hover:bg-secondary-light;
+	}
 }

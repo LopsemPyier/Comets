@@ -1,353 +1,352 @@
 <header class="grid grid-flow-col py-5 px-20">
-    <!-- TODO: <app-logo></app-logo> -->
-    <div class="bg-error w-5 h-5 self-center justify-self-start"></div>
-    <nav
-      class="hidden md:grid justify-self-end self-center grid-flow-col auto-cols-auto gap-10"
-    >
-      <a
-        routerLink="/downloads"
-        routerLinkActive="text-primary"
-        class="self-center"
-        i18n
-        >Downloads</a
-      >
-      <a 
-        routerLink="/login" 
-        class="self-center" 
-        i18n>Login</a>
-      <app-button
-        label="Sign Up"
-        routerLink="/signup"
-        type="primary"
-        class="self-center py-2"
-        i18n-label>
-      </app-button>
-    </nav>
-  </header>
-  
-  <section
-    class="h-full px-10 lg:px-20 grid grid-cols-none md:grid-cols-hero grid-flow-row"
-  >
-    <div class="self-center ml-0 lg:ml-32 justify-end">
-      <h1
-        class="hero text-center md:text-left mb-5"
-        i18n
-      >
-        LaTeX without any trouble
-      </h1>
-      <p class="text-center md:text-left" i18n>
-        Easy to use online and collaborative LaTeX editor
-      </p>
-    </div>
-  
-    <img
-      src="./assets/images/hero.svg"
-      alt="An illustration of a math teacher in front of a green board"
-      class="hidden md:block justify-self-start self-center"
-      i18n-alt
-    />
-  
-    <app-icon
-      icon="mouse-line"
-      color="text"
-      class="col-span-1 md:col-span-2 place-self-center animate-bounce"
-    ></app-icon>
-  </section>
-  
-  <section
-    class="h-auto py-10 px-10 sm:px-20 lg:px-32 bg-gray-lightest dark:bg-gray-darkest flex flex-col items-center"
-  >
-    <h2
-      class="text-center"
-      i18n
-    >
-      For everyone
-    </h2>
-    <div class="container grid md:max-w-max grid-rows-3 gap-3">
-      <div
-        class="grid grid-flow-row auto-rows-auto grid-cols-none sm:grid-cols-3 sm:grid-rows-none"
-      >
-        <img
-          src="./assets/images/scientifics.svg"
-          alt="An illustration of chimists in a laboratory."
-          class="h-44 w-44 mr-5 place-self-center sm:justify-self-end"
-          i18n-alt
-        />
-        <div
-          class="col-span-1 sm:col-span-2 self-center justify-self-start grid grid-flow-row auto-rows-auto"
-        >
-          <h3 class="text-center sm:text-left" i18n>
-            For Scientifics
-          </h3>
-          <p class="text-center sm:text-left max-w-prose" i18n>
-            You can write beautiful articles with all the power of LaTeX, the most
-            used tool by the scientific community. It is robust, well known and
-            designed with sciences in mind. Whatever your domain, you will find
-            packages that are made for it.
-          </p>
-        </div>
-      </div>
-      <div
-        class="grid grid-flow-row auto-rows-auto grid-cols-none sm:grid-cols-3 sm:grid-rows-none"
-      >
-        <img
-          src="./assets/images/students.svg"
-          alt="An illustration of a student in front of courses."
-          class="h-44 w-44 ml-5 place-self-center sm:justify-self-start order-1 sm:order-2"
-          i18n-alt
-        />
-        <div
-          class="order-2 sm:order-1 col-span-1 sm:col-span-2 self-center justify-self-end grid grid-flow-row auto-rows-auto"
-        >
-          <h3 class="text-center sm:text-left" i18n>
-            For Students and Teachers
-          </h3>
-          <p class="text-center sm:text-left max-w-prose" i18n>
-            You can carefully take notes in all of your classes within a beautiful
-            text editor. The simplicity and the flexibility of LaTeX will help you
-            forget about the layout of your lessons and focus more on the content.
-            Moreover, sciences, schemas, texts are all well supported.
-          </p>
-        </div>
-      </div>
-      <div
-        class="grid grid-flow-row auto-rows-auto grid-cols-none sm:grid-cols-3 sm:grid-rows-none"
-      >
-        <img
-          src="./assets/images/office.svg"
-          alt="An illustration of two office workers."
-          class="h-44 w-44 mr-5 place-self-center sm:justify-self-end"
-          i18n-alt
-        />
-        <div
-          class="col-span-1 sm:col-span-2 self-center justify-self-start grid grid-flow-row auto-rows-auto"
-        >
-          <h3 class="text-center sm:text-left" i18n>
-            For Office Workers
-          </h3>
-          <p class="text-center sm:text-left max-w-prose" i18n>
-            You can efficiently write standard documents in a browser or a native
-            application. Switch to the open source and forget alternatives that
-            pump out your private documents. Whether you want more flexibility and
-            robustness or you just don’t want to worry about layout, try it.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section class="h-auto py-10 px-10 sm:px-20 lg:px-32 bg-primary flex flex-col items-center">
-    <h2 class="text-center text-white" i18n>
-      Privacy is in our heart
-    </h2>
-    <div
-      class="container grid grid-rows-2 grid-cols-none sm:grid-rows-none sm:grid-cols-2 gap-5 px-0 lg:px-24 lg:px-52 mt-5"
-    >
-      <div class="bg-primary-light rounded-sm p-5 flex flex-col items-center">
-        <img
-          src="./assets/images/opensource.svg"
-          alt="An illustration of a man alongside a tree and some code."
-          class="h-32 w-32"
-          i18n-alt
-        />
-        <h3 class="text-white" i18n>Open source</h3>
-        <p class="max-w-prose text-gray-light dark:text-gray-light text-center" i18n>
-          We believe in open source. That is why we are entierly based on open
-          sources solutions and this application is also completly open source.
-        </p>
-      </div>
-      <div class="bg-primary-light rounded-sm p-5 flex flex-col items-center">
-        <img
-          src="./assets/images/selfhosted.svg"
-          alt="An illustration of a server connected with phone, laptop and watch."
-          class="h-32 w-32"
-          i18n-alt
-        />
-        <h3 class="text-white" i18n>Self hosted</h3>
-        <p class="max-w-prose text-gray-light dark:text-gray-light text-center" i18n>
-          We provided the source code of the server that you can run on every
-          server, if you prefere to keep your files under control.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-  <section class="h-auto py-10 flex flex-col items-center">
-    <h2
-      class="text-center"
-      i18n
-    >
-      Everywhere you need it
-    </h2>
-  
-    <div
-      class="container grid grid-rows-5 grid-cols-1 sm:grid-rows-3 sm:grid-cols-2 md:grid-rows-2 md:grid-cols-3 xl:grid-rows-none xl:grid-cols-5 gap-5 px-10 md:px-16 lg:px-24 mt-5"
-    >
-      <div
-        class="col-span-1 sm:col-span-2 xl:col-span-1 bg-gray-lightest dark:bg-gray-darkest rounded-sm p-5 flex flex-col items-center"
-      >
-        <app-icon icon="global-line" size="xl" class="m-2"></app-icon>
-  
-        <h3 class="mb-2" i18n>
-          Web
-        </h3>
-  
-        <app-button
-          routerLink="/dashboard"
-          class="self-center"
-          label="Open"
-          type="secondary"
-          i18n-label>
-        </app-button>
-      </div>
-  
-      <div
-        class="bg-gray-lightest dark:bg-gray-darkest rounded-sm p-5 flex flex-col items-center"
-      >
-        <app-icon icon="windows-fill" size="lg" class="m-2"></app-icon>
-  
-        <h3 class="mb-2" i18n>
-          Windows
-        </h3>
-  
-        <app-button
-          label="Download"
-          [disabled]="true"
-          [type]="(os === 'windows') ? 'primary' : 'default'"
-          i18n-label
-        ></app-button>
-  
-        <p class="small italic text-gray" i18n>Coming soon</p>
-      </div>
-  
-      <div
-        class="bg-gray-lightest dark:bg-gray-darkest rounded-sm p-5 flex flex-col items-center"
-      >
-        <app-icon icon="apple-fill" size="lg" class="m-2"></app-icon>
-  
-        <h3 class="mb-2" i18n>
-          Mac OS
-        </h3>
-  
-        <app-button
-          label="Download"
-          [disabled]="true"
-          [type]="(os === 'macos') ? 'primary' : 'default'"
-          i18n-label
-        ></app-button>
-  
-        <p class="small italic text-gray" i18n>Coming soon</p>
-      </div>
-  
-      <div
-        class="bg-gray-lightest dark:bg-gray-darkest rounded-sm p-5 flex flex-col items-center"
-      >
-        <app-icon icon="ubuntu-fill" size="lg" class="m-2"></app-icon>
-  
-        <h3 class="mb-2" i18n>
-          Ubuntu
-        </h3>
-  
-        <app-button
-          label="Download"
-          [disabled]="true"
-          [type]="(os === 'linux') ? 'primary' : 'default'"
-          i18n-label
-        ></app-button>
-  
-        <p class="small italic text-gray" i18n>Coming soon</p>
-      </div>
-  
-      <div
-        class="bg-gray-lightest dark:bg-gray-darkest rounded-sm p-5 flex flex-col items-center"
-      >
-        <app-icon icon="android-fill" size="lg" class="m-2"></app-icon>
-  
-        <h3 class="mb-2" i18n>
-          Android
-        </h3>
-  
-        <app-button
-          label="Download"
-          [disabled]="true"
-          [type]="(os === 'android') ? 'primary' : 'default'"
-          i18n-label
-        ></app-button>
-  
-        <p class="small italic text-gray" i18n>Coming soon</p>
-      </div>
-    </div>
-  </section>
-  
-  <div class="grid grid-rows-2 grid-cols-none md:grid-cols-2 md:grid-rows-none">
-    <section
-      class="bg-gray-lightest px-10 dark:bg-gray-darkest h-auto py-10 flex flex-col items-center"
-    >
-      <h2
-        class="text-center"
-        i18n
-      >
-        Real time collaboration
-      </h2>
-      <p class="max-w-prose text-center" i18n>
-        Collaborate in real time with people all over the world.
-      </p>
-      <img
-        src="./assets/images/collaboration.svg"
-        alt="An illustration of two people collaborating on a document."
-        class="w-60 h-60 hidden md:block"
-        i18n-alt
-      />
-    </section>
-    <section class="bg-black h-auto py-10 px-10 flex flex-col items-center">
-      <h2 class="text-center dark:text-white" i18n>
-        Night Theme
-      </h2>
-      <p class="max-w-prose text-gray-dark dark:text-gray-dark text-center" i18n>
-        A beautiful night theme which won't blow away your eyes at night.
-      </p>
-      <img
-        src="./assets/images/night.svg"
-        alt="An illustration of a girl working late."
-        class="w-60 h-60 hidden md:block"
-        i18n-alt
-      />
-    </section>
-  </div>
-  
-  <section class="bg-primary h-auto py-10 flex flex-col items-center">
-    <h2 class="mb-10 text-center" i18n>
-      Start working now
-    </h2>
-    <app-button
-      routerLink="/signup"
-      label="Sign Up"
-      type="secondary"
-      i18n-label
-    ></app-button>
-  </section>
-  
-  <footer class="bg-gray-darkest grid grid-flow-row md:grid-flow-col py-5 px-20">
-    <p
-      class="justify-self-center md:justify-self-start text-center md:text-left"
-      i18n
-    >
-      Copyright &copy; 2021
-      <a href="https://github.com/LopsemPyier">LopsemPyier</a>
-    </p>
-    <div
-      class="grid grid-flow-row md:grid-flow-col gap-2 md:gap-10 justify-self-center md:justify-self-end"
-    >
-      <a routerLink="/terms-of-service" class="place-self-center" i18n
-        >Terms of Service
-      </a>
-      <a routerLink="/credits" class="place-self-center" i18n>Credits </a>
-      <a href="https://github.com/LopsemPyier/app" class="place-self-center">
-        <app-icon icon="github-fill" color="text"> </app-icon>
-      </a>
-      <a href="https://twitter.com" class="place-self-center">
-        <app-icon icon="twitter-fill" color="text"> </app-icon>
-      </a>
-    </div>
-  </footer>
-  
+	<!-- TODO: <app-logo></app-logo> -->
+	<div class="bg-error w-5 h-5 self-center justify-self-start"></div>
+	<nav
+		class="hidden md:grid justify-self-end self-center grid-flow-col auto-cols-auto gap-10"
+	>
+		<a
+			routerLink="/downloads"
+			routerLinkActive="text-primary"
+			class="self-center"
+			i18n
+		>Downloads</a
+		>
+		<a
+			routerLink="/login"
+			class="self-center"
+			i18n>Login</a>
+		<app-button
+			label="Sign Up"
+			routerLink="/signup"
+			type="primary"
+			class="self-center py-2"
+			i18n-label>
+		</app-button>
+	</nav>
+</header>
+
+<section
+	class="h-full px-10 lg:px-20 grid grid-cols-none md:grid-cols-hero grid-flow-row"
+>
+	<div class="self-center ml-0 lg:ml-32 justify-end">
+		<h1
+			class="hero text-center md:text-left mb-5"
+			i18n
+		>
+			LaTeX without any trouble
+		</h1>
+		<p class="text-center md:text-left" i18n>
+			Easy to use online and collaborative LaTeX editor
+		</p>
+	</div>
+
+	<img
+		src="./assets/images/hero.svg"
+		alt="An illustration of a math teacher in front of a green board"
+		class="hidden md:block justify-self-start self-center"
+		i18n-alt
+	/>
+
+	<app-icon
+		icon="mouse-line"
+		color="text"
+		class="col-span-1 md:col-span-2 place-self-center animate-bounce"
+	></app-icon>
+</section>
+
+<section
+	class="h-auto py-10 px-10 sm:px-20 lg:px-32 bg-gray-lightest dark:bg-gray-darkest flex flex-col items-center"
+>
+	<h2
+		class="text-center"
+		i18n
+	>
+		For everyone
+	</h2>
+	<div class="container grid md:max-w-max grid-rows-3 gap-3">
+		<div
+			class="grid grid-flow-row auto-rows-auto grid-cols-none sm:grid-cols-3 sm:grid-rows-none"
+		>
+			<img
+				src="./assets/images/scientifics.svg"
+				alt="An illustration of chimists in a laboratory."
+				class="h-44 w-44 mr-5 place-self-center sm:justify-self-end"
+				i18n-alt
+			/>
+			<div
+				class="col-span-1 sm:col-span-2 self-center justify-self-start grid grid-flow-row auto-rows-auto"
+			>
+				<h3 class="text-center sm:text-left" i18n>
+					For Scientifics
+				</h3>
+				<p class="text-center sm:text-left max-w-prose" i18n>
+					You can write beautiful articles with all the power of LaTeX, the most
+					used tool by the scientific community. It is robust, well known and
+					designed with sciences in mind. Whatever your domain, you will find
+					packages that are made for it.
+				</p>
+			</div>
+		</div>
+		<div
+			class="grid grid-flow-row auto-rows-auto grid-cols-none sm:grid-cols-3 sm:grid-rows-none"
+		>
+			<img
+				src="./assets/images/students.svg"
+				alt="An illustration of a student in front of courses."
+				class="h-44 w-44 ml-5 place-self-center sm:justify-self-start order-1 sm:order-2"
+				i18n-alt
+			/>
+			<div
+				class="order-2 sm:order-1 col-span-1 sm:col-span-2 self-center justify-self-end grid grid-flow-row auto-rows-auto"
+			>
+				<h3 class="text-center sm:text-left" i18n>
+					For Students and Teachers
+				</h3>
+				<p class="text-center sm:text-left max-w-prose" i18n>
+					You can carefully take notes in all of your classes within a beautiful
+					text editor. The simplicity and the flexibility of LaTeX will help you
+					forget about the layout of your lessons and focus more on the content.
+					Moreover, sciences, schemas, texts are all well supported.
+				</p>
+			</div>
+		</div>
+		<div
+			class="grid grid-flow-row auto-rows-auto grid-cols-none sm:grid-cols-3 sm:grid-rows-none"
+		>
+			<img
+				src="./assets/images/office.svg"
+				alt="An illustration of two office workers."
+				class="h-44 w-44 mr-5 place-self-center sm:justify-self-end"
+				i18n-alt
+			/>
+			<div
+				class="col-span-1 sm:col-span-2 self-center justify-self-start grid grid-flow-row auto-rows-auto"
+			>
+				<h3 class="text-center sm:text-left" i18n>
+					For Office Workers
+				</h3>
+				<p class="text-center sm:text-left max-w-prose" i18n>
+					You can efficiently write standard documents in a browser or a native
+					application. Switch to the open source and forget alternatives that
+					pump out your private documents. Whether you want more flexibility and
+					robustness or you just don’t want to worry about layout, try it.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="h-auto py-10 px-10 sm:px-20 lg:px-32 bg-primary flex flex-col items-center">
+	<h2 class="text-center text-white" i18n>
+		Privacy is in our heart
+	</h2>
+	<div
+		class="container grid grid-rows-2 grid-cols-none sm:grid-rows-none sm:grid-cols-2 gap-5 px-0 lg:px-24 lg:px-52 mt-5"
+	>
+		<div class="bg-primary-light rounded-sm p-5 flex flex-col items-center">
+			<img
+				src="./assets/images/opensource.svg"
+				alt="An illustration of a man alongside a tree and some code."
+				class="h-32 w-32"
+				i18n-alt
+			/>
+			<h3 class="text-white" i18n>Open source</h3>
+			<p class="max-w-prose text-gray-light dark:text-gray-light text-center" i18n>
+				We believe in open source. That is why we are entierly based on open
+				sources solutions and this application is also completly open source.
+			</p>
+		</div>
+		<div class="bg-primary-light rounded-sm p-5 flex flex-col items-center">
+			<img
+				src="./assets/images/selfhosted.svg"
+				alt="An illustration of a server connected with phone, laptop and watch."
+				class="h-32 w-32"
+				i18n-alt
+			/>
+			<h3 class="text-white" i18n>Self hosted</h3>
+			<p class="max-w-prose text-gray-light dark:text-gray-light text-center" i18n>
+				We provided the source code of the server that you can run on every
+				server, if you prefere to keep your files under control.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="h-auto py-10 flex flex-col items-center">
+	<h2
+		class="text-center"
+		i18n
+	>
+		Everywhere you need it
+	</h2>
+
+	<div
+		class="container grid grid-rows-5 grid-cols-1 sm:grid-rows-3 sm:grid-cols-2 md:grid-rows-2 md:grid-cols-3 xl:grid-rows-none xl:grid-cols-5 gap-5 px-10 md:px-16 lg:px-24 mt-5"
+	>
+		<div
+			class="col-span-1 sm:col-span-2 xl:col-span-1 bg-gray-lightest dark:bg-gray-darkest rounded-sm p-5 flex flex-col items-center"
+		>
+			<app-icon icon="global-line" size="xl" class="m-2"></app-icon>
+
+			<h3 class="mb-2" i18n>
+				Web
+			</h3>
+
+			<app-button
+				routerLink="/dashboard"
+				class="self-center"
+				label="Open"
+				type="secondary"
+				i18n-label>
+			</app-button>
+		</div>
+
+		<div
+			class="bg-gray-lightest dark:bg-gray-darkest rounded-sm p-5 flex flex-col items-center"
+		>
+			<app-icon icon="windows-fill" size="lg" class="m-2"></app-icon>
+
+			<h3 class="mb-2" i18n>
+				Windows
+			</h3>
+
+			<app-button
+				label="Download"
+				[disabled]="true"
+				[type]="(os === 'windows') ? 'primary' : 'default'"
+				i18n-label
+			></app-button>
+
+			<p class="small italic text-gray" i18n>Coming soon</p>
+		</div>
+
+		<div
+			class="bg-gray-lightest dark:bg-gray-darkest rounded-sm p-5 flex flex-col items-center"
+		>
+			<app-icon icon="apple-fill" size="lg" class="m-2"></app-icon>
+
+			<h3 class="mb-2" i18n>
+				Mac OS
+			</h3>
+
+			<app-button
+				label="Download"
+				[disabled]="true"
+				[type]="(os === 'macos') ? 'primary' : 'default'"
+				i18n-label
+			></app-button>
+
+			<p class="small italic text-gray" i18n>Coming soon</p>
+		</div>
+
+		<div
+			class="bg-gray-lightest dark:bg-gray-darkest rounded-sm p-5 flex flex-col items-center"
+		>
+			<app-icon icon="ubuntu-fill" size="lg" class="m-2"></app-icon>
+
+			<h3 class="mb-2" i18n>
+				Ubuntu
+			</h3>
+
+			<app-button
+				label="Download"
+				[disabled]="true"
+				[type]="(os === 'linux') ? 'primary' : 'default'"
+				i18n-label
+			></app-button>
+
+			<p class="small italic text-gray" i18n>Coming soon</p>
+		</div>
+
+		<div
+			class="bg-gray-lightest dark:bg-gray-darkest rounded-sm p-5 flex flex-col items-center"
+		>
+			<app-icon icon="android-fill" size="lg" class="m-2"></app-icon>
+
+			<h3 class="mb-2" i18n>
+				Android
+			</h3>
+
+			<app-button
+				label="Download"
+				[disabled]="true"
+				[type]="(os === 'android') ? 'primary' : 'default'"
+				i18n-label
+			></app-button>
+
+			<p class="small italic text-gray" i18n>Coming soon</p>
+		</div>
+	</div>
+</section>
+
+<div class="grid grid-rows-2 grid-cols-none md:grid-cols-2 md:grid-rows-none">
+	<section
+		class="bg-gray-lightest px-10 dark:bg-gray-darkest h-auto py-10 flex flex-col items-center"
+	>
+		<h2
+			class="text-center"
+			i18n
+		>
+			Real time collaboration
+		</h2>
+		<p class="max-w-prose text-center" i18n>
+			Collaborate in real time with people all over the world.
+		</p>
+		<img
+			src="./assets/images/collaboration.svg"
+			alt="An illustration of two people collaborating on a document."
+			class="w-60 h-60 hidden md:block"
+			i18n-alt
+		/>
+	</section>
+	<section class="bg-black h-auto py-10 px-10 flex flex-col items-center">
+		<h2 class="text-center dark:text-white" i18n>
+			Night Theme
+		</h2>
+		<p class="max-w-prose text-gray-dark dark:text-gray-dark text-center" i18n>
+			A beautiful night theme which won't blow away your eyes at night.
+		</p>
+		<img
+			src="./assets/images/night.svg"
+			alt="An illustration of a girl working late."
+			class="w-60 h-60 hidden md:block"
+			i18n-alt
+		/>
+	</section>
+</div>
+
+<section class="bg-primary h-auto py-10 flex flex-col items-center">
+	<h2 class="mb-10 text-center" i18n>
+		Start working now
+	</h2>
+	<app-button
+		routerLink="/signup"
+		label="Sign Up"
+		type="secondary"
+		i18n-label
+	></app-button>
+</section>
+
+<footer class="bg-gray-darkest grid grid-flow-row md:grid-flow-col py-5 px-20">
+	<p
+		class="justify-self-center md:justify-self-start text-center md:text-left"
+		i18n
+	>
+		Copyright &copy; 2021
+		<a href="https://github.com/LopsemPyier">LopsemPyier</a>
+	</p>
+	<div
+		class="grid grid-flow-row md:grid-flow-col gap-2 md:gap-10 justify-self-center md:justify-self-end"
+	>
+		<a routerLink="/terms-of-service" class="place-self-center" i18n
+		>Terms of Service
+		</a>
+		<a routerLink="/credits" class="place-self-center" i18n>Credits </a>
+		<a href="https://github.com/LopsemPyier/app" class="place-self-center">
+			<app-icon icon="github-fill" color="text"></app-icon>
+		</a>
+		<a href="https://twitter.com" class="place-self-center">
+			<app-icon icon="twitter-fill" color="text"></app-icon>
+		</a>
+	</div>
+</footer>

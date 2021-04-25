@@ -5,17 +5,17 @@ import { RemixIconModule } from 'angular-remix-icon';
 import { icons } from './icons.enum';
 
 
-
 @NgModule({
-  declarations: [
-    IconComponent
-  ],
-  imports: [
-    CommonModule,
-    RemixIconModule.configure(icons)
-  ],
-  exports: [
-    IconComponent
-  ]
+	declarations: [
+		IconComponent
+	],
+	imports: [
+		CommonModule,
+		RemixIconModule.configure(icons)
+	],
+	exports: [
+		IconComponent
+	]
 })
-export class IconModule { }
+export class IconModule {
+}

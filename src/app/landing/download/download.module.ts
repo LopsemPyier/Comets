@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { DownloadComponent } from './download.component';
 
 
-
 @NgModule({
-  declarations: [
-    DownloadComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+	declarations: [
+		DownloadComponent
+	],
+	imports: [
+		CommonModule
+	]
 })
-export class DownloadModule { }
+export class DownloadModule {
+}

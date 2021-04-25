@@ -1,535 +1,602 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" target-language="fr" datatype="plaintext" original="ng2.template">
-    <body>
-      <trans-unit id="5459989209005328147" datatype="html">
-        <source>Welcome back</source>
-        <target state="signed-off">Heureux de vous revoir</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
-          <context context-type="linenumber">11</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5248717555542428023" datatype="html">
-        <source>Username</source>
-        <target state="signed-off">Nom d'utilisateur</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1431416938026210429" datatype="html">
-        <source>Password</source>
-        <target state="signed-off">Mot de passe</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
-          <context context-type="linenumber">26</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">46</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2454050363478003966" datatype="html">
-        <source>Login</source>
-        <target state="signed-off">Se connecter</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
-          <context context-type="linenumber">33</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5169592274653225325" datatype="html">
-        <source>Invalid username</source>
-        <target state="signed-off">Nom d'utilisateur incorrect</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
-          <context context-type="linenumber">44</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8288238877926002807" datatype="html">
-        <source>Invalid password</source>
-        <target state="signed-off">Mot de passe incorrect</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
-          <context context-type="linenumber">51</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3933556588498605957" datatype="html">
-        <source>Error during request, please retry.</source>
-        <target state="signed-off">Erreur lors de la requête, veuillez réessayer.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
-          <context context-type="linenumber">58</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">90</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4446942531619331039" datatype="html">
-        <source>Internal error, please retry later.</source>
-        <target state="signed-off">Erreur interne, veuillez réessayer ultérieurement.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
-          <context context-type="linenumber">65</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">97</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7760842120997502604" datatype="html">
-        <source>No account ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/signup&quot; class=&quot;text-gray-darker dark:text-gray-lighter&quot;&gt;"/>Sign Up<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target state="signed-off">Pas de compte ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/signup&quot; class=&quot;text-gray-darker dark:text-gray-lighter&quot;&gt;"/>Inscrivez vous<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
-          <context context-type="linenumber">73</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2283259376295608283" datatype="html">
-        <source>An illustration for the login page which represents an astronaut on his rocket in the space.</source>
-        <target state="signed-off">Une illustration pour la page de connexion qui représente un astronaute sur sa fusée dans l'espace.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
-          <context context-type="linenumber">82</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5036267891319267082" datatype="html">
-        <source>An illustration for the signup page which represents a rocket launch to the space.</source>
-        <target state="signed-off">Une illustration pour la page d'inscription qui représente une fusée décollant vers l'espace.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2725219580663441078" datatype="html">
-        <source>Welcome to comets</source>
-        <target state="signed-off">Bienvenue à Comets</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7137348945017754906" datatype="html">
-        <source>Join the rocket to launch to the comet.</source>
-        <target state="signed-off">Rejoignez la fusée pour le décollage vers la comète.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4768749765465246664" datatype="html">
-        <source>Email</source>
-        <target state="signed-off">E-mail</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">36</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="4362339478195651271" datatype="html">
-        <source>By joigning us, you accept the <x id="START_LINK" ctype="x-a" equiv-text="&lt;arouterLink=&quot;/terms-of-service&quot;class=&quot;text&quot;&gt;"/>Terms of Service<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target state="signed-off">En nous rejoignant, vous acceptez les <x id="START_LINK" ctype="x-a" equiv-text="&lt;arouterLink=&quot;/terms-of-service&quot;class=&quot;text&quot;&gt;"/>Conditions générales d'utilisation<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">56</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1466012768716286509" datatype="html">
-        <source>Sign Up</source>
-        <target state="signed-off">S'inscrire</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">65</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">23</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">324</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7411913630982419535" datatype="html">
-        <source>Username already taken</source>
-        <target state="signed-off">Nom d'utilisateur déjà utilisé</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">76</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6993106617070148867" datatype="html">
-        <source>Email already taken</source>
-        <target state="signed-off">Adresse e-mail déjà utilisée</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">83</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6982707924368850744" datatype="html">
-        <source>Already member ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/login&quot; class=&quot;text&quot;&gt;"/>Login<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target state="signed-off">Déjà membre ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/login&quot; class=&quot;text&quot;&gt;"/>Connectez vous<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
-          <context context-type="linenumber">105</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="9040361513231775562" datatype="html">
-        <source>Downloads</source>
-        <target state="signed-off">Téléchargements</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">12</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5173115640670709698" datatype="html">
-        <source>Login</source>
-        <target state="signed-off">Se connecter</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7855885154366821989" datatype="html">
-        <source>LaTeX without any trouble</source>
-        <target state="signed-off">LaTeX sans aucun soucis</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">36</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1314774502694891466" datatype="html">
-        <source>Easy to use online and collaborative LaTeX editor</source>
-        <target state="signed-off">Éditeur LaTeX facile à utiliser, en ligne et collaboratif</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">39</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8918320492474889909" datatype="html">
-        <source>An illustration of a math teacher in front of a green board</source>
-        <target state="signed-off">Une illustration d'un professeur de mathématiques devant un tableau vert.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">45</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="431844723082505504" datatype="html">
-        <source>For everyone</source>
-        <target state="signed-off">Pour tout le monde</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">64</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5935458268613098531" datatype="html">
-        <source>An illustration of chimists in a laboratory.</source>
-        <target state="signed-off">Une illustration de chimistes dans un laboratoire.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">72</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8230736089634995885" datatype="html">
-        <source>For Scientifics</source>
-        <target state="signed-off">Pour les Scientifiques</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">80</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2956215757153625928" datatype="html">
-        <source>You can write beautiful articles with all the power of LaTeX, the most used tool by the scientific community. It is robust, well known and designed with sciences in mind. Whatever your domain, you will find packages that are made for it.</source>
-        <target state="signed-off">Vous pouvez écrire de magnifiques articles avec toutes la puissance de LaTeX, l'outil le plus utilisé par la communauté scientifique. Il est robuste, connu et créé pour les sciences. Quelque soit votre domaine, vous trouverez un package crée pour.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">83</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2603064956598926728" datatype="html">
-        <source>An illustration of a student in front of courses.</source>
-        <target state="signed-off">Une illustration d'un étudiant devant ses cours.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">95</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5136435215752099590" datatype="html">
-        <source>For Students and Teachers</source>
-        <target state="signed-off">Pour les Etudiants et les Professeurs</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">103</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3332406591391156942" datatype="html">
-        <source>You can carefully take notes in all of your classes within a beautiful text editor. The simplicity and the flexibility of LaTeX will help you forget about the layout of your lessons and focus more on the content. Moreover, sciences, schemas, texts are all well supported.</source>
-        <target state="signed-off">Vous pouvez prendre soigneusement vos notes dans toutes vos classes dans un bel éditeur. La simplicité et la flexibilité de LaTeX vous permettrons d'oublier la mise en page et de vous concentrez sur le contenu. De plus, sciences, schémas et textes sont tous supportés.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">106</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5135640179336423744" datatype="html">
-        <source>An illustration of two office workers.</source>
-        <target state="signed-off">Une illustration de deux employés de bureau.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">118</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2609156860269229954" datatype="html">
-        <source>For Office Workers</source>
-        <target state="signed-off">Pour les Employés de Bureaux</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">126</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1760678181503762882" datatype="html">
-        <source>You can efficiently write standard documents in a browser or a native application. Switch to the open source and forget alternatives that pump out your private documents. Whether you want more flexibility and robustness or you just don’t want to worry about layout, try it.</source>
-        <target state="signed-off">Vous pouvez écrire efficacement des documents standard dans un navigateur ou un application native. Mettez vous à l'open source et oubliez les alternatives qui pompent vos secrets. Que vous vouliez plus de flexibilité et de robustesse ou juste que vous n'ayez pas envie de penser à la mise en page, essayer le.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">129</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2834887133625347595" datatype="html">
-        <source>Privacy is in our heart</source>
-        <target state="signed-off">La vie privée nous tient à cœur</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">141</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6601770693096813711" datatype="html">
-        <source>An illustration of a man alongside a tree and some code.</source>
-        <target state="signed-off">Une illustration d'un homme à côté d'un arbre et d'un block de code.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">149</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7589136797201485434" datatype="html">
-        <source>Open source</source>
-        <target state="signed-off">Open Source</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">153</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1388483519220278375" datatype="html">
-        <source>We believe in open source. That is why we are entierly based on open sources solutions and this application is also completly open source.</source>
-        <target state="signed-off">Nous croyons dans l'open source. C'est pourquoi nous sommes entièrement basé sur les solutions open source et que l'application est complètement open source.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">155</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="278315449775258344" datatype="html">
-        <source>An illustration of a server connected with phone, laptop and watch.</source>
-        <target state="signed-off">Une illustration d'un server connecté avec un téléphone, un ordinateur et une montre.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">162</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="879251459171064374" datatype="html">
-        <source>Self hosted</source>
-        <target state="signed-off">Auto-hebergé</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">166</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5754881353317918646" datatype="html">
-        <source>We provided the source code of the server that you can run on every server, if you prefere to keep your files under control.</source>
-        <target state="signed-off">Nous fournissons le code source du server que vous pouvez faire tourner sur n'importe quel server, si vous préférez garder vous fichiers sous votre contrôle.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">168</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7532079948896514660" datatype="html">
-        <source>Everywhere you need it</source>
-        <target state="signed-off">Partout où vous en avez besoin</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">180</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7408840299106184391" datatype="html">
-        <source>Web</source>
-        <target state="signed-off">Web</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">192</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3799093232488965923" datatype="html">
-        <source>Open</source>
-        <target state="signed-off">Ouvrir</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">200</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3283644315662511208" datatype="html">
-        <source>Windows</source>
-        <target state="signed-off">Windows</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">210</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3099741642167775297" datatype="html">
-        <source>Download</source>
-        <target state="signed-off">Télécharger</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">214</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">233</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">252</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">271</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8067537011964257975" datatype="html">
-        <source>Coming soon</source>
-        <target state="signed-off">Bientôt disponible</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">220</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">239</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">258</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">277</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1285159404691552125" datatype="html">
-        <source>Mac OS</source>
-        <target state="signed-off">Mac OS</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">229</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2744058501957924616" datatype="html">
-        <source>Ubuntu</source>
-        <target state="signed-off">Ubuntu</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">248</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2540504784495529872" datatype="html">
-        <source>Android</source>
-        <target state="signed-off">Android</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">267</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3890125508848478489" datatype="html">
-        <source>Real time collaboration</source>
-        <target state="signed-off">Collaboration en temps réel</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">290</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="7548803421169011868" datatype="html">
-        <source>Collaborate in real time with people all over the world.</source>
-        <target state="signed-off">Collaborer en temps réel avec des personnes partout autour du monde.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">293</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="3278248939518117273" datatype="html">
-        <source>An illustration of two people collaborating on a document.</source>
-        <target state="signed-off">Une illustration de deux personnes collaborant sur un document.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">297</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5264273950475418483" datatype="html">
-        <source>Night Theme</source>
-        <target state="signed-off">Mode nuit</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">304</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="5271509417936541098" datatype="html">
-        <source>A beautiful night theme which won&apos;t blow away your eyes at night.</source>
-        <target state="signed-off">Un magnifique thème sombre qui protège vos yeux durant la nuit.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">307</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="8682021386860148803" datatype="html">
-        <source>An illustration of a girl working late.</source>
-        <target state="signed-off">Une illustration d'une personne travaillant tard.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">311</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="426516996432259635" datatype="html">
-        <source>Start working now</source>
-        <target state="signed-off">Commencez à travailler</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">320</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="6494853859941649817" datatype="html">
-        <source>Copyright © 2021 <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/LopsemPyier&quot; class=&quot;text-white&quot;&gt;"/>LopsemPyier<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
-        <target state="signed-off">Copyright © 2021 <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/LopsemPyier&quot; class=&quot;text-white&quot;&gt;"/>LopsemPyier<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">335</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="2814831631196948102" datatype="html">
-        <source>Terms of Service</source>
-        <target state="signed-off">Conditions générales d'utilisation</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">342</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="1615238080305101678" datatype="html">
-        <source>Credits</source>
-        <target state="signed-off">Crédits</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
-          <context context-type="linenumber">344</context>
-        </context-group>
-      </trans-unit>
-    </body>
-  </file>
+	<file source-language="en-US" target-language="fr" datatype="plaintext" original="ng2.template">
+		<body>
+			<trans-unit id="5459989209005328147" datatype="html">
+				<source>Welcome back</source>
+				<target state="signed-off">Heureux de vous revoir</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
+					<context context-type="linenumber">11</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5248717555542428023" datatype="html">
+				<source>Username</source>
+				<target state="signed-off">Nom d'utilisateur</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
+					<context context-type="linenumber">17</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">27</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="1431416938026210429" datatype="html">
+				<source>Password</source>
+				<target state="signed-off">Mot de passe</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
+					<context context-type="linenumber">26</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">46</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2454050363478003966" datatype="html">
+				<source>Login</source>
+				<target state="signed-off">Se connecter</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
+					<context context-type="linenumber">33</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5169592274653225325" datatype="html">
+				<source>Invalid username</source>
+				<target state="signed-off">Nom d'utilisateur incorrect</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
+					<context context-type="linenumber">44</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="8288238877926002807" datatype="html">
+				<source>Invalid password</source>
+				<target state="signed-off">Mot de passe incorrect</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
+					<context context-type="linenumber">51</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3933556588498605957" datatype="html">
+				<source>Error during request, please retry.</source>
+				<target state="signed-off">Erreur lors de la requête, veuillez réessayer.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
+					<context context-type="linenumber">58</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">90</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="4446942531619331039" datatype="html">
+				<source>Internal error, please retry later.</source>
+				<target state="signed-off">Erreur interne, veuillez réessayer ultérieurement.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
+					<context context-type="linenumber">65</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">97</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7760842120997502604" datatype="html">
+				<source>No account ?<x id="START_LINK" ctype="x-a"
+									   equiv-text="&lt;a routerLink=&quot;/signup&quot; class=&quot;text-gray-darker dark:text-gray-lighter&quot;&gt;"/>
+					Sign Up
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+				</source>
+				<target state="signed-off">Pas de compte ?<x id="START_LINK" ctype="x-a"
+															 equiv-text="&lt;a routerLink=&quot;/signup&quot; class=&quot;text-gray-darker dark:text-gray-lighter&quot;&gt;"/>
+					Inscrivez vous
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
+					<context context-type="linenumber">73</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2283259376295608283" datatype="html">
+				<source>An illustration for the login page which represents an astronaut on his rocket in the space.
+				</source>
+				<target state="signed-off">Une illustration pour la page de connexion qui représente un astronaute sur
+					sa fusée dans l'espace.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
+					<context context-type="linenumber">82</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5036267891319267082" datatype="html">
+				<source>An illustration for the signup page which represents a rocket launch to the space.</source>
+				<target state="signed-off">Une illustration pour la page d'inscription qui représente une fusée
+					décollant vers l'espace.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">6</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2725219580663441078" datatype="html">
+				<source>Welcome to comets</source>
+				<target state="signed-off">Bienvenue à Comets</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">17</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7137348945017754906" datatype="html">
+				<source>Join the rocket to launch to the comet.</source>
+				<target state="signed-off">Rejoignez la fusée pour le décollage vers la comète.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">21</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="4768749765465246664" datatype="html">
+				<source>Email</source>
+				<target state="signed-off">E-mail</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">36</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="4362339478195651271" datatype="html">
+				<source>By joigning us, you accept the<x id="START_LINK" ctype="x-a"
+														 equiv-text="&lt;arouterLink=&quot;/terms-of-service&quot;class=&quot;text&quot;&gt;"/>
+					Terms of Service
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+				</source>
+				<target state="signed-off">En nous rejoignant, vous acceptez les<x id="START_LINK" ctype="x-a"
+																				   equiv-text="&lt;arouterLink=&quot;/terms-of-service&quot;class=&quot;text&quot;&gt;"/>
+					Conditions générales d'utilisation
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">56</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="1466012768716286509" datatype="html">
+				<source>Sign Up</source>
+				<target state="signed-off">S'inscrire</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">65</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">23</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">324</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7411913630982419535" datatype="html">
+				<source>Username already taken</source>
+				<target state="signed-off">Nom d'utilisateur déjà utilisé</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">76</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="6993106617070148867" datatype="html">
+				<source>Email already taken</source>
+				<target state="signed-off">Adresse e-mail déjà utilisée</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">83</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="6982707924368850744" datatype="html">
+				<source>Already member ?<x id="START_LINK" ctype="x-a"
+										   equiv-text="&lt;a routerLink=&quot;/login&quot; class=&quot;text&quot;&gt;"/>
+					Login
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+				</source>
+				<target state="signed-off">Déjà membre ?<x id="START_LINK" ctype="x-a"
+														   equiv-text="&lt;a routerLink=&quot;/login&quot; class=&quot;text&quot;&gt;"/>
+					Connectez vous
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
+					<context context-type="linenumber">105</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="9040361513231775562" datatype="html">
+				<source>Downloads</source>
+				<target state="signed-off">Téléchargements</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">12</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5173115640670709698" datatype="html">
+				<source>Login</source>
+				<target state="signed-off">Se connecter</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">17</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7855885154366821989" datatype="html">
+				<source>LaTeX without any trouble</source>
+				<target state="signed-off">LaTeX sans aucun soucis</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">36</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="1314774502694891466" datatype="html">
+				<source>Easy to use online and collaborative LaTeX editor</source>
+				<target state="signed-off">Éditeur LaTeX facile à utiliser, en ligne et collaboratif</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">39</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="8918320492474889909" datatype="html">
+				<source>An illustration of a math teacher in front of a green board</source>
+				<target state="signed-off">Une illustration d'un professeur de mathématiques devant un tableau vert.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">45</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="431844723082505504" datatype="html">
+				<source>For everyone</source>
+				<target state="signed-off">Pour tout le monde</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">64</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5935458268613098531" datatype="html">
+				<source>An illustration of chimists in a laboratory.</source>
+				<target state="signed-off">Une illustration de chimistes dans un laboratoire.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">72</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="8230736089634995885" datatype="html">
+				<source>For Scientifics</source>
+				<target state="signed-off">Pour les Scientifiques</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">80</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2956215757153625928" datatype="html">
+				<source>You can write beautiful articles with all the power of LaTeX, the most used tool by the
+					scientific community. It is robust, well known and designed with sciences in mind. Whatever your
+					domain, you will find packages that are made for it.
+				</source>
+				<target state="signed-off">Vous pouvez écrire de magnifiques articles avec toutes la puissance de LaTeX,
+					l'outil le plus utilisé par la communauté scientifique. Il est robuste, connu et créé pour les
+					sciences. Quelque soit votre domaine, vous trouverez un package crée pour.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">83</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2603064956598926728" datatype="html">
+				<source>An illustration of a student in front of courses.</source>
+				<target state="signed-off">Une illustration d'un étudiant devant ses cours.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">95</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5136435215752099590" datatype="html">
+				<source>For Students and Teachers</source>
+				<target state="signed-off">Pour les Etudiants et les Professeurs</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">103</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3332406591391156942" datatype="html">
+				<source>You can carefully take notes in all of your classes within a beautiful text editor. The
+					simplicity and the flexibility of LaTeX will help you forget about the layout of your lessons and
+					focus more on the content. Moreover, sciences, schemas, texts are all well supported.
+				</source>
+				<target state="signed-off">Vous pouvez prendre soigneusement vos notes dans toutes vos classes dans un
+					bel éditeur. La simplicité et la flexibilité de LaTeX vous permettrons d'oublier la mise en page et
+					de vous concentrez sur le contenu. De plus, sciences, schémas et textes sont tous supportés.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">106</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5135640179336423744" datatype="html">
+				<source>An illustration of two office workers.</source>
+				<target state="signed-off">Une illustration de deux employés de bureau.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">118</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2609156860269229954" datatype="html">
+				<source>For Office Workers</source>
+				<target state="signed-off">Pour les Employés de Bureaux</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">126</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="1760678181503762882" datatype="html">
+				<source>You can efficiently write standard documents in a browser or a native application. Switch to the
+					open source and forget alternatives that pump out your private documents. Whether you want more
+					flexibility and robustness or you just don’t want to worry about layout, try it.
+				</source>
+				<target state="signed-off">Vous pouvez écrire efficacement des documents standard dans un navigateur ou
+					un application native. Mettez vous à l'open source et oubliez les alternatives qui pompent vos
+					secrets. Que vous vouliez plus de flexibilité et de robustesse ou juste que vous n'ayez pas envie de
+					penser à la mise en page, essayer le.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">129</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2834887133625347595" datatype="html">
+				<source>Privacy is in our heart</source>
+				<target state="signed-off">La vie privée nous tient à cœur</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">141</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="6601770693096813711" datatype="html">
+				<source>An illustration of a man alongside a tree and some code.</source>
+				<target state="signed-off">Une illustration d'un homme à côté d'un arbre et d'un block de code.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">149</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7589136797201485434" datatype="html">
+				<source>Open source</source>
+				<target state="signed-off">Open Source</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">153</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="1388483519220278375" datatype="html">
+				<source>We believe in open source. That is why we are entierly based on open sources solutions and this
+					application is also completly open source.
+				</source>
+				<target state="signed-off">Nous croyons dans l'open source. C'est pourquoi nous sommes entièrement basé
+					sur les solutions open source et que l'application est complètement open source.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">155</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="278315449775258344" datatype="html">
+				<source>An illustration of a server connected with phone, laptop and watch.</source>
+				<target state="signed-off">Une illustration d'un server connecté avec un téléphone, un ordinateur et une
+					montre.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">162</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="879251459171064374" datatype="html">
+				<source>Self hosted</source>
+				<target state="signed-off">Auto-hebergé</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">166</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5754881353317918646" datatype="html">
+				<source>We provided the source code of the server that you can run on every server, if you prefere to
+					keep your files under control.
+				</source>
+				<target state="signed-off">Nous fournissons le code source du server que vous pouvez faire tourner sur
+					n'importe quel server, si vous préférez garder vous fichiers sous votre contrôle.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">168</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7532079948896514660" datatype="html">
+				<source>Everywhere you need it</source>
+				<target state="signed-off">Partout où vous en avez besoin</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">180</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7408840299106184391" datatype="html">
+				<source>Web</source>
+				<target state="signed-off">Web</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">192</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3799093232488965923" datatype="html">
+				<source>Open</source>
+				<target state="signed-off">Ouvrir</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">200</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3283644315662511208" datatype="html">
+				<source>Windows</source>
+				<target state="signed-off">Windows</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">210</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3099741642167775297" datatype="html">
+				<source>Download</source>
+				<target state="signed-off">Télécharger</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">214</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">233</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">252</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">271</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="8067537011964257975" datatype="html">
+				<source>Coming soon</source>
+				<target state="signed-off">Bientôt disponible</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">220</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">239</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">258</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">277</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="1285159404691552125" datatype="html">
+				<source>Mac OS</source>
+				<target state="signed-off">Mac OS</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">229</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2744058501957924616" datatype="html">
+				<source>Ubuntu</source>
+				<target state="signed-off">Ubuntu</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">248</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2540504784495529872" datatype="html">
+				<source>Android</source>
+				<target state="signed-off">Android</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">267</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3890125508848478489" datatype="html">
+				<source>Real time collaboration</source>
+				<target state="signed-off">Collaboration en temps réel</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">290</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="7548803421169011868" datatype="html">
+				<source>Collaborate in real time with people all over the world.</source>
+				<target state="signed-off">Collaborer en temps réel avec des personnes partout autour du monde.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">293</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="3278248939518117273" datatype="html">
+				<source>An illustration of two people collaborating on a document.</source>
+				<target state="signed-off">Une illustration de deux personnes collaborant sur un document.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">297</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5264273950475418483" datatype="html">
+				<source>Night Theme</source>
+				<target state="signed-off">Mode nuit</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">304</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="5271509417936541098" datatype="html">
+				<source>A beautiful night theme which won&apos;t blow away your eyes at night.</source>
+				<target state="signed-off">Un magnifique thème sombre qui protège vos yeux durant la nuit.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">307</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="8682021386860148803" datatype="html">
+				<source>An illustration of a girl working late.</source>
+				<target state="signed-off">Une illustration d'une personne travaillant tard.</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">311</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="426516996432259635" datatype="html">
+				<source>Start working now</source>
+				<target state="signed-off">Commencez à travailler</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">320</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="6494853859941649817" datatype="html">
+				<source>Copyright © 2021<x id="START_LINK" ctype="x-a"
+										   equiv-text="&lt;a href=&quot;https://github.com/LopsemPyier&quot; class=&quot;text-white&quot;&gt;"/>
+					LopsemPyier
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+				</source>
+				<target state="signed-off">Copyright © 2021<x id="START_LINK" ctype="x-a"
+															  equiv-text="&lt;a href=&quot;https://github.com/LopsemPyier&quot; class=&quot;text-white&quot;&gt;"/>
+					LopsemPyier
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">335</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2814831631196948102" datatype="html">
+				<source>Terms of Service</source>
+				<target state="signed-off">Conditions générales d'utilisation</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">342</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="1615238080305101678" datatype="html">
+				<source>Credits</source>
+				<target state="signed-off">Crédits</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+					<context context-type="linenumber">344</context>
+				</context-group>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

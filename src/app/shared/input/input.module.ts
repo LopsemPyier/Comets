@@ -5,16 +5,16 @@ import { IconModule } from '../icon/icon.module';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
-
 @NgModule({
-  declarations: [
-    InputComponent
-  ],
-  imports: [
-    CommonModule,
-    IconModule,
-    ReactiveFormsModule
-  ],
-  exports: [InputComponent]
+	declarations: [
+		InputComponent
+	],
+	imports: [
+		CommonModule,
+		IconModule,
+		ReactiveFormsModule
+	],
+	exports: [InputComponent]
 })
-export class InputModule { }
+export class InputModule {
+}

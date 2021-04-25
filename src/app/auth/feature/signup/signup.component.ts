@@ -1,28 +1,30 @@
 import { Component, OnInit } from '@angular/core';
-import { Validators, FormBuilder } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-signup',
-  templateUrl: './signup.component.html',
-  styleUrls: ['./signup.component.scss']
+	selector: 'app-signup',
+	templateUrl: './signup.component.html',
+	styleUrls: ['./signup.component.scss']
 })
 export class SignupComponent implements OnInit {
-  loading = false;
+	loading = false;
 
-  error: 'username' | 'email' | 'request' | 'internal' | 'none' = 'none';
+	error: 'username' | 'email' | 'request' | 'internal' | 'none' = 'none';
 
-  form = this.fb.group({
-    username: ['', Validators.required],
-    email: ['', [Validators.required, Validators.email]],
-    password: ['', Validators.required],
-  });
+	form = this.fb.group({
+		username: ['', Validators.required],
+		email: ['', [Validators.required, Validators.email]],
+		password: ['', Validators.required],
+	});
 
-  constructor(private fb: FormBuilder) {}
+	constructor(private fb: FormBuilder) {
+	}
 
-  ngOnInit(): void {}
+	ngOnInit(): void {
+	}
 
-  submit(): void {
-    console.log(this.form.value);
-    this.loading = true;
-  }
+	submit(): void {
+		console.log(this.form.value);
+		this.loading = true;
+	}
 }

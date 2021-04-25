@@ -8,20 +8,20 @@ import { InputModule } from 'src/app/shared/input/input.module';
 import { MessageModule } from 'src/app/shared/message/message.module';
 
 
-
 @NgModule({
-  declarations: [
-    LoginComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild([
-      { path: '', pathMatch: 'full', component: LoginComponent}
-    ]),
-    ReactiveFormsModule,
-    ButtonModule,
-    InputModule,
-    MessageModule
-  ]
+	declarations: [
+		LoginComponent
+	],
+	imports: [
+		CommonModule,
+		RouterModule.forChild([
+			{ path: '', pathMatch: 'full', component: LoginComponent }
+		]),
+		ReactiveFormsModule,
+		ButtonModule,
+		InputModule,
+		MessageModule
+	]
 })
-export class LoginModule { }
+export class LoginModule {
+}

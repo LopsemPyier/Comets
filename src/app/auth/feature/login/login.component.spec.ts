@@ -8,31 +8,31 @@ import { MessageModule } from 'src/app/shared/message/message.module';
 import { LoginComponent } from './login.component';
 
 describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
+	let component: LoginComponent;
+	let fixture: ComponentFixture<LoginComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ LoginComponent ],
-      imports: [
-        RouterTestingModule,
-        FormsModule,
-        ReactiveFormsModule,
-        ButtonModule,
-        InputModule,
-        MessageModule
-      ],
-    })
-    .compileComponents();
-  });
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
+			declarations: [LoginComponent],
+			imports: [
+				RouterTestingModule,
+				FormsModule,
+				ReactiveFormsModule,
+				ButtonModule,
+				InputModule,
+				MessageModule
+			],
+		})
+			.compileComponents();
+	});
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(LoginComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+	beforeEach(() => {
+		fixture = TestBed.createComponent(LoginComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });

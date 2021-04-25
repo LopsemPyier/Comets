@@ -1,8 +1,8 @@
 <button
-  (click)="buttonClick.emit($event)"
-  [disabled]="disabled"
-  class="px-10 h-10 w-full rounded-sm flex flex-row items-center justify-center shadow"
-  [ngClass]="{
+	(click)="buttonClick.emit($event)"
+	[disabled]="disabled"
+	class="px-10 h-10 w-full rounded-sm flex flex-row items-center justify-center shadow"
+	[ngClass]="{
     'cursor-not-allowed': disabled,
     'cursor-wait': loading,
     'bg-gray-lightest dark:bg-gray-darker text-gray-light dark:text-gray-dark': (loading || disabled) && type === 'default',
@@ -13,11 +13,11 @@
     'bg-secondary text-white': !(loading || disabled) && type === 'secondary'
   }"
 >
-  <span class="mr-2">{{ label }}</span>
-  <app-icon
-    class="animate-spin"
-    *ngIf="loading"
-    icon="loader-5-fill"
-    color="inherit"
-  ></app-icon>
+	<span class="mr-2">{{ label }}</span>
+	<app-icon
+		class="animate-spin"
+		*ngIf="loading"
+		icon="loader-5-fill"
+		color="inherit"
+	></app-icon>
 </button>

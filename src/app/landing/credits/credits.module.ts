@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { CreditsComponent } from './credits.component';
 
 
-
 @NgModule({
-  declarations: [
-    CreditsComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+	declarations: [
+		CreditsComponent
+	],
+	imports: [
+		CommonModule
+	]
 })
-export class CreditsModule { }
+export class CreditsModule {
+}

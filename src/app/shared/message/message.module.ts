@@ -4,15 +4,15 @@ import { MessageComponent } from './message.component';
 import { IconModule } from '../icon/icon.module';
 
 
-
 @NgModule({
-  declarations: [
-    MessageComponent
-  ],
-  imports: [
-    CommonModule,
-    IconModule
-  ],
-  exports: [MessageComponent]
+	declarations: [
+		MessageComponent
+	],
+	imports: [
+		CommonModule,
+		IconModule
+	],
+	exports: [MessageComponent]
 })
-export class MessageModule { }
+export class MessageModule {
+}

@@ -6,18 +6,18 @@ import { IconModule } from 'src/app/shared/icon/icon.module';
 import { RouterModule } from '@angular/router';
 
 
-
 @NgModule({
-  declarations: [
-    HomeComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild([
-      { path: '', pathMatch: 'full', component: HomeComponent }
-    ]),
-    ButtonModule,
-    IconModule
-  ]
+	declarations: [
+		HomeComponent
+	],
+	imports: [
+		CommonModule,
+		RouterModule.forChild([
+			{ path: '', pathMatch: 'full', component: HomeComponent }
+		]),
+		ButtonModule,
+		IconModule
+	]
 })
-export class HomeModule { }
+export class HomeModule {
+}
