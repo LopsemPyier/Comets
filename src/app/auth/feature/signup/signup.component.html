@@ -63,7 +63,7 @@
 			<app-button
 				label="Sign Up"
 				type='primary'
-				[loading]="loading"
+				[loading]="!!(LOADING_KEY | swIsLoading | async)"
 				[disabled]="!form.valid"
 				class="mb-2 w-72 sm:w-80"
 				i18n-label

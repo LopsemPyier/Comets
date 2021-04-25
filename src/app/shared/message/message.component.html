@@ -12,7 +12,12 @@
 		[icon]="icon"
 		[color]="type"
 	></app-icon>
-	<p class="w-auto font-bold text-current">
+	<p class="w-auto font-bold" [ngClass]="{
+    'text-error dark:text-error-light': type === 'error',
+    'text-warning dark:text-warning-light': type === 'warning',
+    'text-info dark:text-info-light': type === 'info',
+    'text-success dark:text-success-light': type === 'success'
+  }">
 		{{ message }}
 	</p>
 </div>

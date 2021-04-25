@@ -6,22 +6,23 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { ButtonModule } from 'src/app/shared/button/button.module';
 import { InputModule } from 'src/app/shared/input/input.module';
 import { MessageModule } from 'src/app/shared/message/message.module';
-
+import { IsLoadingModule } from '@service-work/is-loading';
 
 @NgModule({
 	declarations: [
-		SignupComponent
+		SignupComponent,
 	],
 	imports: [
 		CommonModule,
 		RouterModule.forChild([
-			{ path: '', pathMatch: 'full', component: SignupComponent }
+			{ path: '', pathMatch: 'full', component: SignupComponent },
 		]),
 		ReactiveFormsModule,
 		ButtonModule,
 		InputModule,
-		MessageModule
-	]
+		MessageModule,
+		IsLoadingModule,
+	],
 })
 export class SignupModule {
 }

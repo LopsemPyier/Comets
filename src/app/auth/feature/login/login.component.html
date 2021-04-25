@@ -12,10 +12,10 @@
 			</h1>
 
 			<app-input
-				formControlName="username"
+				formControlName="email"
 				type="text"
-				label="Username"
-				iconLeft="user-fill"
+				label="Email"
+				iconLeft="mail-fill"
 				class="w-72 sm:w-80"
 				i18n-label
 			></app-input>
@@ -32,7 +32,7 @@
 			<app-button
 				label="Login"
 				type="primary"
-				[loading]="loading"
+				[loading]="!!(LOADING_KEY | swIsLoading | async)"
 				[disabled]="!form.valid"
 				class="mb-2 w-72 sm:w-80"
 				i18n-label
@@ -40,8 +40,8 @@
 
 			<div class="h-10 w-80 sm:w-auto">
 				<app-message
-					*ngIf="error === 'username'"
-					message="Invalid username"
+					*ngIf="error === 'email'"
+					message="Invalid Email"
 					type='error'
 					i18n-message
 				></app-message>
