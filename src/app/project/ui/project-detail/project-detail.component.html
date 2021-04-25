@@ -1,7 +1,11 @@
-<div>
+<div class="p-5 pb-3 bg-gray-lightest dark:bg-gray-darkest rounded-sm grid grid-flow-row place-content-center items-center text-center">
+	<div class="rounded-full place-self-center bg-error h-20 w-20 mb-5">
+
+	</div>
+
 	<a [routerLink]="['/project', project.id]">{{ project.name }}</a>
 	<p>{{ project.description }}</p>
 
-	<p *ngIf="project.lastEdit">Last edit {{ project.lastEdit.createAt | date }} by <a
+	<p class="small place-self-end mt-auto" *ngIf="project.lastEdit">Last edit {{ project.lastEdit.createAt | date }} by <a
 		[routerLink]="['/user', project.lastEdit.author.id]">{{ project.lastEdit.author.username }}</a></p>
 </div>

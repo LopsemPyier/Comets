@@ -3,6 +3,15 @@
 		Loading...
 	</p>
 	<ng-template #elseBlock>
-		<app-project-detail *ngFor="let project of (projects$ | async )" [project]="project"></app-project-detail>
+		<div class="flex flex-wrap flex-row gap-3">
+			<div class="p-5 pb-3 bg-gray-lightest dark:bg-gray-darkest rounded-sm grid grid-flow-row place-content-center items-center text-center">
+				<div class="rounded-full text-white text-7xl place-content-center items-center flex place-self-center bg-primary h-20 w-20 mb-5">
+					+
+				</div>
+
+				<app-button label="New project" type="primary" routerLink="/projects/new"></app-button>
+			</div>
+			<app-project-detail *ngFor="let project of (projects$ | async )" [project]="project"></app-project-detail>
+		</div>
 	</ng-template>
 </div>
