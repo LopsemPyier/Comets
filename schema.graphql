@@ -1,0 +1,97 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+	query: Query
+	mutation: Mutation
+}
+
+type EditObject {
+	actionType: ActionEnum!
+	author: UserObject
+	createAt: DateTime!
+	id: UUID!
+}
+
+type Mutation {
+	createProject(input: ProjectDto!): ProjectObject!
+	login(input: LoginDto!): String!
+	register(input: RegisterDto!): String!
+}
+
+"A project"
+type ProjectObject {
+	"The authors of the project"
+	authors: [UserObject!]!
+	"The project description"
+	description: String!
+	"The edits of the project"
+	edits: [EditObject!]!
+	"The project ID"
+	id: UUID!
+	"The last edit of the project"
+	lastEdit: EditObject!
+	"The project name"
+	name: String!
+}
+
+type Query {
+	me: UserObject!
+	project(id: UUID!): ProjectObject!
+	projects: [ProjectObject!]!
+	user(id: UUID!): UserObject!
+	users: [UserObject!]!
+}
+
+"A user of the app"
+type UserObject {
+	"The email"
+	email: String!
+	"The user id, store as an UUID"
+	id: UUID!
+	"The list of the project the user is author in"
+	projects: [ProjectObject!]!
+	"The username"
+	username: String!
+}
+
+enum ActionEnum {
+	CREATE
+	DELETE
+	EDIT
+}
+
+"The DTO for login"
+input LoginDto {
+	"Email"
+	email: String!
+	"Password"
+	password: String!
+}
+
+"The DTO for project"
+input ProjectDto {
+	"Description"
+	description: String!
+	"Name"
+	name: String!
+}
+
+"The DTO for registration"
+input RegisterDto {
+	"Email (must not already be in the database)"
+	email: String!
+	"Password"
+	password: String!
+	"Username"
+	username: String!
+}
+
+
+"""
+Implement the DateTime<Utc> scalar
+
+The input/output is a string in RFC3339 format.
+"""
+scalar DateTime
+
+scalar UUID
