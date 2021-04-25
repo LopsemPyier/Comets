@@ -1,5 +1,5 @@
 <div>
-	<p *ngIf="(LOADING_KEY | swIsLoading | async); else elseBlock">
+	<p *ngIf="(LOADING_KEY | swIsLoading | async); else elseBlock" i18n>
 		Loading...
 	</p>
 	<ng-template #elseBlock>
@@ -9,7 +9,7 @@
 					+
 				</div>
 
-				<app-button label="New project" type="primary" routerLink="/projects/new"></app-button>
+				<app-button label="New project" type="primary" routerLink="/projects/new" i18n-label></app-button>
 			</div>
 			<app-project-detail *ngFor="let project of (projects$ | async )" [project]="project"></app-project-detail>
 		</div>

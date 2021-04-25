@@ -6,6 +6,6 @@
 	<a [routerLink]="['/project', project.id]">{{ project.name }}</a>
 	<p>{{ project.description }}</p>
 
-	<p class="small place-self-end mt-auto" *ngIf="project.lastEdit">Last edit {{ project.lastEdit.createAt | date }} by <a
+	<p class="small place-self-end mt-auto" *ngIf="project.lastEdit" i18n>Last edit {{ project.lastEdit.createAt | date }} by <a
 		[routerLink]="['/user', project.lastEdit.author.id]">{{ project.lastEdit.author.username }}</a></p>
 </div>

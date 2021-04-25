@@ -40,7 +40,7 @@
 	}
 
 	p.small {
-		@apply text-xs font-light;
+		@apply text-xs font-normal;
 	}
 
 	p.paragraph {
@@ -54,7 +54,7 @@
 	}
 
 	.small a {
-		@apply text-xs;
+		@apply text-xs font-medium
 	}
 
 	form {
