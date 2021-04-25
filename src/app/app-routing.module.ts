@@ -38,6 +38,16 @@ const routes: Routes = [
 					(await import('./landing')).CreditsModule,
 			},
 			{
+				path: 'dashboard',
+				loadChildren: async () =>
+					(await import('./project')).DashboardModule,
+			},
+			{
+				path: 'projects/new',
+				loadChildren: async () =>
+					(await import('./project')).AddModule,
+			},
+			{
 				path: 'collection',
 				redirectTo: 'collection/playlists',
 				pathMatch: 'full'
