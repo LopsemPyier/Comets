@@ -5,7 +5,7 @@ export type Project = {
 	id: string,
 	name: string,
 	description?: string,
-	lastEdit?: Edit
+	lastEdit: Edit
 	edits?: Edit[],
 	author?: User[]
 };

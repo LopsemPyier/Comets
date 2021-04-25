@@ -10,6 +10,8 @@ import { map, shareReplay } from 'rxjs/operators';
 })
 export class AuthService {
 
+	private token: string | null = null;
+
 	constructor(
 		private apollo: Apollo,
 	) {
@@ -25,8 +27,8 @@ export class AuthService {
 		}).pipe(
 			shareReplay(),
 			map(value => {
-				console.log(value.errors);
 				if (value.data) {
+					this.saveToken(value.data.login);
 					return value.data.login;
 				}
 				return '';
@@ -46,10 +48,24 @@ export class AuthService {
 			shareReplay(),
 			map(value => {
 				if (value.data) {
+					this.saveToken(value.data.register);
 					return value.data.register;
 				}
 				return '';
 			}),
 		);
+	}
+
+	logout(): void {
+		this.saveToken(null);
+	}
+
+	private saveToken(token: string | null): void {
+		this.token = token;
+		if (this.token) {
+			localStorage.setItem('token', this.token);
+		} else {
+			localStorage.removeItem('token');
+		}
 	}
 }

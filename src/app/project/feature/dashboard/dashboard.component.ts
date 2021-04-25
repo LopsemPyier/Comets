@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { Project } from '../../../shared/types';
 import { ProjectService } from '../../data-access/project.service';
 import { IsLoadingService } from '@service-work/is-loading';
+import { map } from 'rxjs/operators';
 
 @Component({
 	selector: 'app-dashboard',
@@ -22,8 +23,21 @@ export class DashboardComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
-		this.projects$ = this.isLoadingService.add(this.project.dashboard(), {
-			key: this.LOADING_KEY
+		this.projects$ = this.isLoadingService.add(this.project.dashboard().pipe(map(value => sort(value, compareProject))), {
+			key: this.LOADING_KEY,
 		});
 	}
+}
+
+function sort(array: Project[], compareFn: (a: Project, b: Project) => number): Project[] {
+	const copy = array.slice();
+	return copy.sort(compareFn);
+}
+
+function compareProject(a: Project, b: Project): number {
+	return -(getTime(a.lastEdit.createAt) - getTime(b.lastEdit.createAt));
+}
+
+function getTime(date?: Date): number {
+	return date != null ? new Date(date).getTime() : 0;
 }

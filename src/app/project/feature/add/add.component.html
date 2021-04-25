@@ -1,1 +1,53 @@
-<p>add works!</p>
+<div class="relative items-center flex flex-col place-content-center">
+	<form
+		[formGroup]="form"
+		(ngSubmit)="submit()"
+		class="relative w-full grid grid-flow-row auto-flow-row gap-2 justify-items-center lg:justify-self-end justify-self-center self-center"
+	>
+		<h1 class="mb-3 text-center" i18n>
+			New project
+		</h1>
+
+		<app-input
+			formControlName="name"
+			type="text"
+			label="Name"
+			class="w-72 sm:w-80"
+			i18n-label
+		></app-input>
+
+		<app-input
+			formControlName="description"
+			type="text"
+			label="Description (optional)"
+			class="w-72 sm:w-80"
+			i18n-label
+		></app-input>
+
+		<app-button
+			label="Save"
+			type='primary'
+			[loading]="!!(LOADING_KEY | swIsLoading | async)"
+			[disabled]="!form.valid"
+			class="mb-2 w-72 sm:w-80"
+			i18n-label
+		></app-button>
+
+		<div class="h-10 w-80 sm:w-auto">
+
+			<app-message
+				*ngIf="error === 'request'"
+				message="Error during request, please retry."
+				type='error'
+				i18n-message
+			></app-message>
+
+			<app-message
+				*ngIf="error === 'internal'"
+				message="Internal error, please retry later."
+				type='error'
+				i18n-message
+			></app-message>
+		</div>
+	</form>
+</div>
