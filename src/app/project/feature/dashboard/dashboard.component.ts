@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Project } from '../../../shared/types';
+import { ProjectService } from '../../data-access/project.service';
+import { IsLoadingService } from '@service-work/is-loading';
 
 @Component({
 	selector: 'app-dashboard',
@@ -7,10 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-	constructor() {
+	readonly LOADING_KEY = 'dashboard_query';
+
+	projects$ = new Observable<Project[]>();
+
+	constructor(
+		private project: ProjectService,
+		private isLoadingService: IsLoadingService
+	) {
 	}
 
 	ngOnInit(): void {
+		this.projects$ = this.isLoadingService.add(this.project.dashboard(), {
+			key: this.LOADING_KEY
+		});
 	}
-
 }

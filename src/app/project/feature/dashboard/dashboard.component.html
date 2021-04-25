@@ -1,1 +1,8 @@
-<p>dashboard works!</p>
+<div>
+	<p *ngIf="(LOADING_KEY | swIsLoading | async); else elseBlock">
+		Loading...
+	</p>
+	<ng-template #elseBlock>
+		<app-project-detail *ngFor="let project of (projects$ | async )" [project]="project"></app-project-detail>
+	</ng-template>
+</div>
