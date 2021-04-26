@@ -9,10 +9,21 @@ type EditObject {
 	actionType: ActionEnum!
 	author: UserObject
 	createAt: DateTime!
+	file: FileObject!
 	id: UUID!
 }
 
+type FileObject {
+	extension: String!
+	fileType: FileTypeEnum!
+	id: UUID!
+	name: String!
+	parent: FileObject
+	project: ProjectObject!
+}
+
 type Mutation {
+	createFile(input: FileDto!): FileObject!
 	createProject(input: ProjectDto!): ProjectObject!
 	login(input: LoginDto!): String!
 	register(input: RegisterDto!): String!
@@ -26,6 +37,8 @@ type ProjectObject {
 	description: String!
 	"The edits of the project"
 	edits: [EditObject!]!
+	"The last edit of the project"
+	files: [FileObject!]!
 	"The project ID"
 	id: UUID!
 	"The last edit of the project"
@@ -35,6 +48,8 @@ type ProjectObject {
 }
 
 type Query {
+	file(id: UUID!): FileObject!
+	files: [FileObject!]!
 	me: UserObject!
 	project(id: UUID!): ProjectObject!
 	projects: [ProjectObject!]!
@@ -58,6 +73,21 @@ enum ActionEnum {
 	CREATE
 	DELETE
 	EDIT
+}
+
+enum FileTypeEnum {
+	IMAGE
+	PDF
+	TEX
+}
+
+"The DTO for project"
+input FileDto {
+	extension: String!
+	"Name"
+	name: String!
+	parentId: UUID
+	projectId: UUID!
 }
 
 "The DTO for login"
