@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TreeComponent } from './tree.component';
+import { NodeModule } from '../node/node.module';
 
 @NgModule({
 	declarations: [
@@ -8,6 +9,7 @@ import { TreeComponent } from './tree.component';
 	],
 	imports: [
 		CommonModule,
+		NodeModule,
 	],
 	exports: [
 		TreeComponent,

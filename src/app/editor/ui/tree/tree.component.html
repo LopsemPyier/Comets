@@ -1,1 +1,3 @@
-<p>tree works!</p>
+<div class="w-44">
+	<app-node *ngFor="let file of files" [file]="file" (fileSelect)="selectFile($event)"></app-node>
+</div>

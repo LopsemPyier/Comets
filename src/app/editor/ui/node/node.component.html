@@ -1,1 +1,13 @@
-<p>node works!</p>
+<div
+	class="flex flex-row gap-2 items-center hover:bg-gray-lightest dark:hover:bg-gray-darkest p-1 rounded-r-sm"
+	[ngClass]="{ 'bg-gray-lightest dark:bg-gray-darkest': this.file.selected }"
+	 (click)="clicked()">
+	<app-icon *ngIf="folder" icon="arrow-right-s-line" class="transform transition-transform" [ngClass]="{ 'rotate-90': file.open }"></app-icon>
+	<app-icon [icon]="icon"></app-icon>
+	<p>{{ file.name }}</p>
+</div>
+
+
+<div class="pl-5" *ngIf="file.children && file.open">
+	<app-node *ngFor="let child of file.children" [file]="child" (fileSelect)="fileSelect.emit($event)"></app-node>
+</div>

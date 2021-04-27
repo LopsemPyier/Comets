@@ -53,6 +53,11 @@ const routes: Routes = [
 					(await import('./editor')).FeatureModule,
 			},
 			{
+				path: 'project',
+				redirectTo: 'dashboard',
+				pathMatch: 'full',
+			},
+			{
 				path: 'collection',
 				redirectTo: 'collection/playlists',
 				pathMatch: 'full',
