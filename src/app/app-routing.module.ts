@@ -48,10 +48,15 @@ const routes: Routes = [
 					(await import('./project')).AddModule,
 			},
 			{
+				path: 'project/:id',
+				loadChildren: async () =>
+					(await import('./editor')).FeatureModule,
+			},
+			{
 				path: 'collection',
 				redirectTo: 'collection/playlists',
-				pathMatch: 'full'
-			}
+				pathMatch: 'full',
+			},
 		],
 	},
 	// {
