@@ -1,0 +1,3 @@
+mutation deleteFile($id: UUID!) {
+	deleteFile(id: $id)
+}

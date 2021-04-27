@@ -1,8 +1,18 @@
-<p *ngIf="(LOADING_KEY | swIsLoading | async); else elseBlock" i18n>
-	Loading...
-</p>
-<ng-template #elseBlock>
+<div class="grid grid-flow-col">
+	<p *ngIf="(LOADING_KEY | swIsLoading | async); else elseBlock" i18n>
+		Loading...
+	</p>
+
+	<ng-template #elseBlock>
+		<div>
+			<app-tree [files$]="files$" (addFile)="addFile($event)" (addFolder)="addFolder($event)"
+					  (delete)="delete($event)"></app-tree>
+		</div>
+	</ng-template>
+
+
 	<div>
-		<app-tree [files$]="files$"></app-tree>
+		<app-editor></app-editor>
 	</div>
-</ng-template>
+
+</div>

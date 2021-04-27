@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TreeComponent } from './tree.component';
 import { NodeModule } from '../node/node.module';
+import { IconModule } from '../../../shared/icon/icon.module';
 
 @NgModule({
 	declarations: [
@@ -10,6 +11,7 @@ import { NodeModule } from '../node/node.module';
 	imports: [
 		CommonModule,
 		NodeModule,
+		IconModule,
 	],
 	exports: [
 		TreeComponent,

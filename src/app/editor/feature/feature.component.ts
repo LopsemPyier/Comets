@@ -51,6 +51,7 @@ export class FeatureComponent implements OnInit {
 			open: false,
 			selected: false,
 			children: FeatureComponent.getChildren(files, file.id),
+			parent: (file.parent) ? file.parent.id : null
 		};
 	}
 
@@ -80,6 +81,46 @@ export class FeatureComponent implements OnInit {
 		this.files$ = this.isLoadingService.add(this.filesService.getFilesForProjectId(this.id).pipe(map(
 			FeatureComponent.buildTree,
 		)), {
+			key: this.LOADING_KEY,
+		});
+	}
+
+	addFile(parent: string | null): void {
+		console.log(parent);
+		this.isLoadingService.add(this.filesService.createFile('test', 'tex', parent, false, this.id)
+			.subscribe(
+				file => {
+					console.log('File inserted', file);
+				}, error => {
+					console.log(error);
+				}
+			), {
+			key: this.LOADING_KEY,
+		});
+	}
+
+	addFolder(parent: string | null): void {
+		this.isLoadingService.add(this.filesService.createFile('Folder', null, parent, true, this.id)
+			.subscribe(
+				folder => {
+					console.log('Folder inserted', folder);
+				}, error => {
+					console.log(error);
+				}
+			), {
+			key: this.LOADING_KEY,
+		});
+	}
+
+	delete(id: string): void {
+		this.isLoadingService.add(this.filesService.deleteFile(id)
+			.subscribe(
+				res => {
+					console.log('File deleted', res);
+				}, error => {
+					console.log(error);
+				}
+			), {
 			key: this.LOADING_KEY,
 		});
 	}

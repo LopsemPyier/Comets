@@ -1,6 +1,9 @@
 import {
 	RiAddBoxFill,
 	RiAddFill,
+	RiFileAddFill,
+	RiFolderAddFill,
+	RiDeleteBinFill,
 	RiAlertFill,
 	RiAndroidFill,
 	RiAppleFill,
@@ -42,6 +45,9 @@ import {
 export const icons = {
 	RiFolderFill,
 	RiFolderOpenFill,
+	RiFileAddFill,
+	RiFolderAddFill,
+	RiDeleteBinFill,
 	RiFile3Fill,
 	RiFileTextFill,
 	RiImageFill,

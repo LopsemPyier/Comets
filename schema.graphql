@@ -14,7 +14,7 @@ type EditObject {
 }
 
 type FileObject {
-	extension: String!
+	extension: String
 	fileType: FileTypeEnum!
 	id: UUID!
 	name: String!
@@ -78,6 +78,7 @@ enum ActionEnum {
 }
 
 enum FileTypeEnum {
+	FOLDER
 	IMAGE
 	PDF
 	TEX
@@ -85,7 +86,8 @@ enum FileTypeEnum {
 
 "The DTO for creaating file"
 input FileDto {
-	extension: String!
+	extension: String
+	folder: Boolean!
 	"Name"
 	name: String!
 	parentId: UUID

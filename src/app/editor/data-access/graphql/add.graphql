@@ -1,0 +1,15 @@
+mutation addFile($name: String!, $parent: UUID, $folder: Boolean!, $extension: String, $project: UUID!) {
+	createFile(input: {
+		name: $name,
+		extension: $extension,
+		parentId: $parent,
+		projectId: $project,
+		folder: $folder
+	}) {
+		id
+		name
+		extension
+		fileType
+		parent { id }
+	}
+}

@@ -15,5 +15,6 @@ export type FileNode = {
 	extension: string | null,
 	children: FileNode[] | null,
 	open: boolean,
-	selected: boolean
+	selected: boolean,
+	parent: string | null
 };
