@@ -1,6 +1,6 @@
 export enum FileType {
-	IMAGE = 'image',
-	TEX = 'tex',
-	PDF = 'pdf',
-	FOLDER = 'folder'
+	IMAGE = 'IMAGE',
+	TEX = 'TEX',
+	PDF = 'PDF',
+	FOLDER = 'FOLDER'
 }

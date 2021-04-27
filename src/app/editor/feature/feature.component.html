@@ -1,2 +1,8 @@
-<p>Getting project for id : {{ id$ | async }}</p>
-<app-tree [files]="files$"></app-tree>
+<p *ngIf="(LOADING_KEY | swIsLoading | async); else elseBlock" i18n>
+	Loading...
+</p>
+<ng-template #elseBlock>
+	<div>
+		<app-tree [files$]="files$"></app-tree>
+	</div>
+</ng-template>

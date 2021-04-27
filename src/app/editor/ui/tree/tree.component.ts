@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { FileNode } from '../../../shared/types';
+import { Observable } from 'rxjs';
 
 @Component({
 	selector: 'app-tree',
@@ -8,7 +9,7 @@ import { FileNode } from '../../../shared/types';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TreeComponent {
-	@Input() files!: FileNode[];
+	@Input() files$!: Observable<FileNode[]>;
 	selected: FileNode | null = null;
 
 	selectFile(file: FileNode): void {

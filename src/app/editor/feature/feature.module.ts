@@ -4,6 +4,7 @@ import { FeatureComponent } from './feature.component';
 import { RouterModule } from '@angular/router';
 import { NodeModule } from '../ui/node/node.module';
 import { TreeModule } from '../ui/tree/tree.module';
+import { IsLoadingModule } from '@service-work/is-loading';
 
 @NgModule({
 	declarations: [
@@ -16,6 +17,7 @@ import { TreeModule } from '../ui/tree/tree.module';
 		]),
 		NodeModule,
 		TreeModule,
+		IsLoadingModule,
 	],
 })
 export class FeatureModule {

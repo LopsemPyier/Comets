@@ -1,0 +1,11 @@
+query getFiles($id: UUID!) {
+	project(id: $id) {
+		files {
+			id
+			name
+			parent { id }
+			fileType
+			extension
+		}
+	}
+}
