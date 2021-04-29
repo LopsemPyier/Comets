@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NodeComponent } from './node.component';
-import { IconModule } from '../../../shared/icon/icon.module';
+import { IconModule } from '../../../shared/ui/icon/icon.module';
 
 @NgModule({
 	declarations: [

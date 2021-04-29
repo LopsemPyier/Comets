@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
-import { ButtonModule } from 'src/app/shared/button/button.module';
-import { InputModule } from 'src/app/shared/input/input.module';
-import { MessageModule } from 'src/app/shared/message/message.module';
+import { ButtonModule } from 'src/app/shared/ui/button/button.module';
+import { InputModule } from 'src/app/shared/ui/input/input.module';
+import { MessageModule } from 'src/app/shared/ui/message/message.module';
 
 import { SignupComponent } from './signup.component';
 

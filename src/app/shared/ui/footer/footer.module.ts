@@ -1,20 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { InputComponent } from './input.component';
+import { FooterComponent } from './footer.component';
 import { IconModule } from '../icon/icon.module';
-import { ReactiveFormsModule } from '@angular/forms';
-
+import { RouterModule } from '@angular/router';
 
 @NgModule({
 	declarations: [
-		InputComponent
+		FooterComponent,
 	],
 	imports: [
 		CommonModule,
 		IconModule,
-		ReactiveFormsModule
+		RouterModule,
 	],
-	exports: [InputComponent]
+	exports: [
+		FooterComponent,
+	],
 })
-export class InputModule {
+export class FooterModule {
 }

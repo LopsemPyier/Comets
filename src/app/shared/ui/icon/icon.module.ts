@@ -4,7 +4,6 @@ import { IconComponent } from './icon.component';
 import { RemixIconModule } from 'angular-remix-icon';
 import { icons } from './icons.enum';
 
-
 @NgModule({
 	declarations: [
 		IconComponent

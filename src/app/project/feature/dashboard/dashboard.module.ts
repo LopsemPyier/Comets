@@ -5,8 +5,7 @@ import { ProjectDetailModule } from '../../ui/project-detail/project-detail.modu
 import { RouterModule } from '@angular/router';
 import { UtilsModule } from '../../../shared/utils/utils.module';
 import { IsLoadingModule } from '@service-work/is-loading';
-import { ButtonModule } from '../../../shared/button/button.module';
-
+import { ButtonModule } from '../../../shared/ui/button/button.module';
 
 @NgModule({
 	declarations: [

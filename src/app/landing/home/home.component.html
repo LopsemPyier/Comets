@@ -1,29 +1,4 @@
-<header class="grid grid-flow-col py-5 px-20">
-	<!-- TODO: <app-logo></app-logo> -->
-	<div class="bg-error w-5 h-5 self-center justify-self-start"></div>
-	<nav
-		class="hidden md:grid justify-self-end self-center grid-flow-col auto-cols-auto gap-10"
-	>
-		<a
-			routerLink="/downloads"
-			routerLinkActive="text-primary"
-			class="self-center"
-			i18n
-		>Downloads</a
-		>
-		<a
-			routerLink="/login"
-			class="self-center"
-			i18n>Login</a>
-		<app-button
-			label="Sign Up"
-			routerLink="/signup"
-			type="primary"
-			class="self-center py-2"
-			i18n-label>
-		</app-button>
-	</nav>
-</header>
+<app-header></app-header>
 
 <section
 	class="h-full px-10 lg:px-20 grid grid-cols-none md:grid-cols-hero grid-flow-row"
@@ -327,26 +302,4 @@
 	></app-button>
 </section>
 
-<footer class="bg-gray-darkest grid grid-flow-row md:grid-flow-col py-5 px-20">
-	<p
-		class="justify-self-center md:justify-self-start text-center md:text-left"
-		i18n
-	>
-		Copyright &copy; 2021
-		<a href="https://github.com/LopsemPyier">LopsemPyier</a>
-	</p>
-	<div
-		class="grid grid-flow-row md:grid-flow-col gap-2 md:gap-10 justify-self-center md:justify-self-end"
-	>
-		<a routerLink="/terms-of-service" class="place-self-center" i18n
-		>Terms of Service
-		</a>
-		<a routerLink="/credits" class="place-self-center" i18n>Credits </a>
-		<a href="https://github.com/LopsemPyier/app" class="place-self-center">
-			<app-icon icon="github-fill" color="text"></app-icon>
-		</a>
-		<a href="https://twitter.com" class="place-self-center">
-			<app-icon icon="twitter-fill" color="text"></app-icon>
-		</a>
-	</div>
-</footer>
+<app-footer></app-footer>
