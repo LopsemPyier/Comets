@@ -1,0 +1,8 @@
+<div class="grid grid-cols-3 items-center border-b-2 px-3 mb-5">
+	<p class="text-black dark:text-white">Name & description</p>
+	<p class="text-black dark:text-white">Authors</p>
+	<p class="text-black dark:text-white">Last edit</p>
+</div>
+<div class="px-3 grid grid-flow-row gap-2">
+	<app-project-list-item *ngFor="let project of projects" [project]="project"></app-project-list-item>
+</div>

@@ -7,5 +7,5 @@ export type Edit = {
 	actionType?: Action,
 	createAt: Date,
 	author: User,
-	file: File
+	file?: File
 };

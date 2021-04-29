@@ -21,6 +21,7 @@ module.exports = {
 				login: '60% auto',
 				signup: 'auto 60%',
 				hero: '65% auto',
+				application: '20% auto'
 			},
 			gridTemplateRows: {
 				login: '40% auto',

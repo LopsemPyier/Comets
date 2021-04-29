@@ -1,8 +1,30 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './shared/ui/layout/layout.component';
+import { ApplicationLayoutComponent } from './shared/ui/application-layout/application-layout.component';
 
 const routes: Routes = [
+	{
+		path: 'app',
+		component: ApplicationLayoutComponent,
+		children: [
+			{
+				path: 'dashboard',
+				loadChildren: async () =>
+					(await import('./dashboard')).FeatureModule,
+			},
+			{
+				path: 'settings',
+				loadChildren: async () =>
+					(await import('./settings')).FeatureModule,
+			},
+			{
+				path: 'new',
+				loadChildren: async () =>
+					(await import('./new-project')).FeatureModule,
+			},
+		],
+	},
 	{
 		path: '',
 		component: LayoutComponent,

@@ -1,0 +1,41 @@
+<div class="flex flex-col justify-between h-full bg-gray-lightest dark:bg-gray-darkest p-5">
+	<div class="grid gap-10">
+		<div class="grid grid-flow-col grid-rows-2 gap-x-2">
+			<img
+				src="https://avatars.dicebear.com/api/identicon/{{ user.username }}.svg"
+				alt="Icon with colored squares"
+				class="w-12 h-12 max-w-none row-span-2 auto-cols-min rounded-sm bg-white self-center">
+			<h3 class="self-end">{{ user.username }}</h3>
+			<p class="self-start">{{ user.email }}</p>
+		</div>
+
+		<div class="grid gap-2">
+			<a routerLink="/app/new" class="navItem" routerLinkActive="current">
+				<app-icon icon="add-box-fill"></app-icon>
+				<span>New Project</span>
+			</a>
+
+			<a routerLink="/app/dashboard" class="navItem" routerLinkActive="current">
+				<app-icon icon="dashboard-fill"></app-icon>
+				<span>Dashboard</span>
+			</a>
+
+			<a routerLink="/app/settings" class="navItem" routerLinkActive="current">
+				<app-icon icon="settings-4-fill"></app-icon>
+				<span>Settings</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="grid gap-2">
+		<a routerLink="/app/notifications" class="navItem" routerLinkActive="current">
+			<app-icon icon="notification-4-fill"></app-icon>
+			<span>Notification</span>
+		</a>
+
+		<a (click)="logout()" class="navItem cursor-pointer" routerLinkActive="current">
+			<app-icon icon="logout-box-fill"></app-icon>
+			<span>Logout</span>
+		</a>
+	</div>
+</div>

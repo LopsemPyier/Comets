@@ -3,20 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LayoutModule } from './shared/ui/layout/layout.module';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import { ApplicationLayoutModule } from './shared/ui/application-layout/application-layout.module';
+import { LayoutModule } from './shared/ui/layout/layout.module';
 
 @NgModule({
 	declarations: [
-		AppComponent
+		AppComponent,
 	],
 	imports: [
 		BrowserModule,
 		LayoutModule,
+		ApplicationLayoutModule,
 		AppRoutingModule,
 		GraphQLModule,
-		HttpClientModule
+		HttpClientModule,
 	],
 	providers: [],
 	bootstrap: [AppComponent]

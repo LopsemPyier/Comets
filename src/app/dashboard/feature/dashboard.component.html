@@ -1,0 +1,11 @@
+<div class="p-5 grid grid-flow-row gap-5">
+	<h1>Projects</h1>
+	<div class="grid grid-flow-col items-center w-full gap-2 px-3">
+		<!--		App search-->
+		<app-input class="w-full" label="Search" type="text" iconLeft="search-2-line"
+				   [formControl]="searchForm"></app-input>
+		<app-icon class="max-w-max justify-self-end" icon="sort-asc"></app-icon>
+	</div>
+
+	<app-project-list [projects]="projects$"></app-project-list>
+</div>
