@@ -49,8 +49,8 @@ module.exports = {
 				},
 
 				secondary: {
-					light: '#f0d37c',
-					DEFAULT: '#EBC44E',
+					light: '#ffdd80',
+					DEFAULT: '#ffbb00', // '#EBC44E',
 					dark: '#e6b520',
 				},
 
@@ -67,14 +67,14 @@ module.exports = {
 				},
 
 				warning: {
-					light: '#fdefd3',
+					light: '#f6e8c2',
 					DEFAULT: '#e6c051',
 					dark: '#6d5b2c'
 				},
 
 				success: {
-					light: '#d9f4d8',
-					DEFAULT: '#58d068',
+					light: '#a1ebc3', // '#c4eeca',
+					DEFAULT: '#43d787',// '#58d068',
 					dark: '#316335'
 				}
 			},

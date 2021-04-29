@@ -57,12 +57,11 @@
 		@apply text-xs font-medium
 	}
 
-	form {
+	/*form {
 		@apply relative w-full;
 		@apply grid grid-flow-row gap-2;
 		@apply justify-items-center lg:justify-self-end justify-self-center self-center;
-	}
-
+	}*/
 	.navItem {
 		@apply grid grid-flow-col gap-1 auto-cols-max p-2 rounded-sm;
 		@apply bg-gray-lightest dark:bg-gray-darkest hover:bg-gray-lighter dark:hover:bg-gray-darker;

@@ -44,6 +44,7 @@ import {
 	RiTwitterFill,
 	RiUbuntuFill,
 	RiUserFill,
+	RiVipCrown2Fill,
 	RiWindowsFill,
 } from 'angular-remix-icon';
 
@@ -55,6 +56,7 @@ export const icons = {
 	RiLogoutBoxFill,
 	RiNotification4Fill,
 	RiSettings4Fill,
+	RiVipCrown2Fill,
 	RiSortAsc,
 	RiSearch2Line,
 	RiDeleteBinFill,

@@ -1,1 +1,78 @@
-<p>feature works!</p>
+<div class="p-5 grid grid-flow-row gap-5">
+	<h1>New Project</h1>
+	<form
+		[formGroup]="form"
+		(ngSubmit)="submit()"
+		class="grid grid-flow-row gap-2 w-6/12 px-10"
+	>
+
+		<div class="grid grid-flow-col items-center gap-5 auto-cols-max">
+			<img
+				src="https://avatars.dicebear.com/api/identicon/{{ form.value.name }}.svg"
+				alt="Icon with colored squares"
+				class="w-16 h-16 max-w-none rounded-sm bg-white self-center">
+
+			<app-input
+				formControlName="name"
+				type="text"
+				label="Name"
+				i18n-label
+			></app-input>
+		</div>
+
+		<app-input
+			formControlName="description"
+			type="text"
+			label="Description (optional)"
+			i18n-label
+		></app-input>
+
+		<div class="grid grid-flow-row divide-y-2">
+			<div class="flex flex-row justify-between">
+				<h4>Authors</h4>
+
+				<div class="relative">
+					<app-icon icon="add-box-fill" (click)="open = !open"></app-icon>
+					<div class="absolute top-7 right-0 w-max flex flex-row gap-2"
+						 [ngClass]="{'hidden': !open, 'flex': open}">
+						<app-input type="text" label="Author email" iconLeft="mail-fill"
+								   [formControl]="newAuthorForm"></app-input>
+						<app-button label="Add" type="primary" (buttonClick)="addAuthor()"
+									[disabled]="!newAuthorForm.valid"></app-button>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid grid-flow-row gap-2 pl-3 pt-2">
+				<app-author-item *ngFor="let author of authors" [author]="author"
+								 (delete)="deleteAuthor($event)"></app-author-item>
+			</div>
+		</div>
+
+		<app-button
+			label="Save"
+			type='primary'
+			[loading]="!!(LOADING_KEY | swIsLoading | async)"
+			[disabled]="!form.valid"
+			class="max-w-max justify-self-end"
+			i18n-label
+		></app-button>
+
+		<div class="h-10">
+
+			<app-message
+				*ngIf="error === 'request'"
+				message="Error during request, please retry."
+				type='error'
+				i18n-message
+			></app-message>
+
+			<app-message
+				*ngIf="error === 'internal'"
+				message="Internal error, please retry later."
+				type='error'
+				i18n-message
+			></app-message>
+		</div>
+	</form>
+</div>

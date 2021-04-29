@@ -1,0 +1,23 @@
+<div class="flex flex-row justify-between items-center">
+	<div class="flex flex-row items-center justify-start gap-2">
+		<span class="rounded-full w-1 h-1 bg-black dark:bg-white"></span>
+		<p>{{ author.user.email }}</p>
+	</div>
+	<div class="flex flex-row items-center justify-end gap-2">
+		<div class="text-sm flex flex-row items-center justify-center gap-1"
+			 [ngClass]="{'text-warning dark:text-warning': isPending,
+			 'text-primary-light dark:text-primary-light': isOwner,
+			 'text-success dark:text-success': isAccepted}">
+			<p *ngIf="isPending" class="text-warning dark:text-warning">Pending</p>
+			<app-icon *ngIf="isPending" icon="loader-5-fill" class="animate-spin" color="inherit"></app-icon>
+			<p *ngIf="isAccepted" class="text-success dark:text-success">Accepted</p>
+			<app-icon *ngIf="isAccepted" icon="checkbox-circle-fill" color="inherit"></app-icon>
+			<p *ngIf="isOwner" class="text-primary-light dark:text-primary-light">Owner</p>
+			<app-icon *ngIf="isOwner" icon="vip-crown-2-fill" color="inherit"></app-icon>
+		</div>
+
+		<app-icon icon="delete-bin-fill" *ngIf="!isOwner"
+				  class="text-gray-light dark:text-gray-dark hover:text-white dark:hover:text-white cursor-pointer"
+				  (click)="delete.emit(author.user.email)"></app-icon>
+	</div>
+</div>
