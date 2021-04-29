@@ -16,5 +16,7 @@ export type FileNode = {
 	children: FileNode[] | null,
 	open: boolean,
 	selected: boolean,
-	parent: string | null
+	parent: string | null,
+	edit: boolean,
+	folder: boolean
 };

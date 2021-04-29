@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, Output, EventEmitter } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 import { FileNode, FileType } from '../../../shared/types';
 
 @Component({
@@ -9,10 +9,13 @@ import { FileNode, FileType } from '../../../shared/types';
 })
 export class NodeComponent {
 	@Input() file!: FileNode;
-	@Output() fileSelect = new EventEmitter<FileNode>();
+	@Input() parent: FileNode | null = null;
+	@Output() fileSelect = new EventEmitter<{ file: FileNode, parent: FileNode | null }>();
 
-	get folder(): boolean {
-		return this.file.fileType === FileType.FOLDER;
+	@ViewChild('input') input!: ElementRef;
+
+	focus(): void {
+		this.input.nativeElement.focus();
 	}
 
 	get icon(): string {
@@ -33,6 +36,6 @@ export class NodeComponent {
 
 	clicked(): void {
 		this.file.open = !this.file.open;
-		this.fileSelect.emit(this.file);
+		this.fileSelect.emit({ file: this.file, parent: this.parent });
 	}
 }

@@ -51,7 +51,9 @@ export class FeatureComponent implements OnInit {
 			open: false,
 			selected: false,
 			children: FeatureComponent.getChildren(files, file.id),
-			parent: (file.parent) ? file.parent.id : null
+			parent: (file.parent) ? file.parent.id : null,
+			edit: false,
+			folder: file.fileType === FileType.FOLDER
 		};
 	}
 

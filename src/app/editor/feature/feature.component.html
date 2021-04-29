@@ -4,8 +4,8 @@
 	</p>
 
 	<ng-template #elseBlock>
-		<div>
-			<app-tree [files$]="files$" (addFile)="addFile($event)" (addFolder)="addFolder($event)"
+		<div *ngIf="(files$ | async) as files">
+			<app-tree [files]="files" (addFile)="addFile($event)" (addFolder)="addFolder($event)"
 					  (delete)="delete($event)"></app-tree>
 		</div>
 	</ng-template>

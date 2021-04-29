@@ -5,5 +5,5 @@
 </div>
 
 <div class="w-44">
-	<app-node *ngFor="let file of (files$ | async)" [file]="file" (fileSelect)="selectFile($event)"></app-node>
+	<app-node *ngFor="let file of files" [parent]="file.folder ? file : null" [file]="file" (fileSelect)="selectFile($event.file, $event.parent)"></app-node>
 </div>

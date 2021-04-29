@@ -1,6 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
 import { FileNode, FileType } from '../../../shared/types';
-import { Observable } from 'rxjs';
 
 @Component({
 	selector: 'app-tree',
@@ -9,39 +8,71 @@ import { Observable } from 'rxjs';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TreeComponent {
-	@Input() files$!: Observable<FileNode[]>;
+	@Input() files!: FileNode[];
 	@Output() addFile = new EventEmitter<string | null>();
 	@Output() addFolder = new EventEmitter<string | null>();
 	@Output() delete = new EventEmitter<string>();
 
 	selected: FileNode | null = null;
+	parentSelected: FileNode | null = null;
+	edit = false;
 
-	selectFile(file: FileNode): void {
+	selectFile(file: FileNode, parent: FileNode | null): void {
 		if (this.selected) {
 			this.selected.selected = false;
 			if (this.selected.id === file.id) {
 				this.selected = null;
+				this.parentSelected = null;
 				return;
 			}
 		}
 		this.selected = file;
+		this.parentSelected = parent;
 		this.selected.selected = true;
 	}
 
 	onAddFile(): void {
-		let parentId: string | null = null;
-		if (this.selected) {
-			parentId = (this.selected.fileType === FileType.FOLDER) ? this.selected.id : this.selected.parent;
+		const newFile = {
+			id: '',
+			fileType: FileType.TEX,
+			name: '',
+			extension: 'tex',
+			children: null,
+			open: false,
+			selected: false,
+			parent: this.parentSelected ? this.parentSelected.id : null,
+			edit: true,
+			folder: false,
+		};
+		if (this.parentSelected && this.parentSelected.children) {
+			this.parentSelected.children.push(newFile);
+			this.selectFile(newFile, this.parentSelected);
+		} else {
+			this.files.push(newFile);
+			this.selectFile(newFile, null);
 		}
-		this.addFile.emit(parentId);
 	}
 
 	onAddFolder(): void {
-		let parentId: string | null = null;
-		if (this.selected) {
-			parentId = (this.selected.fileType === FileType.FOLDER) ? this.selected.id : this.selected.parent;
+		const newFolder = {
+			id: '',
+			fileType: FileType.FOLDER,
+			name: '',
+			extension: null,
+			children: null,
+			open: true,
+			selected: false,
+			parent: this.parentSelected ? this.parentSelected.id : null,
+			edit: true,
+			folder: true,
+		};
+		if (this.parentSelected && this.parentSelected.children) {
+			this.parentSelected.children.push(newFolder);
+			this.selectFile(newFolder, this.parentSelected);
+		} else {
+			this.files.push(newFolder);
+			this.selectFile(newFolder, null);
 		}
-		this.addFolder.emit(parentId);
 	}
 
 	onDelete(): void {
