@@ -1,0 +1,7 @@
+fragment LastEdit on EditObject {
+	id
+	createAt
+	author {
+		...Author
+	}
+}

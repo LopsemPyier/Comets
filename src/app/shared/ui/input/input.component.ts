@@ -5,7 +5,7 @@ import { ControlValueAccessor, NgControl } from '@angular/forms';
 	selector: 'app-input',
 	templateUrl: './input.component.html',
 	styleUrls: ['./input.component.scss'],
-	changeDetection: ChangeDetectionStrategy.OnPush,
+	changeDetection: ChangeDetectionStrategy.Default,
 })
 export class InputComponent implements ControlValueAccessor {
 	@Input() label = '';

@@ -23,12 +23,16 @@ type FileObject {
 }
 
 type Mutation {
+	addAuthor(authorId: UUID!, projectId: UUID!): Boolean!
 	createFile(input: FileDto!): FileObject!
 	createProject(input: ProjectDto!): ProjectObject!
 	deleteFile(id: UUID!): Boolean!
+	deleteProject(id: UUID!): Boolean!
 	login(input: LoginDto!): String!
 	register(input: RegisterDto!): String!
+	removeAuthor(authorId: UUID!, projectId: UUID!): Boolean!
 	updateFile(id: UUID!, input: UpdateFileDto!): FileObject!
+	updateProject(input: UpdateProjectDto!): ProjectObject!
 }
 
 "A project"
@@ -50,12 +54,14 @@ type ProjectObject {
 }
 
 type Query {
+	dashboard: [ProjectObject!]!
 	file(id: UUID!): FileObject!
 	files: [FileObject!]!
 	me: UserObject!
 	project(id: UUID!): ProjectObject!
 	projects: [ProjectObject!]!
 	user(id: UUID!): UserObject!
+	userByEmail(email: String!): UserObject!
 	users: [UserObject!]!
 }
 
@@ -125,6 +131,16 @@ input UpdateFileDto {
 	"Name"
 	name: String!
 	parentId: UUID
+}
+
+"The DTO for project"
+input UpdateProjectDto {
+	"Description"
+	description: String!
+	"Id"
+	id: UUID!
+	"Name"
+	name: String!
 }
 
 

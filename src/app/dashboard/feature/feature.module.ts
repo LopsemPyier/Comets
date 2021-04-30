@@ -6,6 +6,8 @@ import { ProjectListModule } from '../ui/project-list/project-list.module';
 import { IconModule } from '../../shared/ui/icon/icon.module';
 import { InputModule } from '../../shared/ui/input/input.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoadingModule } from '../../shared/ui/loading/loading.module';
+import { IsLoadingModule } from '@service-work/is-loading';
 
 @NgModule({
 	declarations: [
@@ -22,6 +24,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 		IconModule,
 		InputModule,
 		ReactiveFormsModule,
+		LoadingModule,
+		IsLoadingModule,
 	],
 })
 export class FeatureModule {

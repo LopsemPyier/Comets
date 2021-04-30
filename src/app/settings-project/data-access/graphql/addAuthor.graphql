@@ -1,0 +1,3 @@
+mutation addAuthor($project_id: UUID!, $author_id: UUID!) {
+	addAuthor(projectId: $project_id, authorId: $author_id)
+}

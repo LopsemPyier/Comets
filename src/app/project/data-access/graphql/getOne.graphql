@@ -1,0 +1,16 @@
+query getOne($id: UUID!) {
+	project(id: $id) {
+		id
+		name
+		description
+		lastEdit {
+			id
+			createAt
+			author {
+				id
+				username
+				email
+			}
+		}
+	}
+}

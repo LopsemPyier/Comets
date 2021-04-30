@@ -12,6 +12,7 @@ export class TreeComponent {
 	@Output() addFile = new EventEmitter<string | null>();
 	@Output() addFolder = new EventEmitter<string | null>();
 	@Output() delete = new EventEmitter<string>();
+	@Output() rename = new EventEmitter<string>();
 
 	selected: FileNode | null = null;
 	parentSelected: FileNode | null = null;
@@ -78,6 +79,12 @@ export class TreeComponent {
 	onDelete(): void {
 		if (this.selected) {
 			this.delete.emit(this.selected.id);
+		}
+	}
+
+	onRename(): void {
+		if (this.selected) {
+			this.rename.emit(this.selected.id);
 		}
 	}
 }

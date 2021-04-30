@@ -7,5 +7,5 @@ export type Project = {
 	description?: string,
 	lastEdit: Edit
 	edits?: Edit[],
-	author?: User[]
+	authors?: User[]
 };

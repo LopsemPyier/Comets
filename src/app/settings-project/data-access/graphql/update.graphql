@@ -1,0 +1,25 @@
+mutation updateProject($id: UUID!, $name: String!, $description: String!) {
+	updateProject(input: {
+		id: $id,
+		name: $name,
+		description: $description
+	}) {
+		id
+		name
+		description
+		authors {
+			id
+			username
+			email
+		}
+		lastEdit {
+			id
+			createAt
+			author {
+				id
+				username
+				email
+			}
+		}
+	}
+}

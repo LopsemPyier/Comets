@@ -1,0 +1,21 @@
+<div class="flex flex-col h-full bg-gray-lightest dark:bg-gray-darkest p-5 pt-1">
+	<a routerLink="/app/dashboard"
+	   class="text-sm text-gray-light items-center dark:text-gray-dark bg-gray-lightest dark:bg-gray-darkest hover:bg-gray-lighter dark:hover:bg-gray-darker grid grid-flow-col gap-1 auto-cols-max p-2 rounded-sm">
+		<app-icon icon="arrow-left-line" size="sm"></app-icon>
+		<span>Back to dashboard</span>
+	</a>
+
+	<div class="grid grid-flow-col auto-cols-max grid-rows-2 gap-x-2">
+		<img
+			src="https://avatars.dicebear.com/api/identicon/{{ project.name }}.svg"
+			alt="Icon with colored squares"
+			class="w-10 h-10 max-w-none row-span-2 auto-cols-min rounded-sm bg-white self-center">
+		<a class="self-end" [routerLink]="['/editor', project.id]">{{ project.name }}</a>
+		<p class="self-start">{{ project.description }}</p>
+	</div>
+
+	<div>
+		<app-tree [files]="files" (addFile)="addFile.emit($event)" (addFolder)="addFolder.emit($event)"
+				  (delete)="delete.emit($event)"></app-tree>
+	</div>
+</div>

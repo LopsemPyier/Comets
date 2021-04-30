@@ -1,0 +1,26 @@
+mutation createProject($name: String!, $description: String!) {
+	createProject(input: {
+		name: $name,
+		description: $description
+	}) {
+		id
+		name
+		description
+		files {
+			id
+			name
+			extension
+			fileType
+			parent { id }
+		}
+		lastEdit {
+			id
+			createAt
+			author {
+				email
+				username
+				id
+			}
+		}
+	}
+}

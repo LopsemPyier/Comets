@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './shared/ui/layout/layout.component';
 import { ApplicationLayoutComponent } from './shared/ui/application-layout/application-layout.component';
+import { EditorLayoutComponent } from './shared/ui/editor-layout/editor-layout.component';
 
 const routes: Routes = [
 	{
@@ -22,6 +23,32 @@ const routes: Routes = [
 				path: 'new',
 				loadChildren: async () =>
 					(await import('./new-project')).FeatureModule,
+			},
+			{
+				path: 'project/:id/settings',
+				loadChildren: async () =>
+					(await import('./settings-project')).FeatureModule,
+			},
+			{
+				path: 'project',
+				redirectTo: 'dashboard',
+				pathMatch: 'full',
+			},
+			{
+				path: '',
+				redirectTo: 'dashboard',
+				pathMatch: 'full',
+			},
+		],
+	},
+	{
+		path: 'editor',
+		component: EditorLayoutComponent,
+		children: [
+			{
+				path: ':id',
+				loadChildren: async () =>
+					(await import('./editor')).FeatureModule,
 			},
 		],
 	},

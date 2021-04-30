@@ -1,0 +1,5 @@
+fragment Author on UserObject {
+	id
+	username
+	email
+}

@@ -1,0 +1,3 @@
+mutation removeAuthor($project_id: UUID!, $author_id: UUID!) {
+	removeAuthor(projectId: $project_id, authorId: $author_id)
+}

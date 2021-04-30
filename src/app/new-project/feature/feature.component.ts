@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, Validators } from '@angular/forms';
-import { ProjectService } from '../../project/data-access/project.service';
+import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { IsLoadingService } from '@service-work/is-loading';
-import { Author, Status } from '../../shared/types/author.type';
+import { CreateService } from '../data-access/create.service';
 
 @Component({
 	selector: 'app-feature',
@@ -19,34 +18,10 @@ export class FeatureComponent implements OnInit {
 		name: ['', Validators.required],
 		description: [''],
 	});
-	newAuthorForm = new FormControl('', [Validators.email, Validators.required]);
-	open = false;
-	authors: Author[] = [{
-		status: Status.OWNER,
-		user: {
-			id: '1',
-			username: 'LopsemPyier',
-			email: 'lopsempyier@gmail.com',
-		},
-	}, {
-		status: Status.ACCEPTED,
-		user: {
-			id: '1',
-			username: 'Juliette Anglade',
-			email: 'juliette.anglade2003@gmail.com',
-		},
-	}, {
-		status: Status.PENDING,
-		user: {
-			id: '1',
-			username: 'Philémon Varnet',
-			email: 'phil.varnet@gmail.com',
-		},
-	}];
 
 	constructor(
 		private fb: FormBuilder,
-		private projectService: ProjectService,
+		private createService: CreateService,
 		private router: Router,
 		private isLoadingService: IsLoadingService,
 	) {
@@ -55,33 +30,20 @@ export class FeatureComponent implements OnInit {
 	ngOnInit(): void {
 	}
 
-	addAuthor(): void {
-		this.open = false;
-		this.authors.push({
-			status: Status.PENDING, user: {
-				id: 'new user id',
-				email: this.newAuthorForm.value,
-				username: 'new user username',
-			},
-		});
-	}
-
-	deleteAuthor(id: string): void {
-		this.authors = this.authors.filter(author => author.user.email !== id);
-	}
-
 	submit(): void {
 		if (!this.form.valid) {
 			return;
 		}
 		this.error = 'none';
 		const { name, description } = this.form.value;
-		this.isLoadingService.add(this.projectService.create(name, description)
+		this.isLoadingService.add(this.createService.create(name, description)
 				.subscribe(
 					(value) => {
-						this.error = 'none';
 						if (value) {
+							this.error = 'none';
 							this.goToEditor(value.id);
+						} else {
+							this.error = 'request';
 						}
 					},
 					(error) => {
@@ -98,7 +60,7 @@ export class FeatureComponent implements OnInit {
 	}
 
 	goToEditor(id: string): void {
-		this.router.navigate(['/project', id]);
+		this.router.navigate(['/editor', id]);
 	}
 
 	handleError(code: string): void {

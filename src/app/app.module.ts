@@ -7,6 +7,7 @@ import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ApplicationLayoutModule } from './shared/ui/application-layout/application-layout.module';
 import { LayoutModule } from './shared/ui/layout/layout.module';
+import { EditorLayoutModule } from './shared/ui/editor-layout/editor-layout.module';
 
 @NgModule({
 	declarations: [
@@ -16,6 +17,7 @@ import { LayoutModule } from './shared/ui/layout/layout.module';
 		BrowserModule,
 		LayoutModule,
 		ApplicationLayoutModule,
+		EditorLayoutModule,
 		AppRoutingModule,
 		GraphQLModule,
 		HttpClientModule,

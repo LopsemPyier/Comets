@@ -1,0 +1,16 @@
+#import './author.fragment.graphql'
+#import './last-edit.fragment.graphql'
+
+query dashboard {
+	dashboard {
+		id
+		name
+		description
+		lastEdit {
+			...LastEdit
+		}
+		authors {
+			...Author
+		}
+	}
+}

@@ -1,5 +1,5 @@
 <div class="p-5 grid grid-flow-row gap-5">
-	<h1>New Project</h1>
+	<h1>Settings</h1>
 	<form
 		[formGroup]="form"
 		(ngSubmit)="submit()"
@@ -27,6 +27,28 @@
 			label="Description (optional)"
 			i18n-label
 		></app-input>
+
+		<div class="grid grid-flow-row divide-y-2">
+			<div class="flex flex-row justify-between">
+				<h4>Authors</h4>
+
+				<div class="relative">
+					<app-icon icon="add-box-fill" (click)="open = !open"></app-icon>
+					<div class="absolute top-7 right-0 w-max flex flex-row gap-2"
+						 [ngClass]="{'hidden': !open, 'flex': open}">
+						<app-input type="email" label="Author email" iconLeft="mail-fill"
+								   [formControl]="newAuthorForm"></app-input>
+						<app-button label="Add" type="primary" (buttonClick)="getUserAndAddIt()"
+									[disabled]="!newAuthorForm.valid"></app-button>
+					</div>
+				</div>
+			</div>
+
+			<div class="grid grid-flow-row gap-2 pl-3 pt-2">
+				<app-author-item *ngFor="let author of authors" [author]="author"
+								 (delete)="deleteAuthor($event)"></app-author-item>
+			</div>
+		</div>
 
 		<app-button
 			label="Save"

@@ -4,6 +4,7 @@ import { Project } from '../../shared/types';
 import { map, shareReplay } from 'rxjs/operators';
 import { Apollo } from 'apollo-angular';
 import dashboardQuery from './graphql/dashboard.graphql';
+import getOneQuery from './graphql/getOne.graphql';
 import createProjectMutation from './graphql/createProject.graphql';
 
 @Injectable({
@@ -21,6 +22,17 @@ export class ProjectService {
 			query: dashboardQuery,
 		}).pipe(shareReplay(), map(value => {
 			return value.data.projects;
+		}));
+	}
+
+	getById(id: string): Observable<Project> {
+		return this.apollo.query<{ project: Project }>({
+			query: getOneQuery,
+			variables: {
+				id,
+			},
+		}).pipe(shareReplay(), map(value => {
+			return value.data.project;
 		}));
 	}
 

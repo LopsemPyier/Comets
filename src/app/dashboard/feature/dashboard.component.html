@@ -4,8 +4,18 @@
 		<!--		App search-->
 		<app-input class="w-full" label="Search" type="text" iconLeft="search-2-line"
 				   [formControl]="searchForm"></app-input>
-		<app-icon class="max-w-max justify-self-end" icon="sort-asc"></app-icon>
+		<app-icon class="max-w-max justify-self-end" [icon]="reverse ? 'sort-asc' : 'sort-desc'"
+				  (click)="switch()"></app-icon>
 	</div>
 
-	<app-project-list [projects]="projects$"></app-project-list>
+	<div>
+		<app-loading *ngIf="(LOADING_KEY | swIsLoading | async); else elseBlock"></app-loading>
+
+		<ng-template #elseBlock>
+			<div *ngIf="(projects$ | async) as projects">
+				<app-project-list [projects]="projects"></app-project-list>
+			</div>
+		</ng-template>
+	</div>
+
 </div>
