@@ -35,7 +35,7 @@
 					<app-icon icon="add-box-fill" (click)="open = !open"></app-icon>
 					<div class="absolute top-7 right-0 w-max flex flex-row gap-2"
 						 [ngClass]="{'hidden': !open, 'flex': open}">
-						<app-input type="text" label="Author email" iconLeft="mail-fill"
+						<app-input type="email" label="Author email" iconLeft="mail-fill"
 								   [formControl]="newAuthorForm"></app-input>
 						<app-button label="Add" type="primary" (buttonClick)="addAuthor()"
 									[disabled]="!newAuthorForm.valid"></app-button>

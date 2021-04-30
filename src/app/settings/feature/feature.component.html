@@ -1,0 +1,123 @@
+<div class="p-5 grid grid-flow-row gap-5">
+	<h1>Settings</h1>
+	<form
+		[formGroup]="form"
+		(ngSubmit)="submit()"
+		class="grid grid-flow-row gap-2 w-6/12 px-10"
+	>
+		<h3>Edit personal information</h3>
+
+		<app-input
+			formControlName="username"
+			type="text"
+			label="Username"
+			iconLeft="user-fill"
+			i18n-label
+		></app-input>
+
+		<app-input
+			formControlName="email"
+			type="email"
+			iconLeft="mail-fill"
+			label="Email"
+			i18n-label
+		></app-input>
+
+		<app-input
+			formControlName="lang"
+			type="text"
+			iconLeft="translate-2"
+			label="Language"
+			i18n-label
+		></app-input>
+
+		<app-checkbox
+			formControlName="theme"
+			iconLeft="mail-fill"
+			label="Theme"
+			i18n-label
+		></app-checkbox>
+
+		<app-button
+			label="Save"
+			type='primary'
+			[loading]="!!(LOADING_KEY | swIsLoading | async)"
+			[disabled]="!form.valid"
+			class="max-w-max justify-self-end"
+			i18n-label
+		></app-button>
+
+		<div class="h-10">
+
+			<app-message
+				*ngIf="error === 'request'"
+				message="Error during request, please retry."
+				type='error'
+				i18n-message
+			></app-message>
+
+			<app-message
+				*ngIf="error === 'internal'"
+				message="Internal error, please retry later."
+				type='error'
+				i18n-message
+			></app-message>
+		</div>
+	</form>
+	<form
+		[formGroup]="passwordForm"
+		(ngSubmit)="submitPassword()"
+		class="grid grid-flow-row gap-2 w-6/12 px-10"
+	>
+		<h3>Modify password</h3>
+
+		<app-input
+			formControlName="password"
+			type="password"
+			label="Password"
+			iconLeft="key-fill"
+			i18n-label
+		></app-input>
+
+		<app-input
+			formControlName="verify"
+			type="password"
+			iconLeft="key-fill"
+			label="Confirm password"
+			i18n-label
+		></app-input>
+
+		<app-button
+			label="Save"
+			type='primary'
+			[loading]="!!(LOADING_KEY | swIsLoading | async)"
+			[disabled]="!passwordForm.valid"
+			class="max-w-max justify-self-end"
+			i18n-label
+		></app-button>
+
+		<div class="h-10">
+
+			<app-message
+				*ngIf="passwordError === 'diff'"
+				message="Password must match"
+				type='error'
+				i18n-message
+			></app-message>
+
+			<app-message
+				*ngIf="passwordError === 'request'"
+				message="Error during request, please retry."
+				type='error'
+				i18n-message
+			></app-message>
+
+			<app-message
+				*ngIf="passwordError === 'internal'"
+				message="Internal error, please retry later."
+				type='error'
+				i18n-message
+			></app-message>
+		</div>
+	</form>
+</div>
