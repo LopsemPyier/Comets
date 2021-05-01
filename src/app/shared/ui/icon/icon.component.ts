@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { Icon, toIconName } from './icons.type';
 
 @Component({
 	selector: 'app-icon',
@@ -7,9 +8,10 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IconComponent {
-	@Input() icon!: string;
-	@Input() size: 'xl' | 'lg' | 'md' | 'sm' | 'xs' = 'md';
-	@Input() color:
+	@Input() icon!: Icon;
+	@Input() size: 'xl' | 'lg' | 'md' | 'sm' | 'xs' | 'fw' = 'xl';
+
+	/*@Input() color:
 		| 'error'
 		| 'warning'
 		| 'info'
@@ -19,28 +21,26 @@ export class IconComponent {
 		| 'text'
 		| 'text-light'
 		| 'inverse'
-		| 'inherit' = 'inherit';
+		| 'inherit' = 'inherit';*/
 
-	public get style(): { width: string; height: string } {
-		let sizeMode = '';
-		switch (this.size) {
-			case 'xl':
-				sizeMode = '3rem';
-				break;
-			case 'lg':
-				sizeMode = '2rem';
-				break;
-			case 'md':
-				sizeMode = '1.5rem';
-				break;
-			case 'sm':
-				sizeMode = '1rem';
-				break;
-			case 'xs':
-				sizeMode = '.75rem';
-				break;
+	get iconName(): string {
+		return toIconName(this.icon);
+	}
+
+	get prefix(): string {
+		if (this.icon === 'loading') {
+			return 'bx-';
+		} else {
+			return 'ph-';
 		}
-		return { width: sizeMode, height: sizeMode };
+	}
+
+	get classes(): string[] {
+		return [this.iconName, this.sizeClass];
+	}
+
+	get sizeClass(): string {
+		return this.prefix + this.size;
 	}
 
 }

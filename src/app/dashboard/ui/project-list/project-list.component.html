@@ -1,8 +1,65 @@
-<div class="grid grid-cols-3 items-center border-b-2 px-3 mb-5">
-	<p class="text-black dark:text-white">Name & description</p>
-	<p class="text-black dark:text-white">Authors</p>
-	<p class="text-black dark:text-white">Last edit</p>
-</div>
-<div class="px-3 grid grid-flow-row gap-2">
-	<app-project-list-item *ngFor="let project of projects" [project]="project"></app-project-list-item>
+<div class="rounded-sm overflow-hidden">
+	<table class="w-full rounded-sm divide-y-2 divide-gray-lighter divide dark:divide-gray-darker">
+		<thead class="bg-gray-lightest dark:bg-gray-darkest rounded-t-sm">
+		<tr class="rounded-t-sm">
+			<th scope="col"
+				class="px-6 py-3 text-left text-xs font-medium text-gray dark:text-gray-dark uppercase tracking-wider rounded-tl-sm">
+				Name
+			</th>
+			<th scope="col"
+				class="px-6 py-3 text-left text-xs font-medium text-gray dark:text-gray-dark uppercase tracking-wider">
+				Authors
+			</th>
+			<th scope="col"
+				class="px-6 py-3 text-left text-xs font-medium text-gray dark:text-gray-dark uppercase tracking-wider">
+				Last Edit
+			</th>
+			<th scope="col" class="relative px-6 py-3 rounded-tr-sm">
+				<span class="sr-only">Settings</span>
+			</th>
+		</tr>
+		</thead>
+		<tbody class="">
+		<!--			<app-project-list-item *ngFor="let project of projects" [project]="project"></app-project-list-item>-->
+		<tr *ngFor="let project of projects">
+			<td class="px-6 py-2 whitespace-nowrap">
+				<div class="flex items-center">
+					<div class="flex-shrink-0 h-10 w-10">
+						<img
+							src="https://avatars.dicebear.com/api/identicon/{{ project.name }}.svg"
+							alt=""
+							class="h-10 w-10 rounded-sm bg-white">
+					</div>
+					<div class="ml-2">
+						<a [routerLink]="['/editor', project.id]" class="font-medium text-black dark:text-white">
+							{{ project.name }}
+						</a>
+						<p class="text-gray-light dark:text-gray-dark">
+							{{ project.description }}
+						</p>
+					</div>
+				</div>
+			</td>
+			<td class="px-6 py-2 whitespace-nowrap">
+				<div class="flex flex-row-reverse justify-end">
+					<a *ngFor="let author of project.authors" [routerLink]="['/app/user', author.id]"
+					   class="rounded-full bg-white w-8 h-8 max-x-none mr-[-.75em] border-white border-2"><img
+						src="https://avatars.dicebear.com/api/identicon/{{ author.username }}.svg"
+						alt="Icon with colored squares" class="rounded-full" title="{{ author.username }}"></a>
+				</div>
+			</td>
+			<td class="px-6 py-2 whitespace-nowrap">
+				<p>Last edit {{ project.lastEdit.createAt | date }} by <a
+					[routerLink]="['/app/user', project.lastEdit.author.id]">{{ project.lastEdit.author.username }}</a>
+				</p>
+			</td>
+			<td class="px-6 py-2 whitespace-nowrap text-right text-sm font-medium">
+				<a [routerLink]="['/app/project', project.id, 'settings']"
+				   class="group transform transition-transform hover:translate-x-2 text-primary dark:text-primary-light flex flex-row gap-1">
+					<app-icon icon="settings" class="transform group-hover:rotate-12 transition-transform"></app-icon>
+					<span>Settings</span> </a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
 </div>

@@ -1,4 +1,53 @@
-<div class="relative flex flex-row items-center w-full">
+<div class="formControl">
+	<label [for]="ngControl.name" class="text-sm text-gray-light dark:text-gray-dark">{{ label }}</label>
+	<div class="relative flex flex-row items-center">
+		<div class="absolute z-10 left-0 pl-2 text-gray-light dark:text-gray-dark" *ngIf="iconLeft">
+			<app-icon [icon]="iconLeft"></app-icon>
+		</div>
+		<input
+			#input
+			[type]="type"
+			[value]="value"
+			(input)="onChange(input.value)"
+			(blur)="onTouched()"
+			[disabled]="disabled"
+			[name]="ngControl.name"
+			[id]="ngControl.name"
+			[placeholder]="placeholder"
+			[class.pl-10]="iconLeft"
+			[class.pr-10]="iconRight"
+			class="h-10 px-2 rounded-sm w-full
+			focus:ring-gray-lighter dark:focus:ring-gray-darker focus:ring-2 outline-none
+			bg-gray-lightest text-black dark:text-white dark:bg-gray-darkest"
+		/>
+		<div
+			class="absolute z-10 right-0 pr-2 text-gray-light dark:text-gray-dark"
+			*ngIf="iconRight"
+		>
+			<app-icon [icon]="iconRight"></app-icon>
+		</div>
+	</div>
+</div>
+
+<div
+	class="h-1 mt-1 bg-light w-full rounded-sm"
+	*ngIf="type === 'password' && strength"
+>
+	<div
+		class="h-full rounded-sm transition-all duration-500"
+		[ngClass]="{
+        'w-0 bg-gray-light dark:bg-gray-dark': passwordStrength === 0,
+        'w-3/12 bg-error': passwordStrength === 1,
+        'w-6/12 bg-warning': passwordStrength === 2,
+        'w-9/12': passwordStrength === 3,
+        'w-full': passwordStrength === 4,
+        'bg-success': passwordStrength >= 3
+      }"
+	></div>
+</div>
+
+<!--
+<div class="relative flex flex-row items-center w-full test">
 	<div
 		class="absolute z-10 left-0 pl-2 text-light"
 		*ngIf="!!iconLeft"
@@ -34,12 +83,13 @@
 	<div
 		class="h-full rounded-sm transition-all duration-500"
 		[ngClass]="{
-        'w-0 bg-gray-light dark:bg-gray-dark': passwordStrengh === 0,
-        'w-3/12 bg-error': passwordStrengh === 1,
-        'w-6/12 bg-warning': passwordStrengh === 2,
-        'w-9/12': passwordStrengh === 3,
-        'w-full': passwordStrengh === 4,
-        'bg-success': passwordStrengh >= 3
+        'w-0 bg-gray-light dark:bg-gray-dark': passwordStrength === 0,
+        'w-3/12 bg-error': passwordStrength === 1,
+        'w-6/12 bg-warning': passwordStrength === 2,
+        'w-9/12': passwordStrength === 3,
+        'w-full': passwordStrength === 4,
+        'bg-success': passwordStrength >= 3
       }"
 	></div>
 </div>
+-->

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProjectListComponent } from './project-list.component';
 import { IconModule } from '../../../shared/ui/icon/icon.module';
 import { ProjectListItemModule } from '../project-list-item/project-list-item.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
 	declarations: [
@@ -12,6 +13,7 @@ import { ProjectListItemModule } from '../project-list-item/project-list-item.mo
 		CommonModule,
 		IconModule,
 		ProjectListItemModule,
+		RouterModule,
 	],
 	exports: [
 		ProjectListComponent,

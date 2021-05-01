@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ControlValueAccessor, NgControl } from '@angular/forms';
+import { Icon } from '../icon/icons.type';
 
 @Component({
 	selector: 'app-input',
@@ -9,10 +10,11 @@ import { ControlValueAccessor, NgControl } from '@angular/forms';
 })
 export class InputComponent implements ControlValueAccessor {
 	@Input() label = '';
-	@Input() iconLeft: string | null = null;
-	@Input() iconRight: string | null = null;
+	@Input() placeholder = '';
+	@Input() iconLeft: Icon | null = null;
+	@Input() iconRight: Icon | null = null;
 	@Input() type: 'text' | 'email' | 'password' | 'phone' = 'text';
-	@Input() strengh = false;
+	@Input() strength = false;
 	value = '';
 	onChange!: (value: string) => void;
 	onTouched!: () => void;
@@ -38,7 +40,7 @@ export class InputComponent implements ControlValueAccessor {
 		this.disabled = disabled;
 	}
 
-	public get passwordStrengh(): number {
+	public get passwordStrength(): number {
 		let mode = 0;
 		let reg = new RegExp('[0-9]+');
 

@@ -36,7 +36,7 @@
 
 	p {
 		@apply font-sans font-normal;
-		@apply text-gray-light dark:text-gray-dark;
+		@apply text-gray dark:text-gray-dark;
 	}
 
 	p.small {
@@ -50,7 +50,7 @@
 	a {
 		@apply font-sans font-normal;
 		@apply text-black;
-		@apply text-white;
+		@apply dark:text-white;
 	}
 
 	.small a {
@@ -65,10 +65,11 @@
 	.navItem {
 		@apply grid grid-flow-col gap-1 auto-cols-max p-2 rounded-sm;
 		@apply bg-gray-lightest dark:bg-gray-darkest hover:bg-gray-lighter dark:hover:bg-gray-darker;
+		@apply transition-colors duration-200;
 	}
 
 	.navItem.current {
 		@apply bg-primary-light hover:bg-primary-light;
+		@apply text-white dark:text-white;
 	}
-
 }

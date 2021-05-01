@@ -61,7 +61,6 @@ export class SettingsProjectService {
 			variables: {
 				email,
 			},
-			errorPolicy: 'all',
 		})
 			.pipe(
 				shareReplay(),

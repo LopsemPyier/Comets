@@ -11,14 +11,14 @@
 			formControlName="username"
 			type="text"
 			label="Username"
-			iconLeft="user-fill"
+			iconLeft="user"
 			i18n-label
 		></app-input>
 
 		<app-input
 			formControlName="email"
 			type="email"
-			iconLeft="mail-fill"
+			iconLeft="email"
 			label="Email"
 			i18n-label
 		></app-input>
@@ -26,14 +26,14 @@
 		<app-input
 			formControlName="lang"
 			type="text"
-			iconLeft="translate-2"
+			iconLeft="language"
 			label="Language"
 			i18n-label
 		></app-input>
 
 		<app-checkbox
 			formControlName="theme"
-			iconLeft="mail-fill"
+			iconLeft="email"
 			label="Theme"
 			i18n-label
 		></app-checkbox>
@@ -44,6 +44,7 @@
 			[loading]="!!(LOADING_KEY | swIsLoading | async)"
 			[disabled]="!form.valid"
 			class="max-w-max justify-self-end"
+			icon="save"
 			i18n-label
 		></app-button>
 
@@ -75,14 +76,14 @@
 			formControlName="password"
 			type="password"
 			label="Password"
-			iconLeft="key-fill"
+			iconLeft="password"
 			i18n-label
 		></app-input>
 
 		<app-input
 			formControlName="verify"
 			type="password"
-			iconLeft="key-fill"
+			iconLeft="password"
 			label="Confirm password"
 			i18n-label
 		></app-input>
@@ -93,6 +94,7 @@
 			[loading]="!!(LOADING_KEY | swIsLoading | async)"
 			[disabled]="!passwordForm.valid"
 			class="max-w-max justify-self-end"
+			icon="save"
 			i18n-label
 		></app-button>
 

@@ -1,23 +1,27 @@
 <button
 	(click)="buttonClick.emit($event)"
 	[disabled]="disabled"
-	class="px-10 h-10 w-full rounded-sm flex flex-row items-center justify-center shadow"
+	class="px-10 h-10 w-full rounded-sm shadow focus:ring-2"
 	[ngClass]="{
     'cursor-not-allowed': disabled,
     'cursor-wait': loading,
     'bg-gray-lightest dark:bg-gray-darker text-gray-light dark:text-gray-dark': (loading || disabled) && type === 'default',
     'bg-primary-light text-gray-light': (loading || disabled) && type === 'primary',
     'bg-secondary-light text-gray-light': (loading || disabled) && type === 'secondary',
-    'bg-gray-lighter dark:bg-gray-darkest text-black dark:text-white': !(loading || disabled) && type === 'default',
-    'bg-primary text-white': !(loading || disabled) && type === 'primary',
-    'bg-secondary text-white': !(loading || disabled) && type === 'secondary'
+    'bg-gray-lighter dark:bg-gray-darkest text-black dark:text-white focus:ring-gray dark:focus:ring-gray-dark': !(loading || disabled) && type === 'default',
+    'bg-primary text-white focus:ring-primary-light': !(loading || disabled) && type === 'primary',
+    'bg-secondary text-white focus:ring-secondary-light ': !(loading || disabled) && type === 'secondary'
   }"
 >
-	<span class="mr-2">{{ label }}</span>
+	<span class="flex flex-row gap-1 items-center justify-center" *ngIf="!loading">
+		<span *ngIf="icon">
+			<app-icon [icon]="icon"></app-icon>
+		</span>
+		<span class="mr-2">{{ label }}</span>
+	</span>
 	<app-icon
-		class="animate-spin"
+		icon="loading"
 		*ngIf="loading"
-		icon="loader-5-fill"
-		color="inherit"
+		size="sm"
 	></app-icon>
 </button>

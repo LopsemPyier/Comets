@@ -2,10 +2,12 @@
 	<h1>Projects</h1>
 	<div class="grid grid-flow-col items-center w-full gap-2 px-3">
 		<!--		App search-->
-		<app-input class="w-full" label="Search" type="text" iconLeft="search-2-line"
+		<app-input class="w-full" placeholder="Search" type="text" iconLeft="search"
 				   [formControl]="searchForm"></app-input>
-		<app-icon class="max-w-max justify-self-end" [icon]="reverse ? 'sort-asc' : 'sort-desc'"
-				  (click)="switch()"></app-icon>
+		<div class="flex flex-row gap-2 items-center max-w-max justify-self-end cursor-pointer" (click)="switch()">
+			<p>Sort</p>
+			<app-icon [icon]="reverse ? 'sort-desc' : 'sort-asc'"></app-icon>
+		</div>
 	</div>
 
 	<div>

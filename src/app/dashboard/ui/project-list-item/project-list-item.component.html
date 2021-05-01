@@ -1,3 +1,4 @@
+<!--
 <div class="grid grid-cols-4 items-center divide-x-2">
 	<div class="grid grid-flow-col auto-cols-max grid-rows-2 gap-x-2">
 		<img
@@ -23,3 +24,40 @@
 		</a>
 	</div>
 </div>
+-->
+
+<tr>
+	<td class="px-6 py-4 whitespace-nowrap">
+		<div class="flex items-center">
+			<div class="flex-shrink-0 h-10 w-10">
+				<img
+					src="https://avatars.dicebear.com/api/identicon/{{ project.name }}.svg"
+					alt=""
+					class="h-10 w-10 rounded-sm bg-white">
+			</div>
+			<div class="ml-2">
+				<a class="font-medium text-black dark:text-white">
+					{{ project.name }}
+				</a>
+				<p class="text-gray-light dark:text-gray-dark">
+					{{ project.description }}
+				</p>
+			</div>
+		</div>
+	</td>
+	<td class="px-6 py-4 whitespace-nowrap flex flex-row-reverse justify-end pl-2">
+		<a *ngFor="let author of project.authors" [routerLink]="['/app/user', author.id]"
+		   class="rounded-full bg-white w-8 h-8 max-x-none mr-[-.75em] border-white border-2"><img
+			src="https://avatars.dicebear.com/api/identicon/{{ author.username }}.svg"
+			alt="Icon with colored squares" class="rounded-full" title="{{ author.username }}"></a>
+	</td>
+	<td class="px-6 py-4 whitespace-nowrap">
+		<p>Last edit {{ project.lastEdit.createAt | date }} by <a
+			[routerLink]="['/app/user', project.lastEdit.author.id]">{{ project.lastEdit.author.username }}</a></p>
+	</td>
+	<td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+		<a [routerLink]="['/app/project', project.id, 'settings']" class="text-primary flex flex-row gap-1">
+			<app-icon icon="settings"></app-icon>
+			<span>Settings</span> </a>
+	</td>
+</tr>

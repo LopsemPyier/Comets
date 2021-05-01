@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { Icon } from '../icon/icons.type';
 
 @Component({
 	selector: 'app-button',
@@ -8,6 +9,7 @@ import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from 
 })
 export class ButtonComponent {
 	@Input() label = '';
+	@Input() icon!: Icon;
 	@Input() type: 'default' | 'primary' | 'secondary' = 'default';
 	@Input() disabled = false;
 	@Input() loading = false;

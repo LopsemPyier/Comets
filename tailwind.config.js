@@ -55,27 +55,27 @@ module.exports = {
 				},
 
 				error: {
-					light: '#ffd3d4',
-					DEFAULT: '#e6405d',
-					dark: '#6e2730'
+					light: '#fdf2f2',
+					DEFAULT: '#f98080',
+					dark: '#cc3231'
 				},
 
 				info: {
-					light: '#daf0fc',
-					DEFAULT: '#46c2f2',
-					dark: '#2d5c71'
+					light: '#ebf5ff',
+					DEFAULT: '#76a9fa',
+					dark: '#4879e2'
 				},
 
 				warning: {
-					light: '#f6e8c2',
-					DEFAULT: '#e6c051',
-					dark: '#6d5b2c'
+					light: '#fdfdea',
+					DEFAULT: '#e3a008',
+					dark: '#9c622d'
 				},
 
 				success: {
-					light: '#a1ebc3', // '#c4eeca',
-					DEFAULT: '#43d787',// '#58d068',
-					dark: '#316335'
+					light: '#f2faf7', // '#c4eeca',
+					DEFAULT: '#32c48d',// '#58d068',
+					dark: '#237c62'
 				}
 			},
 		},

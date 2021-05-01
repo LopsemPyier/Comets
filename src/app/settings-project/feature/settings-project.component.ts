@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, Validators } from '@angular/forms';
-import { Author, Status } from '../../shared/types/author.type';
+import { FormBuilder, Validators } from '@angular/forms';
+import { Author } from '../../shared/types/author.type';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IsLoadingService } from '@service-work/is-loading';
 import { SettingsProjectService } from '../data-access/settings-project.service';
@@ -13,7 +13,9 @@ import { User } from '../../shared/types';
 })
 export class SettingsProjectComponent implements OnInit {
 
-	readonly LOADING_KEY = 'new_project';
+	readonly LOADING_KEY = 'project_settings';
+	readonly AUTHOR_LOADING_KEY = 'new_author';
+	readonly DELETE_AUTHOR_LOADING_KEY = 'delete_author';
 
 	id!: string;
 
@@ -22,8 +24,12 @@ export class SettingsProjectComponent implements OnInit {
 		name: ['', Validators.required],
 		description: [''],
 	});
-	newAuthorForm = new FormControl('', [Validators.email, Validators.required]);
-	open = false;
+	success = false;
+
+	authorError: 'email' | 'request' | 'internal' | 'none' = 'none';
+	newAuthorForm = this.fb.group({
+		email: ['', [Validators.email, Validators.required]],
+	});
 	authors: Author[] = [];
 
 	constructor(
@@ -40,12 +46,12 @@ export class SettingsProjectComponent implements OnInit {
 		this.isLoadingService.add(
 			this.settingsProjectService.getProject(this.id)
 				.subscribe(value => {
-					this.form.setValue({
+					this.form.reset({
 						name: value.name,
 						description: value.description,
 					});
 					this.authors = value.authors ? value.authors.map(user => ({
-						status: Status.ACCEPTED,
+						pending: false,
 						user,
 					})) : [];
 				}),
@@ -56,24 +62,36 @@ export class SettingsProjectComponent implements OnInit {
 		if (!this.newAuthorForm.valid) {
 			return;
 		}
-		const email = this.newAuthorForm.value;
+		this.authorError = 'none';
+		const { email } = this.newAuthorForm.value;
 		this.isLoadingService.add(
 			this.settingsProjectService.getUserByEmail(email)
 				.subscribe(value => {
 					this.addAuthor(value);
-				}),
+					this.newAuthorForm.setValue({ email: '' });
+					this.newAuthorForm.reset();
+				}, error => {
+					if (error.graphQLErrors) {
+						this.handleEmailError(error.graphQLErrors[0].extensions.code);
+					} else if (error.networkError) {
+						this.authorError = 'internal';
+					}
+				}), {
+				key: this.AUTHOR_LOADING_KEY,
+			},
 		);
 	}
 
 	addAuthor(user: User): void {
-		this.open = false;
 		this.isLoadingService.add(
 			this.settingsProjectService.addAuthor(this.id, user.id)
 				.subscribe(_ => {
 					this.authors.push({
-						status: Status.ACCEPTED, user,
+						pending: false, user,
 					});
-				}),
+				}), {
+				key: this.AUTHOR_LOADING_KEY,
+			},
 		);
 	}
 
@@ -82,7 +100,9 @@ export class SettingsProjectComponent implements OnInit {
 			this.settingsProjectService.removeAuthor(this.id, userId)
 				.subscribe(_ => {
 					this.authors = this.authors.filter(author => author.user.id !== userId);
-				}),
+				}), {
+				key: this.DELETE_AUTHOR_LOADING_KEY,
+			},
 		);
 	}
 
@@ -97,10 +117,14 @@ export class SettingsProjectComponent implements OnInit {
 					(value) => {
 						if (value) {
 							this.error = 'none';
-							this.form.setValue({
+							this.form.reset({
 								name: value.name,
 								description: value.description,
 							});
+							this.success = true;
+							setTimeout(() => {
+								this.success = false;
+							}, 2000);
 						} else {
 							this.error = 'request';
 						}
@@ -126,6 +150,17 @@ export class SettingsProjectComponent implements OnInit {
 		switch (code) {
 			default :
 				this.error = 'request';
+				break;
+		}
+	}
+
+	handleEmailError(code: string): void {
+		switch (code) {
+			case 'NO_EMAIL':
+				this.authorError = 'email';
+				break;
+			default :
+				this.authorError = 'request';
 				break;
 		}
 	}
