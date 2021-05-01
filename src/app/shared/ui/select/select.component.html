@@ -1,0 +1,27 @@
+<div class="formControl">
+	<label [for]="ngControl.name" class="text-sm text-gray-light dark:text-gray-dark">{{ label }}</label>
+	<div class="relative flex flex-row items-center">
+		<div class="absolute z-10 left-0 pl-2 text-gray-light dark:text-gray-dark" *ngIf="iconLeft">
+			<app-icon [icon]="iconLeft"></app-icon>
+		</div>
+		<select
+			#input
+			[value]="value"
+			(input)="onChange(input.value)"
+			(blur)="onTouched()"
+			[disabled]="disabled"
+			[name]="ngControl.name"
+			[id]="ngControl.name"
+			[class.pl-10]="iconLeft"
+			class="h-10 px-2 rounded-sm w-full appearance-none
+			focus:ring-gray-lighter dark:focus:ring-gray-darker focus:ring-2 outline-none
+			bg-gray-lightest text-black dark:text-white dark:bg-gray-darkest">
+			<option *ngFor="let option of options" [value]="option.key">{{ option.value }}</option>
+		</select>
+		<div
+			class="absolute z-10 right-0 pr-2 text-gray-light dark:text-gray-dark"
+		>
+			<app-icon icon="chevron-down" class="block focus:rotate-180"></app-icon>
+		</div>
+	</div>
+</div>

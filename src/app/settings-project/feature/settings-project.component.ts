@@ -16,6 +16,7 @@ export class SettingsProjectComponent implements OnInit {
 	readonly LOADING_KEY = 'project_settings';
 	readonly AUTHOR_LOADING_KEY = 'new_author';
 	readonly DELETE_AUTHOR_LOADING_KEY = 'delete_author';
+	readonly DELETE_PROJECT_LOADING_KEY = 'delete_project';
 
 	id!: string;
 
@@ -142,8 +143,32 @@ export class SettingsProjectComponent implements OnInit {
 			});
 	}
 
-	goToEditor(id: string): void {
-		this.router.navigate(['/editor', id]);
+	deleteProject(): void {
+		this.isLoadingService.add(this.settingsProjectService.deleteProject(this.id)
+				.subscribe(
+					(value) => {
+						if (value) {
+							this.error = 'none';
+							this.goToDashboard();
+						} else {
+							this.error = 'request';
+						}
+					},
+					(error) => {
+						if (error.graphQLErrors) {
+							this.handleError(error.graphQLErrors[0].extensions.code);
+						} else if (error.networkError) {
+							this.error = 'internal';
+						}
+					},
+				),
+			{
+				key: this.DELETE_PROJECT_LOADING_KEY,
+			});
+	}
+
+	goToDashboard(): void {
+		this.router.navigateByUrl('/app/dashboard');
 	}
 
 	handleError(code: string): void {

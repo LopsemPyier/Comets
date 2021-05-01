@@ -28,7 +28,7 @@
 				i18n-label
 			></app-textarea>
 
-			<div class="flex flex-row items-center gap-5 justify-end">
+			<div class="flex flex-row items-center gap-5 mt-2 justify-end">
 				<div class="w-max">
 
 					<app-message
@@ -125,7 +125,7 @@
 				  [formGroup]="newAuthorForm">
 				<app-input type="email" label="Author email" iconLeft="email"
 						   formControlName="email"></app-input>
-				<div class="flex flex-row items-center gap-5 justify-end">
+				<div class="flex flex-row items-center gap-5 mt-2 justify-end">
 					<app-message class="w-max" type="error" message="Invalid email"
 								 *ngIf="authorError === 'email'"></app-message>
 
@@ -134,6 +134,23 @@
 								[disabled]="!newAuthorForm.valid"></app-button>
 				</div>
 			</form>
+
+		</div>
+
+		<div class="flex flex-col w-full max-w-xl gap-2">
+			<h3 class="text-error dark:text-error">Danger zone</h3>
+
+			<p>Be sure to you want to delete the project, it can't be reversed</p>
+
+			<div class="flex flex-row items-center gap-5 mt-2 justify-end">
+				<!--<app-message class="w-max" type="error" message="Invalid email"
+							 *ngIf="authorError === 'email'"></app-message>-->
+
+				<app-button class="max-w-max justify-self-end" label="Delete" type="error" icon="delete"
+							[loading]="!!(DELETE_AUTHOR_LOADING_KEY | swIsLoading | async)"
+							(buttonClick)="deleteProject()"></app-button>
+			</div>
+
 
 		</div>
 	</div>

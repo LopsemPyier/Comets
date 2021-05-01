@@ -14,6 +14,7 @@ export class FeatureComponent implements OnInit {
 	readonly LOADING_KEY = 'new_project';
 
 	error: 'request' | 'internal' | 'none' = 'none';
+	success = false;
 	form = this.fb.group({
 		name: ['', Validators.required],
 		description: [''],
@@ -41,6 +42,7 @@ export class FeatureComponent implements OnInit {
 					(value) => {
 						if (value) {
 							this.error = 'none';
+							this.success = true;
 							this.goToEditor(value.id);
 						} else {
 							this.error = 'request';

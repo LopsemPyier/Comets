@@ -1,39 +1,39 @@
-// button {
-//     &:disabled {
-//         @apply cursor-not-allowed;
-//     }
+.primary {
+	@apply bg-primary text-white dark:text-white focus:ring-primary-light;
+}
 
-//     &.loading {
-//         @apply cursor-wait;
-//     }
+.secondary {
+	@apply bg-secondary text-white dark:text-white focus:ring-secondary-light;
+}
 
-//     &.default {
-//         &:disabled, &.loading {
-//             @apply text-light;
-//             @apply bg-light;
-//         }
+.default {
+	@apply bg-gray-lighter dark:bg-gray-darkest text-black dark:text-white focus:ring-gray dark:focus:ring-gray-dark;
+}
 
-//         @apply text;
-//         @apply bg-hover;
-//     }
+.error {
+	@apply bg-error-light text-error-dark dark:bg-error dark:text-error-light focus:ring-error dark:focus:ring-error-dark;
+}
 
-//     &.primary {
-//         &:disabled, &.loading {
-//             @apply text-light-on-primary;
-//             @apply bg-primary-light;
-//         }
+.primary.loading, .primary.disabled {
+	@apply bg-primary-light text-gray-light dark:bg-primary-light dark:text-gray-light;
+}
 
-//         @apply text-on-primary;
-//         @apply bg-primary-hov;
-//     }
+.secondary.loading, .secondary.disabled {
+	@apply bg-secondary-light text-gray-light dark:bg-secondary-light dark:text-gray-light;
+}
 
-//     &.secondary {
-//         &:disabled, &.loading {
-//             @apply text-light-on-primary;
-//             @apply bg-secondary-light;
-//         }
+.error.loading, .error.disabled {
+	@apply bg-error-light text-error-dark dark:bg-error dark:text-error-light;
+}
 
-//         @apply text-on-secondary;
-//         @apply bg-secondary-hov;
-//     }
-// }
+.default.loading, .default.disabled {
+	@apply bg-gray-lightest dark:bg-gray-darker text-gray-light dark:text-gray-dark;
+}
+
+.loading {
+	@apply cursor-wait;
+}
+
+.disabled {
+	@apply cursor-not-allowed;
+}

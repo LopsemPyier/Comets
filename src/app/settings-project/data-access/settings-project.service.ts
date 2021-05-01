@@ -8,6 +8,7 @@ import { FetchResult } from '@apollo/client/core';
 import addAuthorMutation from './graphql/addAuthor.graphql';
 import removeAuthorMutation from './graphql/removeAuthor.graphql';
 import updateProjectMutation from './graphql/update.graphql';
+import deleteProjectMutation from './graphql/deleteProject.graphql';
 import getUserByEmailQuery from './graphql/getUserByEmail.graphql';
 import getProjectByIdQuery from './graphql/getProjectById.graphql';
 
@@ -100,6 +101,22 @@ export class SettingsProjectService {
 				shareReplay(),
 				map(value => {
 					return value.data ? value.data.updateProject : null;
+				}),
+			);
+	}
+
+	deleteProject(id: string): Observable<boolean | null> {
+		return this.apollo.mutate<{ deleteProject: boolean }>({
+			mutation: deleteProjectMutation,
+			variables: {
+				id,
+			},
+			errorPolicy: 'all',
+		})
+			.pipe(
+				shareReplay(),
+				map(value => {
+					return value.data ? value.data.deleteProject : null;
 				}),
 			);
 	}

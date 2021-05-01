@@ -29,31 +29,40 @@
 			i18n-label
 		></app-textarea>
 
-		<app-button
-			label="Create"
-			type='primary'
-			[loading]="!!(LOADING_KEY | swIsLoading | async)"
-			[disabled]="!form.valid"
-			class="max-w-max justify-self-end"
-			icon="save"
-			i18n-label
-		></app-button>
 
-		<div class="h-10">
+		<div class="flex flex-row items-center gap-5 mt-2 justify-end">
+			<div class="w-max">
+				<app-message
+					*ngIf="success"
+					message="Project created."
+					type='success'
+					i18n-message
+				></app-message>
 
-			<app-message
-				*ngIf="error === 'request'"
-				message="Error during request, please retry."
-				type='error'
-				i18n-message
-			></app-message>
+				<app-message
+					*ngIf="error === 'request'"
+					message="Error during request, please retry."
+					type='error'
+					i18n-message
+				></app-message>
 
-			<app-message
-				*ngIf="error === 'internal'"
-				message="Internal error, please retry later."
-				type='error'
-				i18n-message
-			></app-message>
+				<app-message
+					*ngIf="error === 'internal'"
+					message="Internal error, please retry later."
+					type='error'
+					i18n-message
+				></app-message>
+			</div>
+
+			<app-button
+				label="Create"
+				type='primary'
+				[loading]="!!(LOADING_KEY | swIsLoading | async)"
+				[disabled]="!form.valid"
+				class="max-w-max justify-self-end"
+				icon="save"
+				i18n-label
+			></app-button>
 		</div>
 	</form>
 </div>

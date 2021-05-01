@@ -32,7 +32,9 @@ type Mutation {
 	register(input: RegisterDto!): String!
 	removeAuthor(authorId: UUID!, projectId: UUID!): Boolean!
 	updateFile(id: UUID!, input: UpdateFileDto!): FileObject!
+	updatePassword(new: String!, old: String!): Boolean!
 	updateProject(input: UpdateProjectDto!): ProjectObject!
+	updateUser(input: UpdateUserDto!): String!
 }
 
 "A project"
@@ -141,6 +143,14 @@ input UpdateProjectDto {
 	id: UUID!
 	"Name"
 	name: String!
+}
+
+"The DTO for Update informations"
+input UpdateUserDto {
+	"Email"
+	email: String!
+	"Username"
+	username: String!
 }
 
 

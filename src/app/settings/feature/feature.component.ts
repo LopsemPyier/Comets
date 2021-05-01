@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { IsLoadingService } from '@service-work/is-loading';
-import { AuthService } from '../../auth/data-access/auth.service';
+import { SettingsService } from '../data-access/settings.service';
 
 @Component({
 	selector: 'app-feature',
@@ -10,40 +10,48 @@ import { AuthService } from '../../auth/data-access/auth.service';
 	styleUrls: ['./feature.component.scss'],
 })
 export class FeatureComponent implements OnInit {
-	readonly LOADING_KEY = 'new_project';
+	readonly LOADING_KEY = 'settings';
+	readonly PASSWORD_LOADING_KEY = 'password';
 
 	error: 'request' | 'internal' | 'none' = 'none';
-	passwordError: 'diff' | 'request' | 'internal' | 'none' = 'none';
+	passwordError: 'invalid' | 'request' | 'internal' | 'none' = 'none';
+	successPassword = false;
+	success = false;
+
+	languages = [
+		{ key: 'en', value: 'English' },
+		{ key: 'fr', value: 'Français' },
+	];
 	form = this.fb.group({
 		username: ['', Validators.required],
 		email: ['', [Validators.email, Validators.required]],
-		theme: [false, Validators.required],
 		lang: ['en', Validators.required],
 	});
 
 	passwordForm = this.fb.group({
-		password: ['', Validators.required],
-		verify: ['', Validators.required],
+		oldPassword: ['', Validators.required],
+		newPassword: ['', Validators.required],
 	});
 
 	constructor(
 		private fb: FormBuilder,
-		private authService: AuthService,
+		private settingsService: SettingsService,
 		private router: Router,
 		private isLoadingService: IsLoadingService,
 	) {
 	}
 
 	ngOnInit(): void {
-		const user = {
-			id: '1',
-			username: 'LopsemPyier',
-			email: 'lopsempyier@gmail.com',
-		};
-		this.form.patchValue({
-			username: user.username,
-			email: user.email,
-		});
+		this.isLoadingService.add(
+			this.settingsService.getUser()
+				.subscribe(value => {
+					this.form.reset({
+						username: value.username,
+						email: value.email,
+						lang: 'en',
+					});
+				}),
+		);
 	}
 
 	submit(): void {
@@ -51,13 +59,21 @@ export class FeatureComponent implements OnInit {
 			return;
 		}
 		this.error = 'none';
-		const { username, email, lang, theme } = this.form.value;
-		/*this.isLoadingService.add(this.authService.save(username, email, lang, theme)
+		const { username, email, lang } = this.form.value;
+		this.isLoadingService.add(this.settingsService.updateUser(username, email)
 				.subscribe(
 					(value) => {
 						this.error = 'none';
 						if (value) {
-							this.goToEditor(value.id);
+							this.form.reset({
+								username,
+								email,
+								lang: 'en',
+							});
+							this.success = true;
+							setTimeout(() => {
+								this.success = false;
+							}, 2000);
 						}
 					},
 					(error) => {
@@ -70,7 +86,7 @@ export class FeatureComponent implements OnInit {
 				),
 			{
 				key: this.LOADING_KEY,
-			});*/
+			});
 	}
 
 	submitPassword(): void {
@@ -78,30 +94,31 @@ export class FeatureComponent implements OnInit {
 			return;
 		}
 		this.passwordError = 'none';
-		const { password, verify } = this.passwordForm.value;
-		if (password !== verify) {
-			this.passwordError = 'diff';
-			return;
-		}
-		/*this.isLoadingService.add(this.authService.save(username, email, lang, theme)
+		const { oldPassword, newPassword } = this.passwordForm.value;
+		this.isLoadingService.add(this.settingsService.updatePassword(oldPassword, newPassword)
 				.subscribe(
 					(value) => {
 						this.error = 'none';
 						if (value) {
-							this.goToEditor(value.id);
+							this.passwordForm.setValue({ oldPassword: '', newPassword: '' });
+							this.passwordForm.reset();
+							this.successPassword = true;
+							setTimeout(() => {
+								this.successPassword = false;
+							}, 2000);
 						}
 					},
 					(error) => {
 						if (error.graphQLErrors) {
-							this.handleError(error.graphQLErrors[0].extensions.code);
+							this.handlePasswordError(error.graphQLErrors[0].extensions.code);
 						} else if (error.networkError) {
 							this.error = 'internal';
 						}
 					},
 				),
 			{
-				key: this.LOADING_KEY,
-			});*/
+				key: this.PASSWORD_LOADING_KEY,
+			});
 	}
 
 	handleError(code: string): void {
@@ -114,6 +131,10 @@ export class FeatureComponent implements OnInit {
 
 	handlePasswordError(code: string): void {
 		switch (code) {
+			case 'INVALID_PASSWORD':
+				this.passwordError = 'invalid';
+				break;
+
 			default :
 				this.passwordError = 'request';
 				break;

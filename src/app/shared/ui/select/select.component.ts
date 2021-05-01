@@ -1,16 +1,16 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ControlValueAccessor, NgControl } from '@angular/forms';
+import { Icon } from '../icon/icons.type';
 
 @Component({
-	selector: 'app-checkbox',
-	templateUrl: './checkbox.component.html',
-	styleUrls: ['./checkbox.component.scss'],
-	changeDetection: ChangeDetectionStrategy.Default,
+	selector: 'app-select',
+	templateUrl: './select.component.html',
+	styleUrls: ['./select.component.scss'],
 })
-export class CheckboxComponent implements ControlValueAccessor {
+export class SelectComponent implements ControlValueAccessor {
 	@Input() label = '';
-	@Input() iconLeft: string | null = null;
-	@Input() iconRight: string | null = null;
+	@Input() iconLeft: Icon | null = null;
+	@Input() options!: { key: string, value: string }[];
 	value = '';
 	onChange!: (value: string) => void;
 	onTouched!: () => void;

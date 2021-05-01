@@ -26,7 +26,9 @@ export type Icon =
 	| 'logout'
 	| 'language'
 	| 'save'
-	| 'loading';
+	| 'loading'
+	| 'chevron-down'
+	| 'chevron-right';
 
 export function toIconName(icon: Icon): string {
 	switch (icon) {
@@ -113,6 +115,12 @@ export function toIconName(icon: Icon): string {
 
 		case 'loading':
 			return 'bx bx-loader-alt bx-spin';
+
+		case 'chevron-down':
+			return 'ph-caret-down';
+
+		case 'chevron-right':
+			return 'ph-caret-right';
 
 		default:
 			return '';

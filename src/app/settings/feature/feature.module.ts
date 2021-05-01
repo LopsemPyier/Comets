@@ -9,6 +9,7 @@ import { IsLoadingModule } from '@service-work/is-loading';
 import { MessageModule } from '../../shared/ui/message/message.module';
 import { IconModule } from '../../shared/ui/icon/icon.module';
 import { CheckboxModule } from '../../shared/ui/checkbox/checkbox.module';
+import { SelectModule } from '../../shared/ui/select/select.module';
 
 @NgModule({
 	declarations: [
@@ -26,6 +27,7 @@ import { CheckboxModule } from '../../shared/ui/checkbox/checkbox.module';
 		MessageModule,
 		IconModule,
 		CheckboxModule,
+		SelectModule,
 	],
 })
 export class FeatureModule {
