@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LayoutComponent } from './shared/ui/layout/layout.component';
-import { ApplicationLayoutComponent } from './shared/ui/application-layout/application-layout.component';
-import { EditorLayoutComponent } from './shared/ui/editor-layout/editor-layout.component';
+import { LayoutComponent } from './shared/layout/layout/layout.component';
+import { ApplicationLayoutComponent } from './shared/layout/application-layout/application-layout.component';
+import { EditorLayoutComponent } from './shared/layout/editor-layout/editor-layout.component';
+import { AuthLayoutComponent } from './shared/layout/auth-layout/auth-layout.component';
 
 const routes: Routes = [
 	{
@@ -49,6 +50,32 @@ const routes: Routes = [
 				path: ':id',
 				loadChildren: async () =>
 					(await import('./editor')).FeatureModule,
+			},
+		],
+	},
+	{
+		path: 'auth',
+		component: AuthLayoutComponent,
+		children: [
+			{
+				path: 'login',
+				loadChildren: async () =>
+					(await import('./auth')).LoginModule,
+			},
+			{
+				path: 'signup',
+				loadChildren: async () =>
+					(await import('./auth')).SignupModule,
+			},
+			{
+				path: 'logout',
+				loadChildren: async () =>
+					(await import('./auth')).LogoutModule,
+			},
+			{
+				path: '',
+				redirectTo: 'login',
+				pathMatch: 'full',
 			},
 		],
 	},

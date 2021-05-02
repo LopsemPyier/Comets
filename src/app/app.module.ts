@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
-import { ApplicationLayoutModule } from './shared/ui/application-layout/application-layout.module';
-import { LayoutModule } from './shared/ui/layout/layout.module';
-import { EditorLayoutModule } from './shared/ui/editor-layout/editor-layout.module';
+import { ApplicationLayoutModule } from './shared/layout/application-layout/application-layout.module';
+import { LayoutModule } from './shared/layout/layout/layout.module';
+import { EditorLayoutModule } from './shared/layout/editor-layout/editor-layout.module';
+import { AuthLayoutModule } from './shared/layout/auth-layout/auth-layout.module';
 
 @NgModule({
 	declarations: [
@@ -18,6 +19,7 @@ import { EditorLayoutModule } from './shared/ui/editor-layout/editor-layout.modu
 		LayoutModule,
 		ApplicationLayoutModule,
 		EditorLayoutModule,
+		AuthLayoutModule,
 		AppRoutingModule,
 		GraphQLModule,
 		HttpClientModule,

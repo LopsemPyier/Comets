@@ -57,7 +57,7 @@ export class SignupComponent implements OnInit {
 	}
 
 	goToDashboard(): void {
-		this.router.navigateByUrl('/dashboard');
+		this.router.navigateByUrl('/app/dashboard');
 	}
 
 	handleError(code: string): void {

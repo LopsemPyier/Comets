@@ -7,15 +7,16 @@
 		class="hidden justify-self-end self-center lg:block"
 		i18n-alt
 	/>
-	<div class="relative items-center flex flex-col place-content-center">
+	<div class="relative items-center flex max-w-sm w-full px-5 mx-auto place-content-center">
 		<form
 			[formGroup]="form"
-			(ngSubmit)="submit()">
+			(ngSubmit)="submit()"
+			class="grid grid-flow-row gap-2 w-full justify-items-center lg:justify-self-end justify-self-center self-center">
 			<h1 class="mb-[-.75rem] text-center" i18n>
 				Welcome to comets
 			</h1>
 
-			<p class="mb-3 text-center" i18n>
+			<p class="text-center" i18n>
 				Join the rocket to launch to the comet.
 			</p>
 
@@ -23,8 +24,9 @@
 				formControlName="username"
 				type="text"
 				label="Username"
+				placeholder="Username"
 				iconLeft="user"
-				class="w-72 sm:w-80"
+				class="w-full"
 				i18n-label
 			></app-input>
 
@@ -32,8 +34,9 @@
 				formControlName="email"
 				type="email"
 				label="Email"
+				placeholder="Email"
 				iconLeft="email"
-				class="w-72 sm:w-80"
+				class="w-full"
 				i18n-label
 			></app-input>
 
@@ -42,13 +45,14 @@
 				type="password"
 				[strength]="true"
 				label="Password"
+				placeholder="Password"
 				iconLeft="password"
-				class="w-72 sm:w-80"
+				class="w-full"
 				i18n-label
 			></app-input>
 
 			<p
-				class="small mb-2 w-72 text-center sm:w-80"
+				class="small mb-2 w-full text-center"
 				i18n
 			>
 				By joigning us, you accept the
@@ -63,11 +67,10 @@
 				type='primary'
 				[loading]="!!(LOADING_KEY | swIsLoading | async)"
 				[disabled]="!form.valid"
-				class="mb-2 w-72 sm:w-80"
 				i18n-label
 			></app-button>
 
-			<div class="h-10 w-80 sm:w-auto">
+			<div class="h-10 w-full">
 				<app-message
 					*ngIf="error === 'username'"
 					message="Username already taken"
@@ -100,7 +103,7 @@
 
 		<p class="absolute text-center bottom-5" i18n>
 			Already member ?
-			<a routerLink="/login"
+			<a routerLink="/auth/login"
 			>Login</a
 			>
 		</p>

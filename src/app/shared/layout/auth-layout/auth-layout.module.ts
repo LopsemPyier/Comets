@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ApplicationLayoutComponent } from './application-layout.component';
-import { NavModule } from '../nav/nav.module';
+import { AuthLayoutComponent } from './auth-layout.component';
 import { RouterModule } from '@angular/router';
+import { LogoModule } from '../../ui/logo/logo.module';
 
 @NgModule({
 	declarations: [
-		ApplicationLayoutComponent,
+		AuthLayoutComponent,
 	],
 	imports: [
 		CommonModule,
-		NavModule,
 		RouterModule,
+		LogoModule,
 	],
 	exports: [
-		ApplicationLayoutComponent,
+		AuthLayoutComponent,
 	],
 })
-export class ApplicationLayoutModule {
+export class AuthLayoutModule {
 }

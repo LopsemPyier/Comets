@@ -1,11 +1,12 @@
 <section
 	class="h-full w-full grid grid-rows-1 grid-cols-none lg:grid-cols-login lg:grid-rows-none"
 >
-	<div class="relative items-center flex flex-col place-content-center">
+	<div class="relative items-center flex max-w-sm w-full px-5 mx-auto place-content-center">
 		<form
 			[formGroup]="form"
-			(ngSubmit)="submit()">
-			<h1 class="mb-2 text-center" i18n>
+			(ngSubmit)="submit()"
+			class="grid grid-flow-row gap-2 w-full justify-items-center lg:justify-self-end justify-self-center self-center">
+			<h1 class="text-center" i18n>
 				Welcome back
 			</h1>
 
@@ -13,8 +14,9 @@
 				formControlName="email"
 				type="text"
 				label="Email"
-				iconLeft="mail-fill"
-				class="w-72 sm:w-80"
+				iconLeft="email"
+				placeholder="Email"
+				class="w-full"
 				i18n-label
 			></app-input>
 
@@ -22,8 +24,9 @@
 				formControlName="password"
 				type="password"
 				label="Password"
-				iconLeft="lock-2-fill"
-				class="mb-2 w-72 sm:w-80"
+				placeholder="Password"
+				iconLeft="password"
+				class="w-full"
 				i18n-label
 			></app-input>
 
@@ -32,11 +35,11 @@
 				type="primary"
 				[loading]="!!(LOADING_KEY | swIsLoading | async)"
 				[disabled]="!form.valid"
-				class="mb-2 w-72 sm:w-80"
+				class="mt-4"
 				i18n-label
 			></app-button>
 
-			<div class="h-10 w-80 sm:w-auto">
+			<div class="h-10 w-full">
 				<app-message
 					*ngIf="error === 'email'"
 					message="Invalid Email"
@@ -67,9 +70,9 @@
 			</div>
 		</form>
 
-		<p class="absolute text-center bottom-5" i18n>
+		<p class="absolute text-center bottom-5 inset-x-0" i18n>
 			No account ?
-			<a routerLink="/signup"
+			<a routerLink="/auth/signup"
 			>Sign Up</a
 			>
 		</p>
