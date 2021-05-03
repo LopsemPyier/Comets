@@ -3,13 +3,13 @@
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="5459989209005328147" datatype="html" approved="yes">
-        <source>Welcome back</source> <target state="signed-off">Heureux de vous revoir</target><context-group purpose="location">
+        <source>Welcome back</source> <target state="translated">Heureux de vous revoir</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
           <context context-type="linenumber">10,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4768749765465246664" datatype="html" approved="yes">
-        <source>Email</source> <target state="signed-off">E-mail</target><context-group purpose="location">
+        <source>Email</source> <target state="translated">E-mail</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
           <context context-type="linenumber">16</context>
         </context-group>
@@ -39,7 +39,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="1431416938026210429" datatype="html" approved="yes">
-        <source>Password</source> <target state="signed-off">Mot de passe</target><context-group purpose="location">
+        <source>Password</source>
+        <target state="translated">Mot de passe</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
           <context context-type="linenumber">27</context>
         </context-group>
@@ -57,7 +58,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="2454050363478003966" datatype="html" approved="yes">
-        <source>Login</source> <target state="signed-off">Se connecter</target><context-group purpose="location">
+        <source>Login</source>
+        <target state="translated">Se connecter</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
           <context context-type="linenumber">36</context>
         </context-group>
@@ -67,19 +69,22 @@
         </context-group>
       </trans-unit>
       <trans-unit id="2762478885865197015" datatype="html" approved="yes">
-        <source>Invalid Email</source> <target state="signed-off">Adresse e-mail incorrecte</target><context-group purpose="location">
+        <source>Invalid Email</source>
+        <target state="translated">Adresse e-mail incorrecte</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
           <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8288238877926002807" datatype="html" approved="yes">
-        <source>Invalid password</source> <target state="signed-off">Mot de passe incorrect</target><context-group purpose="location">
+        <source>Invalid password</source>
+        <target state="translated">Mot de passe incorrect</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
           <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3933556588498605957" datatype="html" approved="yes">
-        <source>Error during request, please retry.</source> <target state="signed-off">Erreur durant la requête, reéssayez plus tard.</target><context-group purpose="location">
+        <source>Error during request, please retry.</source>
+        <target state="translated">Erreur durant la requête, reéssayez plus tard.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
           <context context-type="linenumber">61</context>
         </context-group>
@@ -105,7 +110,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4446942531619331039" datatype="html" approved="yes">
-        <source>Internal error, please retry later.</source> <target state="signed-off">Erreur interne. Veuillez réessayer plus tard.</target><context-group purpose="location">
+        <source>Internal error, please retry later.</source>
+        <target state="translated">Erreur interne. Veuillez réessayer plus tard.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
           <context context-type="linenumber">68</context>
         </context-group>
@@ -131,67 +137,78 @@
         </context-group>
       </trans-unit>
       <trans-unit id="7760842120997502604" datatype="html" approved="yes">
-        <source>No account ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/auth/signup&quot;    &gt;"/>Sign Up<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a    &gt;"/></source> <target state="signed-off">Pas de compte ? <x id="START_LINK"/> S'inscrire <x id="CLOSE_LINK"/></target><context-group purpose="location">
+        <source> No account ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/auth/signup&quot;    &gt;"/>Sign Up<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a    &gt;"/></source>
+        <target state="translated">Pas de compte ? <x id="START_LINK"/> S'inscrire <x id="CLOSE_LINK"/></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
           <context context-type="linenumber">76,79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2283259376295608283" datatype="html" approved="yes">
-        <source>An illustration for the login page which represents an astronaut on his rocket in the space.</source> <target state="signed-off">Une illustration pour la page de connexion qui représente un astronaute sur sa fusée dans l'espace.</target><context-group purpose="location">
+        <source>An illustration for the login page which represents an astronaut on his rocket in the space.</source>
+        <target state="translated">Une illustration pour la page de connexion qui représente un astronaute sur sa fusée dans l'espace.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/login/login.component.html</context>
           <context context-type="linenumber">85</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6393484388993774452" datatype="html" approved="yes">
-        <source>You have been disconnected</source> <target state="signed-off">Vous avez été déconnecté(e)</target><context-group purpose="location">
+        <source>You have been disconnected</source>
+        <target state="translated">Vous avez été déconnecté(e)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/logout/logout.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2509329210575529638" datatype="html" approved="yes">
-        <source>You will be redirected in <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-black dark:text-white&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ time }}"/> seconds<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> to the Home page</source> <target state="signed-off">Vous allez être redirigés dans <x id="START_TAG_SPAN"/><x id="INTERPOLATION"/> secondes <x id="CLOSE_TAG_SPAN"/> vers la page d'accueil</target><context-group purpose="location">
+        <source>You will be redirected in <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;text-black dark:text-white&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{ time }}"/> seconds<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> to the Home page</source>
+        <target state="translated">Vous allez être redirigés dans <x id="START_TAG_SPAN"/><x id="INTERPOLATION"/> secondes <x id="CLOSE_TAG_SPAN"/> vers la page d'accueil</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/logout/logout.component.html</context>
           <context context-type="linenumber">3,5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="648168694486340407" datatype="html" approved="yes">
-        <source>Go to login page</source> <target state="signed-off">Page de connexion</target><context-group purpose="location">
+        <source>Go to login page</source>
+        <target state="translated">Page de connexion</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/logout/logout.component.html</context>
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4020663284410482277" datatype="html" approved="yes">
-        <source>Go to home page</source> <target state="signed-off">Page d'accueil</target><context-group purpose="location">
+        <source>Go to home page</source>
+        <target state="translated">Page d'accueil</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/logout/logout.component.html</context>
           <context context-type="linenumber">8,9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3206494891484948545" datatype="html" approved="yes">
-        <source>An illustration of a man stand on a rocket</source> <target state="signed-off">Une illustration d'un homme debout sur une fusée</target><context-group purpose="location">
+        <source>An illustration of a man stand on a rocket</source>
+        <target state="translated">Une illustration d'un homme debout sur une fusée</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/logout/logout.component.html</context>
           <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5036267891319267082" datatype="html" approved="yes">
-        <source>An illustration for the signup page which represents a rocket launch to the space.</source> <target state="signed-off">Une illustration pour la page d'inscription qui représente un lancement de fusée.</target><context-group purpose="location">
+        <source>An illustration for the signup page which represents a rocket launch to the space.</source>
+        <target state="translated">Une illustration pour la page d'inscription qui représente un lancement de fusée.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2725219580663441078" datatype="html" approved="yes">
-        <source>Welcome to comets</source> <target state="signed-off">Bienvenue dans Comets</target><context-group purpose="location">
+        <source> Welcome to comets </source>
+        <target state="translated">Bienvenue dans Comets</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
           <context context-type="linenumber">16,17</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7137348945017754906" datatype="html" approved="yes">
-        <source>Join the rocket to launch to the comet.</source> <target state="signed-off">Rejoignez la fusée pour le départ vers la comètes.</target><context-group purpose="location">
+        <source> Join the rocket to launch to the comet. </source>
+        <target state="translated">Rejoignez la fusée pour le départ vers la comètes.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
           <context context-type="linenumber">20,21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5248717555542428023" datatype="html" approved="yes">
-        <source>Username</source> <target state="signed-off">Identifiant</target><context-group purpose="location">
+        <source>Username</source>
+        <target state="translated">Identifiant</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
           <context context-type="linenumber">26</context>
         </context-group>
@@ -209,55 +226,64 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4362339478195651271" datatype="html" approved="yes">
-        <source>By joigning us, you accept the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a      routerLink=&quot;/terms-of-service&quot;     &gt;"/>Terms of Service<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a     &gt;"/></source> <target state="signed-off">En nous rejoignant, vous acceptez les <x id="START_LINK"/> Conditions générales d'utilisations <x id="CLOSE_LINK"/></target><context-group purpose="location">
+        <source> By joigning us, you accept the <x id="START_LINK" ctype="x-a" equiv-text="&lt;a      routerLink=&quot;/terms-of-service&quot;     &gt;"/>Terms of Service<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a     &gt;"/></source>
+        <target state="translated">En nous rejoignant, vous acceptez les <x id="START_LINK"/> Conditions générales d'utilisations <x id="CLOSE_LINK"/></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
           <context context-type="linenumber">61,65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1466012768716286509" datatype="html" approved="yes">
-        <source>Sign Up</source> <target state="signed-off">S’inscrire</target><context-group purpose="location">
+        <source>Sign Up</source>
+        <target state="translated">S’inscrire</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
           <context context-type="linenumber">69</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7411913630982419535" datatype="html" approved="yes">
-        <source>Username already taken</source> <target state="signed-off">Indentifiant déjà utilisé</target><context-group purpose="location">
+        <source>Username already taken</source>
+        <target state="translated">Indentifiant déjà utilisé</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
           <context context-type="linenumber">79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6993106617070148867" datatype="html" approved="yes">
-        <source>Email already taken</source> <target state="signed-off">Adressse e-mail déjà utilisée</target><context-group purpose="location">
+        <source>Email already taken</source>
+        <target state="translated">Adressse e-mail déjà utilisée</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
           <context context-type="linenumber">86</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6982707924368850744" datatype="html" approved="yes">
-        <source>Already member ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/auth/login&quot;    &gt;"/>Login<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a    &gt;"/></source> <target state="signed-off">Déjà member ? <x id="START_LINK"/> Se connecter <x id="CLOSE_LINK"/></target><context-group purpose="location">
+        <source> Already member ? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/auth/login&quot;    &gt;"/>Login<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a    &gt;"/></source>
+        <target state="translated">Déjà member ? <x id="START_LINK"/> Se connecter <x id="CLOSE_LINK"/></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/auth/feature/signup/signup.component.html</context>
           <context context-type="linenumber">108,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7091571651222742304" datatype="html" approved="yes">
-        <source>Projects</source> <target state="signed-off">Projets</target><context-group purpose="location">
+        <source>Projects</source>
+        <target state="translated">Projets</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/feature/dashboard.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4580988005648117665" datatype="html" approved="yes">
-        <source>Search</source> <target state="signed-off">Rechercher</target><context-group purpose="location">
+        <source>Search</source>
+        <target state="translated">Rechercher</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/feature/dashboard.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5146398958364876914" datatype="html" approved="yes">
-        <source>Sort</source> <target state="signed-off">Trier</target><context-group purpose="location">
+        <source>Sort</source>
+        <target state="translated">Trier</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/feature/dashboard.component.html</context>
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8778616811237742446" datatype="html" approved="yes">
-        <source>Name</source> <target state="signed-off">Nom</target><context-group purpose="location">
+        <source> Name </source>
+        <target state="translated">Nom</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/ui/project-list/project-list.component.html</context>
           <context context-type="linenumber">8,9</context>
         </context-group>
@@ -267,19 +293,22 @@
         </context-group>
       </trans-unit>
       <trans-unit id="3457323307791867315" datatype="html" approved="yes">
-        <source>Authors</source> <target state="signed-off">Auteurs</target><context-group purpose="location">
+        <source> Authors </source>
+        <target state="translated">Auteurs</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/ui/project-list/project-list.component.html</context>
           <context context-type="linenumber">13,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2757645991218200788" datatype="html" approved="yes">
-        <source>Last Edit</source> <target state="signed-off">Dernière modification</target><context-group purpose="location">
+        <source> Last Edit </source>
+        <target state="translated">Dernière modification</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/ui/project-list/project-list.component.html</context>
           <context context-type="linenumber">18,19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4930506384627295710" datatype="html" approved="yes">
-        <source>Settings</source> <target state="signed-off">Paramètres</target><context-group purpose="location">
+        <source>Settings</source>
+        <target state="translated">Paramètres</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/ui/project-list/project-list.component.html</context>
           <context context-type="linenumber">21</context>
         </context-group>
@@ -301,145 +330,176 @@
         </context-group>
       </trans-unit>
       <trans-unit id="5280907946014568207" datatype="html" approved="yes">
-        <source>Last edit <x id="INTERPOLATION" equiv-text="{{ project.lastEdit.createAt | date }}"/> by <x id="START_LINK" ctype="x-a" equiv-text="&lt;a      [routerLink]=&quot;['/app/user', project.lastEdit.author.id]&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ project.lastEdit.author.username }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source> <target state="signed-off">Dernière modification <x id="INTERPOLATION"/> par <x id="START_LINK"/><x id="INTERPOLATION_1"/><x id="CLOSE_LINK"/></target><context-group purpose="location">
+        <source>Last edit <x id="INTERPOLATION" equiv-text="{{ project.lastEdit.createAt | date }}"/> by <x id="START_LINK" ctype="x-a" equiv-text="&lt;a      [routerLink]=&quot;['/app/user', project.lastEdit.author.id]&quot;&gt;"/><x id="INTERPOLATION_1" equiv-text="{{ project.lastEdit.author.username }}"/><x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target state="translated">Dernière modification <x id="INTERPOLATION"/> par <x id="START_LINK"/><x id="INTERPOLATION_1"/><x id="CLOSE_LINK"/></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/dashboard/ui/project-list/project-list.component.html</context>
           <context context-type="linenumber">55,56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4371481522026140901" datatype="html" approved="yes">
-        <source>Loading...</source> <target state="signed-off">Chargement...</target><context-group purpose="location">
+        <source> Loading...
+</source>
+        <target state="translated">Chargement...</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/editor/feature/feature.component.html</context>
           <context context-type="linenumber">2,3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7855885154366821989" datatype="html" approved="yes">
-        <source>LaTeX without any trouble</source> <target state="signed-off">LaTeX sans aucun soucis</target><context-group purpose="location">
+        <source> LaTeX without any trouble </source>
+        <target state="translated">LaTeX sans aucun soucis</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">10,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1314774502694891466" datatype="html" approved="yes">
-        <source>Easy to use online and collaborative LaTeX editor</source> <target state="signed-off">Éditeur LaTeX facile à utiliser, en ligne et collaboratif</target><context-group purpose="location">
+        <source> Easy to use online and collaborative LaTeX editor </source>
+        <target state="translated">Éditeur LaTeX facile à utiliser, en ligne et collaboratif</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">13,14</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8918320492474889909" datatype="html" approved="yes">
-        <source>An illustration of a math teacher in front of a green board</source> <target state="signed-off">Une illustration d'un professeur de mathématique devant une tableau vert</target><context-group purpose="location">
+        <source>An illustration of a math teacher in front of a green board</source>
+        <target state="translated">Une illustration d'un professeur de mathématique devant une tableau vert</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6599364831830861985" datatype="html" approved="yes">
+        <source>Features</source> <target state="signed-off">Caractéristiques</target><context-group purpose="location">
+          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="5938627273116127317" datatype="html" approved="yes">
-        <source>For everyone</source> <target state="signed-off">Pour tous</target><context-group purpose="location">
+        <source>For everyone</source>
+        <target state="translated">Pour tous</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1564948975805062065" datatype="html" approved="yes">
-        <source>Write beautiful articles and documents or carefully take notes in classes, all in a beautiful text editor. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>The power of LaTeX will help you with standart layout and tools. </source> <target state="signed-off">Ecrivez de magnifiques articles et documents ou prenez attentivement vos notes en classe, le tout dans un bel éditeur de text. <x id="LINE_BREAK"/> Le pouvoir de LaTeX vous aidera avec ses mises en page standard et ses outils.</target><context-group purpose="location">
+        <source>Write beautiful articles and documents or carefully take notes in classes, all in a beautiful text editor. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>The power of LaTeX will help you with standart layout and tools. </source>
+        <target state="translated">Ecrivez de magnifiques articles et documents ou prenez attentivement vos notes en classe, le tout dans un bel éditeur de text. <x id="LINE_BREAK"/> Le pouvoir de LaTeX vous aidera avec ses mises en page standard et ses outils.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">39,41</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5221101287037900248" datatype="html" approved="yes">
-        <source>learn latex</source> <target state="signed-off">apprendre latex</target><context-group purpose="location">
+        <source>learn latex</source>
+        <target state="translated">apprendre latex</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8440128775129354214" datatype="html" approved="yes">
-        <source>Privacy</source> <target state="signed-off">Vie privée</target><context-group purpose="location">
+        <source>Privacy</source>
+        <target state="translated">Vie privée</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5899666159504068064" datatype="html" approved="yes">
-        <source>We believe in open source. That is why we are entierly based on open sources solutions. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>We also provide all the code to run it your self and keep your files under your control</source> <target state="signed-off">Nous croyons en l'open source. C'est pourquoi nous utilisons que des solutions open source.<x id="LINE_BREAK"/> Nous fournissons également tout le code pour l'exécuter vous-même et garder vos fichiers sous votre contrôle</target><context-group purpose="location">
+        <source>We believe in open source. That is why we are entierly based on open sources solutions. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>We also provide all the code to run it your self and keep your files under your control</source>
+        <target state="translated">Nous croyons en l'open source. C'est pourquoi nous utilisons que des solutions open source.<x id="LINE_BREAK"/> Nous fournissons également tout le code pour l'exécuter vous-même et garder vos fichiers sous votre contrôle</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">54,56</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4433465581804222728" datatype="html" approved="yes">
-        <source>more info</source> <target state="signed-off">plus d'informations</target><context-group purpose="location">
+        <source>more info</source>
+        <target state="translated">plus d'informations</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">59</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4186132298996668585" datatype="html" approved="yes">
-        <source>LaTeX power</source> <target state="signed-off">LaTeX power</target><context-group purpose="location">
+        <source>LaTeX power</source>
+        <target state="translated">LaTeX power</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8064489392003101987" datatype="html" approved="yes">
-        <source>LaTeX is robust, well known designed with sciences in mind. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Thus, whatever your domain, you will find packages to help you write articles our lessons with math, text or schemas.</source> <target state="signed-off">LaTeX est robuste, bien connu et conçu pour les sciences. <x id="LINE_BREAK"/>Ainsi, quel que soit votre domaine, vous trouverez des paquets pour vous aider à rédiger des articles ou des leçons avec des mathématiques, du texte ou des schémas.</target><context-group purpose="location">
+        <source>LaTeX is robust, well known designed with sciences in mind. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Thus, whatever your domain, you will find packages to help you write articles our lessons with math, text or schemas.</source>
+        <target state="translated">LaTeX est robuste, bien connu et conçu pour les sciences. <x id="LINE_BREAK"/>Ainsi, quel que soit votre domaine, vous trouverez des paquets pour vous aider à rédiger des articles ou des leçons avec des mathématiques, du texte ou des schémas.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">68,70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6526811599610436966" datatype="html" approved="yes">
-        <source>get started</source> <target state="signed-off">commencer maintenant</target><context-group purpose="location">
+        <source>get started</source>
+        <target state="translated">commencer maintenant</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8858557237630903286" datatype="html" approved="yes">
-        <source>Everywhere you are</source> <target state="signed-off">Partout où vous êtes</target><context-group purpose="location">
+        <source>Everywhere you are</source>
+        <target state="translated">Partout où vous êtes</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3820385301361794182" datatype="html" approved="yes">
-        <source>Edit your documents in a browser or in one of the native applications available in every platforms. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>You can view them on the fly with our mobile application.</source> <target state="signed-off">Modifiez vos documents dans un navigateur ou dans l'une des applications natives disponibles sur toutes les plateformes. <x id="LINE_BREAK"/>Vous pouvez les consulter à la volée grâce à notre application mobile.</target><context-group purpose="location">
+        <source>Edit your documents in a browser or in one of the native applications available in every platforms. <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>You can view them on the fly with our mobile application.</source>
+        <target state="translated">Modifiez vos documents dans un navigateur ou dans l'une des applications natives disponibles sur toutes les plateformes. <x id="LINE_BREAK"/>Vous pouvez les consulter à la volée grâce à notre application mobile.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">82,84</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6631147598757213823" datatype="html" approved="yes">
-        <source>download</source> <target state="signed-off">télécharger</target><context-group purpose="location">
+        <source>download</source>
+        <target state="translated">télécharger</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8458375241882951939" datatype="html" approved="yes">
-        <source>Collaborate</source> <target state="signed-off">Collaborer</target><context-group purpose="location">
+        <source>Collaborate</source>
+        <target state="translated">Collaborer</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">109</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8951455938854677604" datatype="html" approved="yes">
-        <source>Collaborate in real time with people all over the world.</source> <target state="signed-off">Collaborer en temps réel avec des personnes partout autour du monde.</target><context-group purpose="location">
+        <source>Collaborate in real time with people all over the world.</source>
+        <target state="translated">Collaborer en temps réel avec des personnes partout autour du monde.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">110,111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="839939486133752612" datatype="html" approved="yes">
-        <source>Work late</source> <target state="signed-off">Travailler (tard)</target><context-group purpose="location">
+        <source>Work late</source>
+        <target state="translated">Travailler (tard)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">114</context>
         </context-group>
       </trans-unit>
       <trans-unit id="390235434655004021" datatype="html" approved="yes">
-        <source>A beautiful night theme which won't blow away your eyes at night.</source> <target state="signed-off">Un magnifique temps sombre qui protège vos yeux durant la nuit.</target><context-group purpose="location">
+        <source>A beautiful night theme which won't blow away your eyes at night.</source>
+        <target state="translated">Un magnifique temps sombre qui protège vos yeux durant la nuit.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">115,117</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3099741642167775297" datatype="html" approved="yes">
-        <source>Download</source> <target state="signed-off">Télécharger</target><context-group purpose="location">
+        <source>Download</source>
+        <target state="translated">Télécharger</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">120</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5805354458159912297" datatype="html" approved="yes">
-        <source>Download your work easily in standard format.</source> <target state="signed-off">Télécharger votre travaille facilement dans un format standard.</target><context-group purpose="location">
+        <source>Download your work easily in standard format.</source>
+        <target state="translated">Télécharger votre travaille facilement dans un format standard.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
           <context context-type="linenumber">121</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5132597689526105" datatype="html" approved="yes">
-        <source>New Project</source> <target state="signed-off">Nouveau Projet</target><context-group purpose="location">
+        <source>New Project</source>
+        <target state="translated">Nouveau Projet</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/new-project/feature/feature.component.html</context>
           <context context-type="linenumber">2</context>
         </context-group>
@@ -449,7 +509,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4028507579371320778" datatype="html" approved="yes">
-        <source>Icon with colored squares</source> <target state="signed-off">Icon avec des carrés colorés</target><context-group purpose="location">
+        <source>Icon with colored squares</source>
+        <target state="translated">Icon avec des carrés colorés</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/new-project/feature/feature.component.html</context>
           <context context-type="linenumber">12</context>
         </context-group>
@@ -459,7 +520,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="8953033926734869941" datatype="html" approved="yes">
-        <source>Name</source> <target state="signed-off">Nom</target><context-group purpose="location">
+        <source>Name</source>
+        <target state="translated">Nom</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/new-project/feature/feature.component.html</context>
           <context context-type="linenumber">18</context>
         </context-group>
@@ -477,7 +539,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4902817035128594900" datatype="html" approved="yes">
-        <source>Description</source> <target state="signed-off">Description</target><context-group purpose="location">
+        <source>Description</source>
+        <target state="translated">Description</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/new-project/feature/feature.component.html</context>
           <context context-type="linenumber">28</context>
         </context-group>
@@ -487,37 +550,43 @@
         </context-group>
       </trans-unit>
       <trans-unit id="5479956740377309255" datatype="html" approved="yes">
-        <source>Optional description</source> <target state="signed-off">Description facultative</target><context-group purpose="location">
+        <source>Optional description</source>
+        <target state="translated">Description facultative</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/new-project/feature/feature.component.html</context>
           <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5861462401031465669" datatype="html" approved="yes">
-        <source>Project created.</source> <target state="signed-off">Projet créé.</target><context-group purpose="location">
+        <source>Project created.</source>
+        <target state="translated">Projet créé.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/new-project/feature/feature.component.html</context>
           <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5674286808255988565" datatype="html" approved="yes">
-        <source>Create</source> <target state="signed-off">Créer</target><context-group purpose="location">
+        <source>Create</source>
+        <target state="translated">Créer</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/new-project/feature/feature.component.html</context>
           <context context-type="linenumber">60</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3327094637278066401" datatype="html" approved="yes">
-        <source>Description (optional)</source> <target state="signed-off">Description (facultative)</target><context-group purpose="location">
+        <source>Description (optional)</source>
+        <target state="translated">Description (facultative)</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2504247853379676894" datatype="html" approved="yes">
-        <source>Project details saved.</source> <target state="signed-off">Détails du projet enregistrés.</target><context-group purpose="location">
+        <source>Project details saved.</source>
+        <target state="translated">Détails du projet enregistrés.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">54</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3768927257183755959" datatype="html" approved="yes">
-        <source>Save</source> <target state="signed-off">Enregistrer</target><context-group purpose="location">
+        <source>Save</source>
+        <target state="translated">Enregistrer</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">61</context>
         </context-group>
@@ -531,19 +600,22 @@
         </context-group>
       </trans-unit>
       <trans-unit id="5505637243815082364" datatype="html" approved="yes">
-        <source>Authors</source> <target state="signed-off">Auteurs</target><context-group purpose="location">
+        <source>Authors</source>
+        <target state="translated">Auteurs</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">72</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4282587102956396340" datatype="html" approved="yes">
-        <source>Status</source> <target state="signed-off">Statut</target><context-group purpose="location">
+        <source> Status </source>
+        <target state="translated">Statut</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">87,88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="4814285799071780083" datatype="html" approved="yes">
-        <source>Remove</source> <target state="signed-off">Supprimer</target><context-group purpose="location">
+        <source>Remove</source>
+        <target state="translated">Supprimer</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">90</context>
         </context-group>
@@ -553,79 +625,92 @@
         </context-group>
       </trans-unit>
       <trans-unit id="4416413576346763682" datatype="html" approved="yes">
-        <source>Pending</source> <target state="signed-off">En attente</target><context-group purpose="location">
+        <source>Pending</source>
+        <target state="translated">En attente</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">110</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7317290694079257887" datatype="html" approved="yes">
-        <source>Accepted</source> <target state="signed-off">Accepté</target><context-group purpose="location">
+        <source>Accepted</source>
+        <target state="translated">Accepté</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">113</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1733264802646111587" datatype="html" approved="yes">
-        <source>Author email</source> <target state="signed-off">Addresse e-mail de l'auteur</target><context-group purpose="location">
+        <source>Author email</source>
+        <target state="translated">Addresse e-mail de l'auteur</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">133</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1140599166278569579" datatype="html" approved="yes">
-        <source>Invalid email</source> <target state="signed-off">Adresse e-mail incorrecte</target><context-group purpose="location">
+        <source>Invalid email</source>
+        <target state="translated">Adresse e-mail incorrecte</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">137</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3249513483374643425" datatype="html" approved="yes">
-        <source>Add</source> <target state="signed-off">Ajouter</target><context-group purpose="location">
+        <source>Add</source>
+        <target state="translated">Ajouter</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">140</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2547571169649786686" datatype="html" approved="yes">
-        <source>Danger zone</source> <target state="signed-off">Zone dangereuse</target><context-group purpose="location">
+        <source>Danger zone</source>
+        <target state="translated">Zone dangereuse</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">149</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5583513468372750330" datatype="html" approved="yes">
-        <source>Be sure to you want to delete the project, it can't be reversed</source> <target state="signed-off">Assurez-vous de vouloir supprimer le projet, il ne peut pas être récupéré</target><context-group purpose="location">
+        <source>Be sure to you want to delete the project, it can't be reversed</source>
+        <target state="translated">Assurez-vous de vouloir supprimer le projet, il ne peut pas être récupéré</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">151</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7022070615528435141" datatype="html" approved="yes">
-        <source>Delete</source> <target state="signed-off">Supprimer</target><context-group purpose="location">
+        <source>Delete</source>
+        <target state="translated">Supprimer</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings-project/feature/settings-project.component.html</context>
           <context context-type="linenumber">157</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6267577653105675049" datatype="html" approved="yes">
-        <source>Edit personal information</source> <target state="signed-off">Modifier vos informations personnelles</target><context-group purpose="location">
+        <source>Edit personal information</source>
+        <target state="translated">Modifier vos informations personnelles</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings/feature/feature.component.html</context>
           <context context-type="linenumber">8</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2826581353496868063" datatype="html" approved="yes">
-        <source>Language</source> <target state="signed-off">Langue</target><context-group purpose="location">
+        <source>Language</source>
+        <target state="translated">Langue</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings/feature/feature.component.html</context>
           <context context-type="linenumber">34</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8215448639875301323" datatype="html" approved="yes">
-        <source>Personal information saved.</source> <target state="signed-off">Informations personnelles enregistrées</target><context-group purpose="location">
+        <source>Personal information saved.</source>
+        <target state="translated">Informations personnelles enregistrées</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings/feature/feature.component.html</context>
           <context context-type="linenumber">42</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1424588447737418278" datatype="html" approved="yes">
-        <source>Modify password</source> <target state="signed-off">Modifier le mot de passe</target><context-group purpose="location">
+        <source>Modify password</source>
+        <target state="translated">Modifier le mot de passe</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings/feature/feature.component.html</context>
           <context context-type="linenumber">78</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5340498030552368470" datatype="html" approved="yes">
-        <source>Current password</source> <target state="signed-off">Mot de passe actuel</target><context-group purpose="location">
+        <source>Current password</source>
+        <target state="translated">Mot de passe actuel</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings/feature/feature.component.html</context>
           <context context-type="linenumber">83</context>
         </context-group>
@@ -635,7 +720,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="3588415639242079458" datatype="html" approved="yes">
-        <source>New password</source> <target state="signed-off">Nouveau mot de passe</target><context-group purpose="location">
+        <source>New password</source>
+        <target state="translated">Nouveau mot de passe</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings/feature/feature.component.html</context>
           <context context-type="linenumber">94</context>
         </context-group>
@@ -645,25 +731,29 @@
         </context-group>
       </trans-unit>
       <trans-unit id="8666615009060969246" datatype="html" approved="yes">
-        <source>Password changed.</source> <target state="signed-off">Mot de passe modifié.</target><context-group purpose="location">
+        <source>Password changed.</source>
+        <target state="translated">Mot de passe modifié.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings/feature/feature.component.html</context>
           <context context-type="linenumber">104</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1564465350243099217" datatype="html" approved="yes">
-        <source>Wrong password.</source> <target state="signed-off">Mot de passe incorrect.</target><context-group purpose="location">
+        <source>Wrong password.</source>
+        <target state="translated">Mot de passe incorrect.</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/settings/feature/feature.component.html</context>
           <context context-type="linenumber">111</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6494853859941649817" datatype="html" approved="yes">
-        <source>Copyright © 2021 <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/LopsemPyier&quot;&gt;"/>LopsemPyier<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source> <target state="signed-off">Copyright © 2021 <x id="START_LINK"/>LopsemPyier<x id="CLOSE_LINK"/></target><context-group purpose="location">
+        <source> Copyright © 2021 <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/LopsemPyier&quot; class=&quot;text-white dark:text-white&quot;&gt;"/>LopsemPyier<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target state="translated">Copyright © 2021 <x id="START_LINK"/>LopsemPyier<x id="CLOSE_LINK"/></target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/footer/footer.component.html</context>
           <context context-type="linenumber">8,9</context>
         </context-group>
       </trans-unit>
       <trans-unit id="9040361513231775562" datatype="html" approved="yes">
-        <source>Downloads</source> <target state="signed-off">Téléchargements</target><context-group purpose="location">
+        <source>Downloads</source>
+        <target state="translated">Téléchargements</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/footer/footer.component.html</context>
           <context context-type="linenumber">17</context>
         </context-group>
@@ -673,49 +763,57 @@
         </context-group>
       </trans-unit>
       <trans-unit id="2029980907058777630" datatype="html" approved="yes">
-        <source>Terms of Service</source> <target state="signed-off">Conditions générales d'utilisation</target><context-group purpose="location">
+        <source>Terms of Service</source>
+        <target state="translated">Conditions générales d'utilisation</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/footer/footer.component.html</context>
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1948732483765799751" datatype="html" approved="yes">
-        <source>Credits</source> <target state="signed-off">Crédits</target><context-group purpose="location">
+        <source>Credits</source>
+        <target state="translated">Crédits</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/footer/footer.component.html</context>
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5018804994794983050" datatype="html" approved="yes">
-        <source>Signup</source> <target state="signed-off">S'inscrire</target><context-group purpose="location">
+        <source>Signup</source>
+        <target state="translated">S'inscrire</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/header/header.component.html</context>
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3894950702316166331" datatype="html" approved="yes">
-        <source>Loading...</source> <target state="signed-off">Chargement...</target><context-group purpose="location">
+        <source>Loading...</source>
+        <target state="translated">Chargement...</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/loading/loading.component.html</context>
           <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6570363013146073520" datatype="html" approved="yes">
-        <source>Dashboard</source> <target state="signed-off">Tableau de bord</target><context-group purpose="location">
+        <source>Dashboard</source>
+        <target state="translated">Tableau de bord</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/nav/nav.component.html</context>
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8044304973848447418" datatype="html" approved="yes">
-        <source>Notification</source> <target state="signed-off">Notification</target><context-group purpose="location">
+        <source>Notification</source>
+        <target state="translated">Notification</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/nav/nav.component.html</context>
           <context context-type="linenumber">33</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3797778920049399855" datatype="html" approved="yes">
-        <source>Logout</source> <target state="signed-off">Se deconnecter</target><context-group purpose="location">
+        <source>Logout</source>
+        <target state="translated">Se deconnecter</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/nav/nav.component.html</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6606929492607524568" datatype="html" approved="yes">
-        <source>Back to dashboard</source> <target state="signed-off">Retour au menu</target><context-group purpose="location">
+        <source>Back to dashboard</source>
+        <target state="translated">Retour au menu</target><context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/side-bar/side-bar.component.html</context>
           <context context-type="linenumber">5</context>
         </context-group>

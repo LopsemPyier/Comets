@@ -15,11 +15,11 @@
 }
 
 .primary.loading, .primary.disabled {
-	@apply bg-primary-light text-gray-light dark:bg-primary-light dark:text-gray-light;
+	@apply bg-primary-light text-gray dark:bg-primary-light dark:text-gray;
 }
 
 .secondary.loading, .secondary.disabled {
-	@apply bg-secondary-light text-gray-light dark:bg-secondary-light dark:text-gray-light;
+	@apply bg-secondary-light text-gray dark:bg-secondary-light dark:text-gray;
 }
 
 .error.loading, .error.disabled {
@@ -27,7 +27,7 @@
 }
 
 .default.loading, .default.disabled {
-	@apply bg-gray-lightest dark:bg-gray-darker text-gray-light dark:text-gray-dark;
+	@apply bg-gray-lightest dark:bg-gray-darker text-gray dark:text-gray-dark;
 }
 
 .loading {

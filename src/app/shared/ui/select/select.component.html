@@ -1,7 +1,7 @@
 <div class="formControl">
-	<label [for]="ngControl.name" class="text-sm text-gray-light dark:text-gray-dark">{{ label }}</label>
+	<label [for]="ngControl.name" class="text-sm text-gray dark:text-gray-dark">{{ label }}</label>
 	<div class="relative flex flex-row items-center">
-		<div class="absolute z-10 left-0 pl-2 text-gray-light dark:text-gray-dark" *ngIf="iconLeft">
+		<div class="absolute z-10 left-0 pl-2 text-gray dark:text-gray-dark" *ngIf="iconLeft">
 			<app-icon [icon]="iconLeft"></app-icon>
 		</div>
 		<select
@@ -19,7 +19,7 @@
 			<option *ngFor="let option of options" [value]="option.key">{{ option.value }}</option>
 		</select>
 		<div
-			class="absolute z-10 right-0 pr-2 text-gray-light dark:text-gray-dark"
+			class="absolute z-10 right-0 pr-2 text-gray dark:text-gray-dark"
 		>
 			<app-icon icon="chevron-down" class="block focus:rotate-180"></app-icon>
 		</div>

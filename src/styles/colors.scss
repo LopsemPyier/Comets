@@ -4,7 +4,7 @@
 	}
 
 	.text-on-primary-light {
-		@apply text-gray-light;
+		@apply text-gray;
 	}
 
 	.text-on-secondary {
@@ -12,7 +12,7 @@
 	}
 
 	.text-on-secondary-light {
-		@apply text-gray-light;
+		@apply text-gray;
 	}
 
 	.text {
@@ -20,7 +20,7 @@
 	}
 
 	.text-light {
-		@apply text-gray-light dark:text-gray-dark;
+		@apply text-gray dark:text-gray-dark;
 	}
 
 	.bg {

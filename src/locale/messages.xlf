@@ -375,6 +375,13 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="6599364831830861985" datatype="html">
+        <source>Features</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/landing/home/home.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="5938627273116127317" datatype="html">
         <source>For everyone</source>
         <context-group purpose="location">
@@ -749,7 +756,7 @@
         </context-group>
       </trans-unit>
       <trans-unit id="6494853859941649817" datatype="html">
-        <source> Copyright © 2021 <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/LopsemPyier&quot;&gt;"/>LopsemPyier<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <source> Copyright © 2021 <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://github.com/LopsemPyier&quot; class=&quot;text-white dark:text-white&quot;&gt;"/>LopsemPyier<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/ui/footer/footer.component.html</context>
           <context context-type="linenumber">8,9</context>
