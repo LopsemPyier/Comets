@@ -5,7 +5,6 @@ import { ActivatedRoute } from '@angular/router';
 import { IsLoadingService } from '@service-work/is-loading';
 import { FilesService } from '../../../editor/data-access/files.service';
 import { map, switchMap } from 'rxjs/operators';
-import { ProjectService } from '../../../project/data-access/project.service';
 
 @Component({
 	selector: 'app-editor-layout',
@@ -13,8 +12,10 @@ import { ProjectService } from '../../../project/data-access/project.service';
 	styleUrls: ['./editor-layout.component.scss'],
 })
 export class EditorLayoutComponent implements OnInit {
+	ngOnInit(): void {
+	}
 
-	readonly LOADING_KEY = 'files_tree';
+	/*readonly LOADING_KEY = 'files_tree';
 	files$ = new Observable<FileNode[]>();
 	project$!: Project;
 
@@ -131,6 +132,6 @@ export class EditorLayoutComponent implements OnInit {
 			), {
 			key: this.LOADING_KEY,
 		});
-	}
+	}*/
 
 }
