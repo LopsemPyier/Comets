@@ -1,11 +1,14 @@
 <section class="h-full w-full flex flex-col pt-5 px-5 items-center gap-2">
-	<h1 class="text-center">You have been disconnected</h1>
-	<p class="text-center">You will be redirected in <span class="text-black dark:text-white">{{ time }} seconds</span>
+	<h1 class="text-center" i18n>You have been disconnected</h1>
+	<p class="text-center" i18n>You will be redirected in <span class="text-black dark:text-white">{{ time }}
+		seconds</span>
 		to the Home page</p>
 	<div class="flex flex-col md:flex-row gap-5">
-		<a routerLink="/app/login" class="h-10 px-10 items-center flex text-secondary">Go to login page</a>
-		<a routerLink="/" class="h-10 px-10 text-white items-center flex dark:text-white bg-primary">Go to home page</a>
+		<a routerLink="/app/login" class="h-10 px-10 items-center flex text-secondary" i18n>Go to login page</a>
+		<a routerLink="/" class="h-10 px-10 text-white items-center flex dark:text-white bg-primary" i18n>Go to home
+			page</a>
 	</div>
 
-	<img src="./assets/images/logout.svg" class="pt-5 hidden md:block" alt="An illustration of a man stand on a rocket">
+	<img src="./assets/images/logout.svg" class="pt-5 hidden md:block" alt="An illustration of a man stand on a rocket"
+		 i18n-alt>
 </section>

@@ -84,16 +84,6 @@ const routes: Routes = [
 		component: LayoutComponent,
 		children: [
 			{
-				path: 'login',
-				loadChildren: async () =>
-					(await import('./auth')).LoginModule,
-			},
-			{
-				path: 'signup',
-				loadChildren: async () =>
-					(await import('./auth')).SignupModule,
-			},
-			{
 				path: '',
 				loadChildren: async () =>
 					(await import('./landing')).HomeModule,
@@ -104,7 +94,7 @@ const routes: Routes = [
 					(await import('./landing')).TermsModule,
 			},
 			{
-				path: 'download',
+				path: 'downloads',
 				loadChildren: async () =>
 					(await import('./landing')).DownloadModule,
 			},
@@ -114,37 +104,17 @@ const routes: Routes = [
 					(await import('./landing')).CreditsModule,
 			},
 			{
-				path: 'dashboard',
-				loadChildren: async () =>
-					(await import('./project')).DashboardModule,
-			},
-			{
-				path: 'projects/new',
-				loadChildren: async () =>
-					(await import('./project')).AddModule,
-			},
-			{
-				path: 'project/:id',
-				loadChildren: async () =>
-					(await import('./editor')).FeatureModule,
-			},
-			{
-				path: 'project',
-				redirectTo: 'dashboard',
+				path: 'terms',
+				redirectTo: 'terms-of-service',
 				pathMatch: 'full',
 			},
 			{
-				path: 'collection',
-				redirectTo: 'collection/playlists',
+				path: 'home',
+				redirectTo: '',
 				pathMatch: 'full',
 			},
 		],
 	},
-	// {
-	//   path: '',
-	//   redirectTo: '',
-	//   pathMatch: 'full'
-	// }
 ];
 
 @NgModule({

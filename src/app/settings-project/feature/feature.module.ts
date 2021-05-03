@@ -7,7 +7,6 @@ import { InputModule } from '../../shared/ui/input/input.module';
 import { IconModule } from '../../shared/ui/icon/icon.module';
 import { ButtonModule } from '../../shared/ui/button/button.module';
 import { MessageModule } from '../../shared/ui/message/message.module';
-import { AuthorItemModule } from '../ui/author-item/author-item.module';
 import { IsLoadingModule } from '@service-work/is-loading';
 import { TextareaModule } from '../../shared/ui/textarea/textarea.module';
 
@@ -25,7 +24,6 @@ import { TextareaModule } from '../../shared/ui/textarea/textarea.module';
 		IconModule,
 		ButtonModule,
 		MessageModule,
-		AuthorItemModule,
 		IsLoadingModule,
 		TextareaModule,
 	],

@@ -1,26 +1,30 @@
 <div class="p-5 grid grid-flow-row gap-5 max-w-4xl">
-	<h1>Settings</h1>
+	<h1 i18n>Settings</h1>
 	<form
 		[formGroup]="form"
 		(ngSubmit)="submit()"
 		class="grid grid-flow-row gap-2 w-full max-w-xl px-10"
 	>
-		<h3>Edit personal information</h3>
+		<h3 i18n>Edit personal information</h3>
 
 		<app-input
 			formControlName="username"
 			type="text"
 			label="Username"
+			placeholder="Username"
 			iconLeft="user"
 			i18n-label
+			i18n-placeholder
 		></app-input>
 
 		<app-input
 			formControlName="email"
 			type="email"
 			iconLeft="email"
+			placeholder="Email"
 			label="Email"
 			i18n-label
+			i18n-placeholder
 		></app-input>
 
 		<app-select
@@ -71,14 +75,16 @@
 		(ngSubmit)="submitPassword()"
 		class="grid grid-flow-row gap-2 w-full max-w-xl px-10"
 	>
-		<h3>Modify password</h3>
+		<h3 i18n>Modify password</h3>
 
 		<app-input
 			formControlName="oldPassword"
 			type="password"
 			label="Current password"
+			placeholder="Current password"
 			iconLeft="password"
 			i18n-label
+			i18n-placeholder
 		></app-input>
 
 		<app-input
@@ -86,7 +92,9 @@
 			type="password"
 			iconLeft="password"
 			label="New password"
+			placeholder="New password"
 			i18n-label
+			i18n-placeholder
 		></app-input>
 
 		<div class="flex flex-row items-center gap-5 mt-2 justify-end">

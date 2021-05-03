@@ -1,5 +1,5 @@
 <div class="p-5 grid grid-flow-row gap-5">
-	<h1>New Project</h1>
+	<h1 i18n>New Project</h1>
 	<form
 		[formGroup]="form"
 		(ngSubmit)="submit()"
@@ -9,7 +9,7 @@
 		<div class="flex flex-row items-center gap-5 w-full">
 			<img
 				src="https://avatars.dicebear.com/api/identicon/{{ form.value.name }}.svg"
-				alt="Icon with colored squares"
+				alt="Icon with colored squares" i18n-alt
 				class="w-16 h-16 max-w-none rounded-sm bg-white self-center">
 
 			<app-input
@@ -19,6 +19,7 @@
 				placeholder="Name"
 				class="w-full"
 				i18n-label
+				i18n-placeholder
 			></app-input>
 		</div>
 
@@ -27,6 +28,7 @@
 			label="Description"
 			placeholder="Optional description"
 			i18n-label
+			i18n-placeholder
 		></app-textarea>
 
 
