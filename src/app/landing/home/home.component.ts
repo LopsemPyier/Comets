@@ -14,4 +14,9 @@ export class HomeComponent implements OnInit {
 	ngOnInit(): void {
 	}
 
+	test($event: IntersectionObserverEntry[]): void {
+		if ($event[0].isIntersecting) {
+			$event[0].target.classList.remove('onScroll');
+		}
+	}
 }

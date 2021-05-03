@@ -18,18 +18,18 @@ export class NodeComponent {
 		this.input.nativeElement.focus();
 	}
 
-	get icon(): string {
+	get icon(): 'folder-open' | 'folder' | 'file' | 'file-text' | 'file-image' {
 		if (this.file.fileType === FileType.FOLDER) {
 			if (this.file.open) {
-				return 'folder-open-fill';
+				return 'folder-open';
 			} else {
-				return 'folder-fill';
+				return 'folder';
 			}
 		} else {
 			if (this.file.fileType === FileType.TEX) {
-				return 'file-text-fill';
+				return 'file-text';
 			} else {
-				return this.file.fileType === FileType.IMAGE ? 'image-fill' : 'file-3-fill';
+				return this.file.fileType === FileType.IMAGE ? 'file-image' : 'file';
 			}
 		}
 	}

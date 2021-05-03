@@ -1,10 +1,12 @@
 <div
 	class="flex flex-row gap-2 items-center hover:bg-gray-lightest dark:hover:bg-gray-darkest p-1 rounded-r-sm"
 	[ngClass]="{ 'bg-gray-lightest dark:bg-gray-darkest': this.file.selected }"
-	 (click)="clicked()">
-	<app-icon *ngIf="file.folder" icon="arrow-right-s-line" class="transform transition-transform" [ngClass]="{ 'rotate-90': file.open }"></app-icon>
+	(click)="clicked()">
+	<app-icon *ngIf="file.folder" icon="chevron-right" class="transform transition-transform"
+			  [ngClass]="{ 'rotate-90': file.open }"></app-icon>
 	<app-icon [icon]="icon"></app-icon>
-	<input class="text-black bg-transparent w-full dark:text-white" #input [readOnly]="!file.edit" [(ngModel)]="file.name">
+	<input class="text-black bg-transparent w-full dark:text-white" #input [readOnly]="!file.edit"
+		   [(ngModel)]="file.name">
 </div>
 
 

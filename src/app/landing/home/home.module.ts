@@ -6,6 +6,7 @@ import { IconModule } from 'src/app/shared/ui/icon/icon.module';
 import { RouterModule } from '@angular/router';
 import { HeaderModule } from '../../shared/ui/header/header.module';
 import { FooterModule } from '../../shared/ui/footer/footer.module';
+import { IntersectionObserverModule } from '@ng-web-apis/intersection-observer';
 
 @NgModule({
 	declarations: [
@@ -20,6 +21,7 @@ import { FooterModule } from '../../shared/ui/footer/footer.module';
 		IconModule,
 		HeaderModule,
 		FooterModule,
+		IntersectionObserverModule,
 	],
 })
 export class HomeModule {

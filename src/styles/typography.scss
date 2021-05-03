@@ -72,4 +72,12 @@
 		@apply bg-primary-light hover:bg-primary-light;
 		@apply text-white dark:text-white;
 	}
+
+	.onScroll {
+		@apply transform translate-y-6 opacity-0;
+	}
+
+	.onScroll.seen {
+		@apply transform translate-y-0 opacity-100;
+	}
 }

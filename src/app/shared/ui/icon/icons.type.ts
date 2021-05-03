@@ -28,7 +28,17 @@ export type Icon =
 	| 'save'
 	| 'loading'
 	| 'chevron-down'
-	| 'chevron-right';
+	| 'chevron-right'
+	| 'arrow-right'
+	| 'mouse'
+	| 'external'
+	| 'heart'
+	| 'infinity'
+	| 'laptop'
+	| 'file-add'
+	| 'folder-add'
+	| 'logo-github'
+	| 'logo-twitter';
 
 export function toIconName(icon: Icon): string {
 	switch (icon) {
@@ -60,13 +70,13 @@ export function toIconName(icon: Icon): string {
 			return 'ph-file-text-fill';
 
 		case 'folder':
-			return 'ph-folder-fill';
+			return 'ph-folder-simple-fill';
 
 		case 'folder-open':
 			return 'ph-folder-open-fill';
 
 		case 'password':
-			return 'ph-key-fill';
+			return 'ph-fingerprint';
 
 		case 'settings':
 			return 'ph-gear-six-fill';
@@ -121,6 +131,36 @@ export function toIconName(icon: Icon): string {
 
 		case 'chevron-right':
 			return 'ph-caret-right';
+
+		case 'arrow-right':
+			return 'ph-arrow-right-bold';
+
+		case 'mouse':
+			return 'ph-mouse-simple';
+
+		case 'external':
+			return 'ph-arrow-square-out';
+
+		case 'heart':
+			return 'ph-heart-straight-fill';
+
+		case 'infinity':
+			return 'ph-infinity';
+
+		case 'laptop':
+			return 'ph-laptop-fill';
+
+		case 'file-add':
+			return 'ph-file-plus-fill';
+
+		case 'folder-add':
+			return 'ph-folder-simple-plus-fill';
+
+		case 'logo-github':
+			return 'bx bxl-github';
+
+		case 'logo-twitter':
+			return 'bx bxl-twitter';
 
 		default:
 			return '';

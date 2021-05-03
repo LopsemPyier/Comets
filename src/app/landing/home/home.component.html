@@ -1,34 +1,131 @@
-<app-header></app-header>
+<div class="flex flex-col">
+	<section
+		class="h-screen bg-white dark:bg-black px-10 lg:px-20 grid grid-cols-none md:grid-cols-hero grid-flow-row"
+	>
+		<div class="self-center ml-0 lg:ml-32 justify-end">
+			<h1
+				class="hero text-center md:text-left mb-5"
+				i18n
+			>
+				LaTeX without any trouble
+			</h1>
+			<p class="text-center md:text-left" i18n>
+				Easy to use online and collaborative LaTeX editor
+			</p>
+		</div>
 
-<section
-	class="h-full px-10 lg:px-20 grid grid-cols-none md:grid-cols-hero grid-flow-row"
->
-	<div class="self-center ml-0 lg:ml-32 justify-end">
-		<h1
-			class="hero text-center md:text-left mb-5"
-			i18n
-		>
-			LaTeX without any trouble
-		</h1>
-		<p class="text-center md:text-left" i18n>
-			Easy to use online and collaborative LaTeX editor
-		</p>
-	</div>
+		<img
+			src="./assets/images/hero.svg"
+			alt="An illustration of a math teacher in front of a green board"
+			class="hidden md:block justify-self-start self-center"
+			i18n-alt
+		/>
 
-	<img
-		src="./assets/images/hero.svg"
-		alt="An illustration of a math teacher in front of a green board"
-		class="hidden md:block justify-self-start self-center"
-		i18n-alt
-	/>
+		<app-icon
+			icon="mouse"
+			class="col-span-1 md:col-span-2 place-self-center animate-bounce"
+		></app-icon>
+	</section>
 
-	<app-icon
-		icon="mouse-line"
-		color="text"
-		class="col-span-1 md:col-span-2 place-self-center animate-bounce"
-	></app-icon>
-</section>
+	<section
+		class="w-full px-10 py-10 bg-gray-lightest gap-16 dark:bg-gray-darkest flex flex-col items-center"
+	>
+		<h2>Features</h2>
+		<div class="grid grid-cols-1 grid-rows-4 md:grid-cols-2 md:grid-rows-2 gap-y-10 gap-x-20 max-w-sm md:max-w-3xl">
+			<div class="max-w-prose flex flex-col gap-2 items-start transition duration-700 onScroll"
+				 waIntersectionObserver waIntersectionThreshold="0.35" (waIntersectionObservee)="test($event)">
+				<app-icon icon="users" class="p-2 bg-secondary-light text-secondary-dark rounded-md"></app-icon>
+				<h3 i18n>For everyone</h3>
+				<p i18n>Write beautiful articles and documents or carefully take notes in classes, all in a beautiful
+					text
+					editor. <br/>The power of LaTeX will help you with standart layout and tools. </p>
+				<a href="https://www.overleaf.com/learn"
+				   class="group flex flex-row gap-1 items-center transition-colors hover:text-secondary dark:hover:text-secondary-light"><span
+					i18n>learn latex</span>
+					<app-icon icon="external"
+							  class="transform transition-transform group-hover:-translate-y-1 group-hover:translate-x-1"
+							  size="md"></app-icon>
+				</a>
+			</div>
+			<div class="max-w-prose flex flex-col gap-2 items-start transition duration-700 delay-200 onScroll"
+				 waIntersectionObserver waIntersectionThreshold="0.35" (waIntersectionObservee)="test($event)">
+				<app-icon icon="heart" class="p-2 bg-primary-light text-primary-dark rounded-md"></app-icon>
+				<h3 i18n>Privacy</h3>
+				<p i18n>We believe in open source. That is why we are entierly based on open sources solutions. <br>We
+					also
+					provide all the code to run it your self and keep your files under your control</p>
+				<a routerLink="/terms"
+				   class="group flex flex-row gap-1 transition-colors hover:text-primary dark:hover:text-primary-light items-center"><span
+					i18n>more info</span>
+					<app-icon icon="arrow-right" class="transform transition-transform group-hover:translate-x-2"
+							  size="md"></app-icon>
+				</a>
+			</div>
+			<div class="max-w-prose flex flex-col gap-2 items-start transition duration-700 onScroll"
+				 waIntersectionObserver waIntersectionThreshold="0.35" (waIntersectionObservee)="test($event)">
+				<app-icon icon="infinity" class="p-2 bg-info-light text-info rounded-md"></app-icon>
+				<h3 i18n>LaTeX power</h3>
+				<p i18n>LaTeX is robust, well known designed with sciences in mind. <br>Thus, whatever your domain, you
+					will
+					find packages to help you write articles our lessons with math, text or schemas.</p>
+				<a routerLink="/auth/signup"
+				   class="group flex flex-row gap-1 transition-colors hover:text-info dark:hover:text-info items-center"><span
+					i18n>get started</span>
+					<app-icon icon="arrow-right" class="transform transition-transform group-hover:translate-x-2"
+							  size="md"></app-icon>
+				</a>
+			</div>
+			<div class="max-w-prose flex flex-col gap-2 items-start transition duration-700 delay-200 onScroll"
+				 waIntersectionObserver waIntersectionThreshold="0.35" (waIntersectionObservee)="test($event)">
+				<app-icon icon="laptop" class="p-2 bg-success-light text-success rounded-md"></app-icon>
+				<h3 i18n>Everywhere you are</h3>
+				<p i18n>Edit your documents in a browser or in one of the native applications available in every
+					platforms.
+					<br>You can view them on the fly with our mobile application.</p>
+				<a routerLink="/downloads"
+				   class="group flex flex-row gap-1 transition-colors hover:text-success dark:hover:text-success items-center"><span
+					i18n>download</span>
+					<app-icon icon="arrow-right" class="transform transition-transform group-hover:translate-x-2"
+							  size="md"></app-icon>
+				</a>
+			</div>
+		</div>
+	</section>
 
+	<section
+		class="w-full px-10 py-10 gap-16 bg-black dark:bg-black text-white dark:text-white flex flex-row items-center"
+	>
+		<!--		illustration-->
+		<div
+			class="w-full flex items-center justify-center h-full rounded-sm overflow-hidden transition duration-700 onScroll"
+			waIntersectionObserver waIntersectionThreshold="0.2" (waIntersectionObservee)="test($event)">
+			<img src="./assets/images/collab-night.svg" alt=""
+				 class="flex items-center justify-center h-full rounded-sm overflow-hidden">
+		</div>
+
+		<ul class="flex flex-col gap-10 transition duration-700 delay-300 onScroll" waIntersectionObserver
+			waIntersectionThreshold="0.2" (waIntersectionObservee)="test($event)">
+			<li>
+				<h2 class="text-white dark:text-white">Collaborate</h2>
+				<p class="text-gray-dark dark:text-gray-dark">Collaborate in real time with people all over the
+					world.</p>
+			</li>
+			<li>
+				<h2 class="text-white dark:text-white">Work late</h2>
+				<p class="text-gray-dark dark:text-gray-dark">A beautiful night theme which won't blow away your eyes at
+					night.</p>
+			</li>
+			<li>
+				<h2 class="text-white dark:text-white">Download</h2>
+				<p class="text-gray-dark dark:text-gray-dark">Download your work easily in standard format.</p>
+			</li>
+		</ul>
+
+	</section>
+</div>
+
+
+<!--
 <section
 	class="h-auto py-10 px-10 sm:px-20 lg:px-32 bg-gray-lightest dark:bg-gray-darkest flex flex-col items-center"
 >
@@ -301,5 +398,4 @@
 		i18n-label
 	></app-button>
 </section>
-
-<app-footer></app-footer>
+-->

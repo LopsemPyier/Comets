@@ -4,6 +4,7 @@ import { HeaderComponent } from './header.component';
 import { RouterModule } from '@angular/router';
 import { ButtonModule } from '../button/button.module';
 import { LogoModule } from '../logo/logo.module';
+import { IconModule } from '../icon/icon.module';
 
 @NgModule({
 	declarations: [
@@ -14,6 +15,7 @@ import { LogoModule } from '../logo/logo.module';
 		RouterModule,
 		ButtonModule,
 		LogoModule,
+		IconModule,
 	],
 	exports: [
 		HeaderComponent,

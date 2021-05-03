@@ -28,7 +28,7 @@ export class IconComponent {
 	}
 
 	get prefix(): string {
-		if (this.icon === 'loading') {
+		if (this.icon === 'loading' || this.icon.startsWith('logo-')) {
 			return 'bx-';
 		} else {
 			return 'ph-';

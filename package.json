@@ -24,6 +24,8 @@
 		"@angular/router": "~11.2.8",
 		"@apollo/client": "^3.0.0",
 		"@graphql-tools/webpack-loader": "^6.4.0",
+		"@ng-web-apis/common": "^1.9.0",
+		"@ng-web-apis/intersection-observer": "^2.1.0",
 		"@ngneat/tailwind": "^7.0.1",
 		"@service-work/is-loading": "^5.1.2",
 		"ace-builds": "^1.4.12",

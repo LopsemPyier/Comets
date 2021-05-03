@@ -1,6 +1,5 @@
 <header class="grid grid-flow-col py-5 px-20">
-	<app-logo routerLink="/" class="text-black dark:text-white"></app-logo>
-	<!--	<div class="bg-error w-5 h-5 self-center justify-self-start"></div>-->
+	<app-logo routerLink="/" class="text-black dark:text-white cursor-pointer"></app-logo>
 	<nav
 		class="hidden md:grid justify-self-end self-center grid-flow-col auto-cols-auto gap-10"
 	>
@@ -12,15 +11,16 @@
 		>Downloads</a
 		>
 		<a
-			routerLink="/login"
+			routerLink="/auth/login"
 			class="self-center"
 			i18n>Login</a>
-		<app-button
-			label="Sign Up"
-			routerLink="/signup"
-			type="primary"
-			class="self-center py-2"
-			i18n-label>
-		</app-button>
+		<a
+			routerLink="/auth/signup"
+			class="group self-center text-primary dark:text-primary-light font-bold flex flex-row gap-1 items-center">
+			<span i18n>Signup</span>
+			<app-icon icon="arrow-right" class="transform transition-transform group-hover:translate-x-2"
+					  size="md"></app-icon>
+
+		</a>
 	</nav>
 </header>
